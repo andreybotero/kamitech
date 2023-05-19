@@ -1,6 +1,7 @@
 var i = 0;
 function adicionar() {
     i++
+
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
     document.getElementById("T" + i).innerHTML = titulo;
@@ -15,6 +16,7 @@ function adicionar() {
     document.getElementById("A" + i).innerHTML = autor;
     document.getElementById("bt" + i).hidden = false;
 }
+
 function remover() {
     if (i > 20) {
         var menos = i - 1;
