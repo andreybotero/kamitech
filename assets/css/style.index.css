@@ -196,6 +196,24 @@ article .container section .botao form button {
     margin: 15px 0;
 }
 
+/* article .container section .botao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+article .container section .botao a {
+    padding: 10px auto;
+    background-color: #509bfa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+article .container section .botao a:hover {
+    background-color: #294c79;
+} */
+
+
 .centralizarCards {
     display: flex;
     justify-content: space-evenly;
@@ -208,7 +226,6 @@ article .container section .card {
     padding: 0px 0px 10px 0px;
     width: 16%;
     height: auto;
-    /* margin: 8px; */
     display: inline-block;
     text-align: center;
 
