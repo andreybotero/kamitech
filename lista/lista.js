@@ -21,4 +21,6 @@ function remover() {
     document.getElementById("DD" + i).innerHTML = "";
     document.getElementById("A" + i).innerHTML = "";
     document.getElementById("bt" + i).hidden = true;
+    var menos = i - 1;
+    i = menos;
 }
