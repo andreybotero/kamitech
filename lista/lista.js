@@ -1,5 +1,6 @@
-var i = 1;
+var i = 0;
 function adicionar() {
+    i++
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
     document.getElementById("T" + i).innerHTML = titulo;
@@ -12,6 +13,13 @@ function adicionar() {
     var autor = document.getElementById("Autor").value;
     document.getElementById("Autor").value = '';
     document.getElementById("A" + i).innerHTML = autor;
-
-    i++
+    document.getElementById("bt" + i).hidden = false;
+}
+function remover() {
+    document.getElementById("T" + i).innerHTML = "";
+    document.getElementById("D" + i).innerHTML = "";
+    document.getElementById("DD" + i).innerHTML = "";
+    document.getElementById("A" + i).innerHTML = "";
+    document.getElementById("bt" + i).hidden = true;
+    
 }
