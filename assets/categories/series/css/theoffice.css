@@ -14,10 +14,10 @@ body{
 
 }
 #img2{
-  margin-left: 4%;
+  margin-left: 8%;
 }
 .legend{
-  margin-left: 4%;
+  margin-left: 8%;
 }
 /*concertando header*/
 .header-upper {
@@ -48,9 +48,9 @@ h1{
 #s1{
  border-top: solid 3px #3c4ffa;
   text-align: justify;
-  padding: 20px;
+  padding: 16px;
 border-radius: 6px;
-margin-left: 4%;
+margin-left: 1%;
 
 }
 
@@ -78,7 +78,7 @@ article{
 }
 /*titulo*/
 h2{
-  margin-top: 5%;
+  margin-top: 6%;
 }
 /*imagens*/
 #img1:hover{
@@ -86,7 +86,11 @@ transform: scale(1.1) ;
 transition: all 0.5s;
 box-shadow: -4px -1px 46px -7px rgba(37, 31, 31, 0.75);
 -webkit-box-shadow: -4px -1px 46px -7px rgba(18, 16, 16, 0.75);
--moz-box-shadow: -4px -1px 46px -7px rgba(30, 25, 25, 0.75);}
+-moz-box-shadow: -4px -1px 46px -7px rgba(30, 25, 25, 0.75);
+text-align: center;
+margin: 2%;
+}
+
 /*titulos*/
 h2{
  margin-top: 1%;
@@ -98,6 +102,8 @@ h1{
 #h2tt{
   border-top: solid 3px #3c4ffa;
   text-align: center;
+  margin-left: 5%;
+
 }
 .container2{
   
