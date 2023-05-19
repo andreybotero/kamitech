@@ -24,9 +24,9 @@ body {
     height: 180px;
 }
 
- .header-upper iframe:hover {
+.header-upper iframe:hover {
     height: 500px;
-} 
+}
 
 main {
     margin-top: 170px;
@@ -87,7 +87,7 @@ input {
     transition: .6s;
 }
 
-#slide1:checked~.navigation #l1{
+#slide1:checked~.navigation #l1 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -97,7 +97,7 @@ input {
     margin-left: 0;
 }
 
-#slide2:checked~.navigation #l2{
+#slide2:checked~.navigation #l2 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -106,7 +106,7 @@ input {
     margin-left: -20%;
 }
 
-#slide3:checked~.navigation #l3{
+#slide3:checked~.navigation #l3 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -196,28 +196,10 @@ article .container section .botao form button {
     margin: 15px 0;
 }
 
-/* article .container section .botao {
-    text-align: center;
-    margin: 20px 0;
-}
-
-article .container section .botao a {
-    padding: 10px auto;
-    background-color: #509bfa;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-article .container section .botao a:hover {
-    background-color: #294c79;
-} */
-
-
 .centralizarCards {
     display: flex;
-    justify-content:space-evenly;
-    
+    justify-content: space-evenly;
+
 }
 
 article .container section .card {
@@ -229,7 +211,7 @@ article .container section .card {
     /* margin: 8px; */
     display: inline-block;
     text-align: center;
-    
+
 }
 
 article .container section .card img {
@@ -295,4 +277,67 @@ article .container aside .card-2 img {
 
 footer iframe {
     margin-bottom: -5px;
+}
+
+@media (max-width:600px) {
+    header {
+        height: 20vh;
+
+    }
+
+    #slide1sec {
+        margin-top: 23%;
+    }
+
+    #slide2sec {
+        margin-top: 16%;
+    }
+
+    #slide3sec {
+        margin-top: 21%;
+    }
+
+    .carrosel .slide {
+        display: inline;
+    }
+
+    .carrosel .slide section {
+        width: 90%;
+        height: 60vh;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+
+    article .container section .card {
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .centralizarCards {
+        display: inline;
+
+    }
+
+    .botao {
+        margin-left: 35%;
+    }
+
+    h2 {
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+    #iframe_footer {
+        height: 290px;
+        background-color: #282d32;
+    }
+
+    #footer {
+        height: 600px;
+    }
 }
