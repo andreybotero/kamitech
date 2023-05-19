@@ -9,7 +9,7 @@ body{
 }
 .container{
   display: flex;
-  margin-left: 40%;
+  margin-left: 32%;
   gap: 30px;
 
 }
@@ -86,7 +86,8 @@ transform: scale(1.1) ;
 transition: all 0.5s;
 box-shadow: -4px -1px 46px -7px rgba(37, 31, 31, 0.75);
 -webkit-box-shadow: -4px -1px 46px -7px rgba(18, 16, 16, 0.75);
--moz-box-shadow: -4px -1px 46px -7px rgba(30, 25, 25, 0.75);}
+-moz-box-shadow: -4px -1px 46px -7px rgba(30, 25, 25, 0.75);} 
+
 /*titulos*/
 h2{
  margin-top: 1%;
@@ -98,6 +99,7 @@ h1{
 #h2tt{
   border-top: solid 3px #3c4ffa;
   text-align: center;
+  margin-bottom: 2%;
 }
 .container2{
   
