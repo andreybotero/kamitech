@@ -16,6 +16,11 @@ function adicionar() {
     document.getElementById("bt" + i).hidden = false;
 }
 function remover() {
+    if (i > 20) {
+        var menos = i - 1;
+        i = menos;
+    }
+
     document.getElementById("T" + i).innerHTML = "";
     document.getElementById("D" + i).innerHTML = "";
     document.getElementById("DD" + i).innerHTML = "";
@@ -23,4 +28,4 @@ function remover() {
     document.getElementById("bt" + i).hidden = true;
     var menos = i - 1;
     i = menos;
-}
+    }
