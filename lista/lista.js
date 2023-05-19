@@ -23,4 +23,8 @@ function remover() {
     document.getElementById("bt" + i).hidden = true;
     var menos = i - 1;
     i = menos;
+    if (i > 20) {
+        var menos = i - 1;
+    i = menos;
+    }
 }
