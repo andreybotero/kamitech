@@ -296,7 +296,7 @@ footer iframe {
     margin-bottom: -5px;
 }
 
-@media (max-width:720px) {
+@media (max-width:600px) {
     header {
         height: 20vh;
 
@@ -310,8 +310,8 @@ footer iframe {
     }
 
     #slide2sec {
-        margin-top: 23%; 
-        height: 60%;
+        margin-top: 1%; 
+        height: 25%;
     }
 
     #slide3sec {
