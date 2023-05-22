@@ -40,15 +40,14 @@ main {
 }
 
 .about_container .about_contents {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    grid-gap: 70px;
+    display: flex;
 }
 
 .about_contents .imageSection {
     position: relative;
     min-width: 300px;
     height: 380px;
+    margin-right: 100px;
 }
 
 .imageSection img {
@@ -57,6 +56,7 @@ main {
     object-fit: cover;
     position: relative;
     z-index: 2;
+    margin-right: 100px;
 }
 
 .about_contents .imageSection::after {
@@ -66,7 +66,7 @@ main {
     height: 100%;
     outline: 3px solid #787cb5;
     top: 13px;
-    left: 15px;
+    left: 20px;
     z-index: 1;
 }
 
@@ -119,9 +119,7 @@ main {
 }
 
 .personalinfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
+    display: flex;
     margin-top: 14px;
     padding-bottom: 10px;
     border-bottom: 1px solid #555;
@@ -131,8 +129,7 @@ main {
 
 
 .personalinfo div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 
 .personalinfo div span {

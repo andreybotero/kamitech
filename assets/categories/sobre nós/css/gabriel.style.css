@@ -6,6 +6,7 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #2b2a2f; */
 }
 
 main {
@@ -39,15 +40,14 @@ main {
 }
 
 .about_container .about_contents {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    grid-gap: 70px;
+    display: flex;
 }
 
 .about_contents .imageSection {
     position: relative;
     min-width: 300px;
     height: 380px;
+    margin-right: 100px;
 }
 
 .imageSection img {
@@ -56,6 +56,7 @@ main {
     object-fit: cover;
     position: relative;
     z-index: 2;
+    margin-right: 100px;
 }
 
 .about_contents .imageSection::after {
@@ -65,7 +66,7 @@ main {
     height: 100%;
     outline: 3px solid #787cb5;
     top: 13px;
-    left: 15px;
+    left: 20px;
     z-index: 1;
 }
 
@@ -77,7 +78,6 @@ main {
     margin-bottom: 5px;
     position: relative;
     color: #2b2a2f;
-
 }
 
 .Infosection h1::before {
@@ -111,7 +111,7 @@ main {
 
 .Infosection p {
     color: #aaabb0;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.2;
     text-align: justify;
     padding-bottom: 8px;
@@ -119,22 +119,22 @@ main {
 }
 
 .personalinfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
+    display: flex;
     margin-top: 14px;
     padding-bottom: 10px;
     border-bottom: 1px solid #555;
+    color: #2b2a2f;
 }
 
+
+
 .personalinfo div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 
 .personalinfo div span {
-    letter-spacing: 1px;
     color: #2b2a2f;
+    letter-spacing: 1px;
 }
 
 .Infosection button {
