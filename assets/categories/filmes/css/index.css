@@ -190,4 +190,20 @@ footer iframe {
     div{
         grid: none;
     }
+    
+        #some {
+            display: none;
+        }
+    
+        #a2 {
+            display: flex;
+            flex-direction: column;
+        }
+      .linkblock{
+        width: 70%;
+      }
+      .linkblock .sub1{
+        font-size: 30px;
+      }
+    }
 }
