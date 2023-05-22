@@ -29,10 +29,7 @@ function adicionar() {
     document.body.innerHTML += div;
 }
 
-function desfazer(id) {
-    var divs = document.getElementById("div" + id);
-    divs.hidden = true;
-}
+
 
 function editar(id) {
     var divs = document.getElementById("div" + id);
@@ -64,4 +61,8 @@ function editar(id) {
     var div = '<div id="Div' + i + '">' + tudo + '</div>';
 
     document.body.innerHTML += div;
+}
+function desfazer(id) {
+    var divs = document.getElementById("div" + id);
+    divs.hidden = true;
 }
