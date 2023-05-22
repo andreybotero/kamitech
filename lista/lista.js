@@ -22,12 +22,11 @@ function adicionar() {
     var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
     var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
-    var div = document.createElement("div");
-    div.setAttribute("id", "div" + i);
-
     var tudo = title + date + descri + creater + button1 + button2;
 
-    document.body.innerHTML += '<div id="div' + i + '">' + tudo + '</div>';
+    var div = '<div id="div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
 }
 
 function desfazer(id) {
@@ -60,10 +59,9 @@ function editar(id) {
     var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
     var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
-    var div = document.createElement("div");
-    div.setAttribute("id", "div" + i);
-
     var tudo = title + date + descri + creater + button1 + button2;
 
-    document.body.innerHTML += '<div id="div' + i + '">' + tudo + '</div>';
+    var div = '<div id="Div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
 }
