@@ -19,8 +19,8 @@ function adicionar() {
     document.getElementById("Autor").value = '';
     var creater = '<p id="A' + i + '">' + autor + '</p>';
 
-    var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
-    var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
+    var button1 = '<button class="edt_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button class="edt_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
@@ -57,8 +57,8 @@ function editar(id) {
     document.getElementById("Autor").value = '';
     var creater = '<p id="A' + i + '">' + autor + '</p>';
 
-    var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
-    var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
+    var button1 = '<button class="edt_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button class="edt_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
