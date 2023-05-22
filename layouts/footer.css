@@ -29,7 +29,7 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* estilização footer */
@@ -123,5 +123,10 @@ p {
         font-weight: 500;
         position: relative;
         margin-top: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
