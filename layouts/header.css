@@ -125,7 +125,7 @@ nav ul li:hover .sub-menu1 ul li:hover {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
@@ -176,7 +176,7 @@ nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
@@ -198,8 +198,7 @@ nav ul li:hover .sub-sobre ul li {
     }
 
     li {
-        font-size: 11px;
-        padding: 1px;
+        font-size: 10px;
     }
 
     ul {
@@ -214,5 +213,8 @@ nav ul li:hover .sub-sobre ul li {
 
     nav {
         display: flex;
+    }
+    #a1 { 
+        font-size: 10px;
     }
 }
