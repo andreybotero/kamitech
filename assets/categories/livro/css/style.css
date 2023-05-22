@@ -242,6 +242,7 @@ a:hover {
 .linkblock:hover .sub1 {
     top: -20px;
     opacity: 0;
+
 }
 .linkblock .sub4{
     position: absolute;
@@ -295,4 +296,11 @@ a:hover {
 
 footer iframe {
     margin-bottom: -5px;
+}
+
+@media (max-width: 600px) {
+    #some {
+        display: none;
+    }
+
 }

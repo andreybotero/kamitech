@@ -50,6 +50,7 @@ ul a {
 
 li {
     list-style-type: none;
+
 }
 
 nav {
@@ -117,30 +118,30 @@ nav ul li:hover .sub-menu1 ul li:hover {
     background-color: rgb(82, 177, 194);
 }
 
-.sub-menu2{
+.sub-menu2 {
     display: none;
 }
 
-.hover-sub:hover .sub-menu2{
+.hover-sub:hover .sub-menu2 {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
-.sub-sobre{
+.sub-sobre {
     display: none;
     background-color: rgb(73, 236, 248);
 }
 
-nav ul li:hover .sub-sobre{
+nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
     background-color: aqua;
     margin-top: 4px;
     margin-left: -35px;
-   
+
 }
 
 /* sub-sobre é o menu do sobre nós */
@@ -158,25 +159,25 @@ nav ul li:hover .sub-sobre ul li {
     border-radius: 10px;
 }
 
-.sub-sobre2{
+.sub-sobre2 {
     display: none;
     background-color: aqua;
 }
 
-nav ul li:hover .sub-sobre{
+nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
-   background-color: aqua;
+    background-color: aqua;
     margin-top: 4px;
-    margin-left: -35px; 
-   
+    margin-left: -35px;
+
 }
 
-.hover-sobre:hover .sub-sobre2{
+.hover-sobre:hover .sub-sobre2 {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
@@ -191,5 +192,31 @@ nav ul li:hover .sub-sobre ul li {
     transition: 0.7s;
 }
 
+@media (max-width:600px) {
+    img.logo {
+        width: 80px;
+        height: 80px;
+    }
 
- 
+    li {
+        font-size: 10px;
+     
+    }
+
+    ul {
+        display: flex;
+        width: 500px;
+        height: 70px;
+    }
+
+    a {
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+    }
+    #a1 { 
+        font-size: 10px;
+    }
+}

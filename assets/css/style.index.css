@@ -24,9 +24,9 @@ body {
     height: 180px;
 }
 
- .header-upper iframe:hover {
+.header-upper iframe:hover {
     height: 500px;
-} 
+}
 
 main {
     margin-top: 170px;
@@ -87,7 +87,7 @@ input {
     transition: .6s;
 }
 
-#slide1:checked~.navigation #l1{
+#slide1:checked~.navigation #l1 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -97,7 +97,7 @@ input {
     margin-left: 0;
 }
 
-#slide2:checked~.navigation #l2{
+#slide2:checked~.navigation #l2 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -106,7 +106,7 @@ input {
     margin-left: -20%;
 }
 
-#slide3:checked~.navigation #l3{
+#slide3:checked~.navigation #l3 {
     background-color: #509bfa;
     border: 2px solid #fff;
 }
@@ -196,11 +196,28 @@ article .container section .botao form button {
     margin: 15px 0;
 }
 
+/* article .container section .botao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+article .container section .botao a {
+    padding: 10px auto;
+    background-color: #509bfa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+article .container section .botao a:hover {
+    background-color: #294c79;
+} */
+
 
 .centralizarCards {
     display: flex;
-    justify-content:space-evenly;
-    
+    justify-content: space-evenly;
+
 }
 
 article .container section .card {
@@ -211,7 +228,7 @@ article .container section .card {
     height: auto;
     display: inline-block;
     text-align: center;
-    
+
 }
 
 article .container section .card img {
@@ -279,4 +296,77 @@ footer iframe {
     margin-bottom: -5px;
 }
 
+@media (max-width:720px) {
+    header {
+        height: 20vh;
 
+    }
+
+    #slide1sec {
+        margin-top: 15%;
+    }
+    #h2slide2 {
+       font-size: 0;
+    }
+
+    #slide2sec {
+        margin-top: 23%; 
+        height: 60%;
+    }
+
+    #slide3sec {
+        margin-top: 16%;
+    }
+
+    #h2slide3 {
+        font-size: 0;
+    }
+
+    .carrosel .slide {
+        display: inline;
+        height: 100%;
+    }
+
+    .carrosel .slide section {
+        width: 100%;
+        height: 60vh;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+
+    article .container section .card {
+        margin-bottom: 100px;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .centralizarCards {
+        display: inline;
+
+    }
+
+    .botao {
+        margin-left: 35%;
+    }
+
+    h2 {
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+
+    #iframe_footer {
+        height: 290px;
+        background-color: #282d32;
+    }
+
+    #footer {
+        height: 600px;
+    }
+    #h2slide1 {
+        font-size: 0%;
+    }
+}

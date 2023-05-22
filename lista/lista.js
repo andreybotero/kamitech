@@ -1,33 +1,67 @@
 var i = 0;
+
 function adicionar() {
-    i++
+    i++;
 
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
-    document.getElementById("T" + i).innerHTML = titulo;
+    var title = '<p id="T' + i + '">' + titulo + '</p>';
+
     var data = document.getElementById("Data").value;
     document.getElementById("Data").value = '';
-    document.getElementById("D" + i).innerHTML = data;
+    var date = '<p id="D' + i + '">' + data + '</p>';
+
     var des = document.getElementById("Descricao").value;
     document.getElementById("Descricao").value = '';
-    document.getElementById("DD" + i).innerHTML = des;
+    var descri = '<p id="DD' + i + '">' + des + '</p>';
+
     var autor = document.getElementById("Autor").value;
     document.getElementById("Autor").value = '';
-    document.getElementById("A" + i).innerHTML = autor;
-    document.getElementById("bt" + i).hidden = false;
+    var creater = '<p id="A' + i + '">' + autor + '</p>';
+
+    var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
+
+    var tudo = title + date + descri + creater + button1 + button2;
+
+    var div = '<div id="div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
 }
 
-function remover() {
-    if (i > 20) {
-        var menos = i - 1;
-        i = menos;
-    }
+function desfazer(id) {
+    var divs = document.getElementById("div" + id);
+    divs.hidden = true;
+}
 
-    document.getElementById("T" + i).innerHTML = "";
-    document.getElementById("D" + i).innerHTML = "";
-    document.getElementById("DD" + i).innerHTML = "";
-    document.getElementById("A" + i).innerHTML = "";
-    document.getElementById("bt" + i).hidden = true;
-    var menos = i - 1;
-    i = menos;
-    }
+function editar(id) {
+    var divs = document.getElementById("div" + id);
+    divs.hidden = true;
+    
+    i++;
+
+    var titulo = document.getElementById("Titulo").value;
+    document.getElementById("Titulo").value = '';
+    var title = '<p id="T' + i + '">' + titulo + '</p>';
+
+    var data = document.getElementById("Data").value;
+    document.getElementById("Data").value = '';
+    var date = '<p id="D' + i + '">' + data + '</p>';
+
+    var des = document.getElementById("Descricao").value;
+    document.getElementById("Descricao").value = '';
+    var descri = '<p id="DD' + i + '">' + des + '</p>';
+
+    var autor = document.getElementById("Autor").value;
+    document.getElementById("Autor").value = '';
+    var creater = '<p id="A' + i + '">' + autor + '</p>';
+
+    var button1 = '<button id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
+
+    var tudo = title + date + descri + creater + button1 + button2;
+
+    var div = '<div id="Div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
+}
