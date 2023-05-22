@@ -9,30 +9,51 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1 style="text-align: center;">Lista</h1>
-        <section>
-            <h3>Titulo</h3>
+    <header class="header-upper">
+        <iframe src="../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+    </header>
+
+<form action="">
+    <div id="input">
+        <h1>Adicione uma notícia aqui</h1>
+        <p> Em breve te daremos retorno 
+            e logo poderá ver sua notícia em nosso site!
+        </p>
+        <section class="input-single">
+            <h3>Título</h3>
             <input type="text" id="Titulo">
         </section>
-        <section>
+
+        <section class="input-single">
             <h3>Data</h3>
             <input type="date" id="Data">
         </section>
-        <section>
+
+        <section class="input-single">
             <h3>Descrição</h3>
             <input type="text" id="Descricao">
         </section>
-        <section>
+
+        <section class="input-single">
             <h3>Autor</h3>
             <input type="text" id="Autor">
         </section>
+
         <br>
-        <button onclick="adicionar()">Adicione</button>
+        <button id="botao_add" onclick="adicionar()">Adicione</button>
     </div>
+ <div>
+    <button id="bt1"onclick="desfazer"></button>
+    <button id="bt2"onclick="editar"></button>
+ </div>
 
+
+</form>
     <div id="div"></div>
-
+    <footer>
+        <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
+    </footer>
+</body>
 
 
 
