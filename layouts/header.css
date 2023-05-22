@@ -50,6 +50,7 @@ ul a {
 
 li {
     list-style-type: none;
+
 }
 
 nav {
@@ -199,6 +200,7 @@ nav ul li:hover .sub-sobre ul li {
 
     li {
         font-size: 10px;
+     
     }
 
     ul {
