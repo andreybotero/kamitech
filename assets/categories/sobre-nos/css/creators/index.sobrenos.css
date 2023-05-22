@@ -71,7 +71,7 @@ body {
 }
 
 .swiper-de:not(.swiper-slide-active) {
-    filter: blur(3  px);
+    filter: blur(3px);
 }
 
 
