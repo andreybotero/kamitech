@@ -201,10 +201,7 @@ footer iframe {
         flex-direction: column;
     }
 
-    .link-block {
-        width: 50%;
-
-    }
+   
 
     .link-block .sub1 {
         font-size: 30px;
@@ -220,8 +217,9 @@ footer iframe {
         flex-direction: column;
        
     }
-    .link-block .dundas-blue-text-long {
-        width: 50%;
+    .link-block  {
         flex-direction: column;
+        margin: 10%;
+        width: 50%;
     }
 }
