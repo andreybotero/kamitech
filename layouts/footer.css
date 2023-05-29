@@ -113,9 +113,11 @@ p {
         flex-direction: column;
         max-height: 610px;
     }
+
     #some {
         display: none;
     }
+
     .footer-col h4 {
         font-size: 18px;
         color: #fff;
