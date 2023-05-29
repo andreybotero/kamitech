@@ -18,7 +18,9 @@ function adicionar() {
     var tudo = title + date + descri + creater + button1 + button2;
     var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '</div>';
 
-    document.body.innerHTML += div;
+    
+    var divdasdivs = document.getElementById("divdasdivs");
+    divdasdivs.innerHTML += div;
 }
 
 
