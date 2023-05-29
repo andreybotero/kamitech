@@ -172,6 +172,9 @@ footer iframe {
 } }
 
 @media (max-width: 600px) {
+    .h1vesti {
+        text-align: center;
+    }
     * {
       padding: 0;
       margin: 0;
