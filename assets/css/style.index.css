@@ -374,4 +374,8 @@ footer iframe {
     .view {
         margin-left: 55%;
     }
+
+    .carrosel .navigation {
+        left: 40%;
+    }
 }
