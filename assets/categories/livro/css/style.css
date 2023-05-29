@@ -75,6 +75,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 
@@ -305,7 +306,7 @@ footer iframe {
     margin-bottom: -5px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     #some {
         display: none;
     }
@@ -317,6 +318,7 @@ footer iframe {
 
     .linkblock {
         width: 70%;
+        height: 50%;
     }
 
 
