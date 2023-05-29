@@ -23,22 +23,22 @@ body {
 }
 
 .header-upper iframe:hover {
-    height: 500px;
+    height: 600px;
 }
 
 /* titulo */
 
 .titulo {
-    margin-top: 190px;
+    margin-top: 200px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* /sections/ */
 #s1 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
     border-radius: 6px;
 }
 
@@ -87,7 +87,7 @@ li {
 #s3 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
-    padding: 20px;
+    padding: 15px;
     border-radius: 6px;
 }
 
@@ -288,4 +288,22 @@ footer iframe {
 
 .container2 {
     text-align: center;
+
 }
+
+@media (max-width: 768px){
+    
+}
+    #some {
+        display: none;
+    }
+
+    #container2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkblock {
+        width: 70%;
+        height: 50%;
+    }
