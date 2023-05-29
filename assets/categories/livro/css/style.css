@@ -306,7 +306,7 @@ footer iframe {
     margin-bottom: -5px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     #some {
         display: none;
     }
