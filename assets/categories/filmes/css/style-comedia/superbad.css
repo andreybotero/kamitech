@@ -29,7 +29,7 @@ body {
 /* titulo */
 
 .titulo {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -56,6 +56,7 @@ body {
 
 #a2 {
     width: 70%;
+    flex-direction: column;
 }
 
 ul {
@@ -102,14 +103,16 @@ li {
 
 #a3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* aside */
 
 aside {
-    width: 30%;
+    width: 20%;
     border-left: 1.5px solid #000;
+    display: flex;
+    flex-direction: column;
 }
 
 aside hr {
@@ -117,7 +120,7 @@ aside hr {
 }
 
 aside #maisLidos {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 5px;
 }
 
@@ -138,7 +141,7 @@ aside .card-2 .legend p {
 }
 
 aside .card-2 img {
-    margin: 0px 10px;
+    margin: 0px 0px;
 }
 
 .containermain {
@@ -149,8 +152,8 @@ aside .card-2 img {
 
 .avaliacaoMateria {
     background-color: #f5f5f5;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .avaliacaoMateria article section {
@@ -199,7 +202,7 @@ input:checked+.avaliacaoMateria article section #mais {
 
 #menos {
     display: none;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
 
 }
@@ -213,7 +216,7 @@ input:checked+.avaliacaoMateria article section #mais {
 
 .depoiments {
     background-color: #f5f5f5;
-    padding: 50px;
+    padding: 30px;
     display: none;
 }
 
@@ -231,13 +234,13 @@ input:checked+.avaliacaoMateria article section #mais {
     justify-content: end;
     align-items: end;
     bottom: 0;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
     margin-top: 10px;
 }
 
 .cards {
     display: flex;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -247,7 +250,7 @@ input:checked+.avaliacaoMateria article section #mais {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 20px;
+    padding: 15px 20px;
     box-shadow: 6px 6px 10px #000;
     border-radius: 10px;
     width: calc(100% / 3);
@@ -258,7 +261,7 @@ input:checked+.avaliacaoMateria article section #mais {
 }
 
 .cards .card span {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
     font-size: 10px;
 }
@@ -285,7 +288,7 @@ footer iframe {
 
 
 #elenco {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     letter-spacing: 2px;
     font-style: italic;
     font-size: 35px;
@@ -298,19 +301,29 @@ footer iframe {
 
 }
 
-@media (max-width: 768px){
-    
-}
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        max-height: 610px;
+    }
+
     #some {
         display: none;
     }
 
-    #container2{
-        display: flex;
-        flex-direction: column;
+    .footer-col h4 {
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        margin-top: 0;
     }
 
-    .linkblock {
-        width: 80%;
-        height: 50%;
+    .row {
+        display: flex;
+        justify-content: space-evenly;
     }
+}
