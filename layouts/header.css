@@ -221,7 +221,7 @@ nav ul li:hover .sub-sobre ul li {
 
     nav {
         display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
         padding: -50px;
     }
 
