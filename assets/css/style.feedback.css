@@ -263,3 +263,10 @@ form p {
 footer iframe {
     margin-bottom: -5px;
 }
+
+@media (max-width:600px) {
+    form {
+        width: 400px;
+        height: 450px;
+    }
+}

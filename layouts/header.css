@@ -37,7 +37,6 @@ ul {
     display: flex;
     justify-content: space-evenly;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /*   */
     text-decoration: none;
 }
 
@@ -50,6 +49,7 @@ ul a {
 
 li {
     list-style-type: none;
+
 }
 
 nav {
@@ -66,18 +66,20 @@ nav ul {
 nav ul li {
     width: 120px;
     margin: 15px;
-    padding: 8px;
+    padding: 10px;
 }
 
 button {
     border: none;
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
-    padding: 12px 30px;
+    padding: 12px 25px;
     border-radius: 30px;
     color: #fff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     transition: .4s;
+    margin-left: 5%;
+    margin-bottom: 7%;
 }
 
 button:hover {
@@ -125,7 +127,7 @@ nav ul li:hover .sub-menu1 ul li:hover {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
@@ -176,7 +178,7 @@ nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
@@ -191,6 +193,12 @@ nav ul li:hover .sub-sobre ul li {
     transition: 0.7s;
 }
 
+#diff {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
 @media (max-width:600px) {
     img.logo {
         width: 80px;
@@ -198,21 +206,20 @@ nav ul li:hover .sub-sobre ul li {
     }
 
     li {
-        font-size: 11px;
-        padding: 1px;
+        font-size: 15px;
     }
 
-    ul {
-        display: flex;
-        width: 500px;
-        height: 70px;
+    .sub-menu1 {
+        display: none;
     }
 
-    a {
-        align-items: center;
+    .sub-sobre {
+        display: none;
     }
 
-    nav {
-        display: flex;
+    nav ul li {
+        width: 120px;
+        margin: 5px;
+        padding: 5px;
     }
-}
+}   

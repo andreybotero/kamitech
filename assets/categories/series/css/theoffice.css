@@ -6,6 +6,7 @@
 body{
  font-family: system-ui;
   font-size: 20px;
+  
 }
 .container{
   display: flex;
@@ -14,10 +15,10 @@ body{
 
 }
 #img2{
-  margin-left: 4%;
+  margin-left: 10%;
 }
 .legend{
-  margin-left: 4%;
+  margin-left: 20%;
 }
 /*concertando header*/
 .header-upper {
@@ -37,7 +38,7 @@ body{
   height: 500px;
 }
 main {
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 20px;
   margin-top: 170px;
 }
@@ -46,7 +47,7 @@ h1{
 }
 /*sections*/
 #s1{
- border-top: solid 3px #3c4ffa;
+ border-top: solid 3px hsl(234, 81%, 21%);
   text-align: justify;
   padding: 20px;
 border-radius: 6px;
@@ -55,25 +56,26 @@ margin-left: 4%;
 }
 
 #s2{
-  border-top: solid 3px #3c4ffa;
+  border-top: solid 5px hsl(234, 81%, 21%);
   text-align: justify;
   padding: 20px;
 border-radius: 6px;
-width: 40%;
+width: 50%;
 }
 #s3{
-  border-top: solid 3px #3c4ffa;
+  border-top: solid 3px hsl(234, 81%, 21%);
   text-align: justify;
   padding: 20px;
 border-radius: 6px;
-width: 40%;
+width: 50%;
 }
 /*centralizando*/
 article{
 
-  gap: 50px;
-  margin-left: 4%;
+  gap: 70px;
+  margin-left: 15%;
   margin-top: 5%;
+  text-align: center;
 
 }
 /*titulo*/
@@ -97,7 +99,7 @@ h1{
 }
 /*div imagens*/
 #h2tt{
-  border-top: solid 3px #3c4ffa;
+  border-top: solid 3px hsl(234, 81%, 21%);
   text-align: center;
   margin-bottom: 2%;
 }
@@ -133,7 +135,7 @@ color: #383838;
 }
 
 .avaliacaoMateria article section label:active {
-color: #3c4ffa;
+color: hsl(234, 81%, 21%);
 }
 
 .avaliacaoMateria article .notas {
