@@ -187,7 +187,7 @@ footer iframe {
 }
 
 
-@media (max-width:600px) {
+@media (max-width:768px) {
     div {
         grid: none;
     }
@@ -202,12 +202,26 @@ footer iframe {
     }
 
     .link-block {
-        width: 30%;
+        width: 50%;
 
     }
 
     .link-block .sub1 {
         font-size: 30px;
     }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+    }
+    .webinar-grid {
 
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .link-block .dundas-blue-text-long {
+        width: 50%;
+        flex-direction: column;
+    }
 }
