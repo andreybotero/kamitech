@@ -22,7 +22,7 @@ function adicionar() {
 }
 
 
-    function editar(id) {
+function editar(id) {
         var divs = document.getElementById("div" + id);
         
         var titulo = document.getElementById("Titulo").value;
@@ -52,7 +52,7 @@ function adicionar() {
     divs.innerHTML = div;
 
 }
+
 function desfazer(id) {
     var divs = document.getElementById("div" + id);
-    divs.hidden = true;
 }
