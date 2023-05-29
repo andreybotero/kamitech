@@ -13,11 +13,11 @@ body {
 
 
 /* linha titulo */
-.linha{
+.linha {
     border: solid 1px black;
     text-align: center;
-    
-  }
+
+}
 
 main {
     background-color: white;
@@ -28,7 +28,6 @@ main {
 
 
 .webinar-grid {
-    width: 190%;
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -169,14 +168,16 @@ main {
     left: 0;
     position: absolute;
     width: 100%;
-    
+
 }
+
 .header-upper iframe {
     height: 180px;
 }
- .header-upper iframe:hover {
+
+.header-upper iframe:hover {
     height: 500px;
-} 
+}
 
 /* fix footer */
 
@@ -186,24 +187,41 @@ footer iframe {
 }
 
 
-@media (max-width:600px) {
-    div{
+@media (max-width:768px) {
+    div {
         grid: none;
     }
-    
-        #some {
-            display: none;
-        }
-    
-        #a2 {
-            display: flex;
-            flex-direction: column;
-        }
-      .linkblock{
-        width: 70%;
-      }
-      .linkblock .sub1{
+
+    #some {
+        display: none;
+    }
+
+    #a2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-block {
+        width: 50%;
+
+    }
+
+    .link-block .sub1 {
         font-size: 30px;
-      }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+    }
+    .webinar-grid {
+
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .link-block .dundas-blue-text-long {
+        width: 50%;
+        flex-direction: column;
     }
 }
