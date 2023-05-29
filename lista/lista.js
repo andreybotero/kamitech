@@ -19,15 +19,14 @@ function adicionar() {
     document.getElementById("Autor").value = '';
     var creater = '<p id="A' + i + '">' + autor + '</p>';
 
-    var button1 = '<button class="edt_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
-    var button2 = '<button class="edt_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
-
-    var div = document.createElement("div");
-    div.setAttribute("id", "div" + i);
+    var button1 = '<button class="edit_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button class="edit_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
     var tudo = title + date + descri + creater + button1 + button2;
 
-    document.body.innerHTML += '<div id="div' + i + '">' + tudo + '</div>';
+    var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
 }
 
 function desfazer(id) {
@@ -38,7 +37,7 @@ function desfazer(id) {
 function editar(id) {
     var divs = document.getElementById("div" + id);
     divs.hidden = true;
-    
+   
     i++;
 
     var titulo = document.getElementById("Titulo").value;
@@ -57,13 +56,12 @@ function editar(id) {
     document.getElementById("Autor").value = '';
     var creater = '<p id="A' + i + '">' + autor + '</p>';
 
-    var button1 = '<button class="edt_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
-    var button2 = '<button class="edt_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
-
-    var div = document.createElement("div");
-    div.setAttribute("id", "div" + i);
+    var button1 = '<button class="edit_desf" id="bt1' + i + '" onclick="desfazer(' + i + ')">Desfazer</button>';
+    var button2 = '<button class="edit_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button>';
 
     var tudo = title + date + descri + creater + button1 + button2;
 
-    document.body.innerHTML += '<div id="div' + i + '">' + tudo + '</div>';
+    var div = '<div class="noticia_add" id="Div' + i + '">' + tudo + '</div>';
+
+    document.body.innerHTML += div;
 }
