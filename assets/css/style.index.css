@@ -171,7 +171,8 @@ article .container {
 }
 
 article .container section {
-    width: 70%;
+    width: 90%;
+    margin-left: -12%;
 
 }
 
@@ -279,7 +280,7 @@ footer iframe {
     margin-bottom: -5px;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
     header {
         height: 20vh;
 
@@ -325,7 +326,11 @@ footer iframe {
     article .container section .card {
         margin-bottom: 100px;
         width: 100%;
-        margin-left: 20%;
+        margin-left: 30%;
+    }
+
+    section {
+        margin-top: 100px;
     }
 
     article {
@@ -338,7 +343,7 @@ footer iframe {
     }
 
     .botao {
-        margin-left: 35%;
+        margin-left: 3%;
     }
 
     h2 {
@@ -357,5 +362,9 @@ footer iframe {
 
     #h2slide1 {
         font-size: 0%;
+    }
+
+    .view {
+        margin-left: 125px;
     }
 }
