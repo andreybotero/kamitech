@@ -36,7 +36,7 @@ function adicionar() {
     var div = '<div id="div' + i + '">' + tudo + '</div>';
 
     document.body.innerHTML += div;
-}
+
 
 
 
