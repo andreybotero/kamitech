@@ -101,6 +101,9 @@
         padding-bottom: 8px;
         color: #2b2a2f;
     }
+    a {
+        text-decoration: none;
+    }
     
     .personalinfo {
         display: inline;
