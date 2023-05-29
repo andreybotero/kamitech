@@ -196,23 +196,6 @@ article .container section .botao form button {
     margin: 15px 0;
 }
 
-/* article .container section .botao {
-    text-align: center;
-    margin: 20px 0;
-}
-
-article .container section .botao a {
-    padding: 10px auto;
-    background-color: #509bfa;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-article .container section .botao a:hover {
-    background-color: #294c79;
-} */
-
 
 .centralizarCards {
     display: flex;
@@ -303,19 +286,20 @@ footer iframe {
     }
 
     #slide1sec {
-        margin-top: 15%;
+        margin-top: 1%;
     }
+
     #h2slide2 {
-       font-size: 0;
+        font-size: 0;
     }
 
     #slide2sec {
-        margin-top: 1%; 
-        height: 25%;
+        margin-top: 1%;
+        height: 17%;
     }
 
     #slide3sec {
-        margin-top: 16%;
+        margin-top: 1%;
     }
 
     #h2slide3 {
@@ -344,6 +328,10 @@ footer iframe {
         margin-left: 20%;
     }
 
+    article {
+        width: 85%;
+    }
+
     .centralizarCards {
         display: inline;
 
@@ -364,8 +352,9 @@ footer iframe {
     }
 
     #footer {
-        height: 600px;
+        height: 360px;
     }
+
     #h2slide1 {
         font-size: 0%;
     }
