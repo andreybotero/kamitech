@@ -156,6 +156,6 @@ p {
     outline: none;
 }
 
-footer iframe {
-    margin-bottom: -50%;
+.footer {
+    display: flex;
 }
