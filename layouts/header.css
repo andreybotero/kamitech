@@ -205,8 +205,9 @@ nav ul li:hover .sub-sobre ul li {
         height: 80px;
     }
 
-
-   
+    li {
+        font-size: 10px;
+    }
 
     nav ul li {
         width: 120px;
