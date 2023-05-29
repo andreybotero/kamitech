@@ -92,6 +92,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.card2 {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 /* padronização main */
 main {
     display: flex;
@@ -149,18 +154,26 @@ body {
     background-color: #fff;
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    padding: 2em 1em;
+    padding-bottom: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
 
-    margin: 0 2em;
+
+    
+    margin-top: 400px;
+    margin-bottom: 400px;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
-    filter: blur(3px);
+    filter: blur(0px);
 }
 
 
@@ -204,7 +217,7 @@ body {
 .card_text {
     text-align: center;
     font-size: 1.1rem;
-    margin: 1em 0;
+    
 
 }
 /* config button veja mais */
@@ -224,4 +237,11 @@ body {
 /* config footer */
 iframe {
     margin-bottom: -5px;
-}}
+}
+#bnt1 {
+    margin-top: 45px;
+}
+#bnt2 {
+    margin-top: 20px;
+}
+}
