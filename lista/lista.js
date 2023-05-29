@@ -32,8 +32,7 @@ function adicionar() {
 
 
 function editar(id) {
-    var divs = document.getElementById("div" + id);
-    divs.hidden = true;
+    
     
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
@@ -57,8 +56,10 @@ function editar(id) {
     var tudo = title + date + descri + creater + button1 + button2;
 
     var div = '<div id="Div' + id + '">' + tudo + '</div>';
+    
+    var divs = document.getElementById("div" + id);
+    divs.innerHTML = div;
 
-    document.body.innerHTML += div;
 }
 
 function desfazer(id) {

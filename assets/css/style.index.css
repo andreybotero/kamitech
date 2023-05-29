@@ -200,6 +200,7 @@ article .container section .botao form button {
 .centralizarCards {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 100px;
 
 }
 
@@ -284,6 +285,13 @@ footer iframe {
         height: 20vh;
 
     }
+    .centralizarCards {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0px;
+    
+    }
+    
 
     #slide1sec {
         margin-top: -10%;

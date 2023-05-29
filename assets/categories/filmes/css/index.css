@@ -201,18 +201,13 @@ footer iframe {
         flex-direction: column;
     }
 
-    .link-block {
-        width: 50%;
-
-    }
-
     .link-block .sub1 {
         font-size: 30px;
     }
     main{
         display: flex;
         flex-direction: column;
-        margin: 1%;
+
     }
     .webinar-grid {
 
@@ -220,8 +215,10 @@ footer iframe {
         flex-direction: column;
        
     }
-    .link-block .dundas-blue-text-long {
-        width: 50%;
+    .link-block  {
         flex-direction: column;
+        margin: 10%;
+        width: 50%;
     }
+
 }
