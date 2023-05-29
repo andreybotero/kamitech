@@ -108,6 +108,7 @@
         padding-bottom: 10px;
         border-bottom: 1px solid #555;
         color: #2b2a2f;
+        
     }
     
     
@@ -300,6 +301,17 @@ main {
     padding-bottom: 10px;
     border-bottom: 1px solid #555;
     color: #2b2a2f;
+    
+}
+#i {
+    margin-left: 15px;
+
+}
+#g {
+    margin-left: 15px;
+}
+#e{
+    margin-left: 15px;
 }
 
 

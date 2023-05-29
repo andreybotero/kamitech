@@ -206,31 +206,7 @@ nav ul li:hover .sub-sobre ul li {
     }
 
     li {
-        font-size: 10px;
-    }
-
-    ul {
-        display: flex;
-        height: 70px;
-        justify-content: space-evenly;
-    }
-
-    a {
-        align-items: center;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-evenly;
-        padding: -50px;
-    }
-
-    #a1 {
-        font-size: 10px;
-    }
-
-    .del {
-        display: none;
+        font-size: 15px;
     }
 
     nav ul li {
