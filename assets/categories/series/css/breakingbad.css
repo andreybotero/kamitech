@@ -268,7 +268,7 @@ input:checked+.avaliacaoMateria article section #mais {
   cursor: pointer;
   transition: all 0.4s;
   margin-top: 2%;
-  
+  margin-left: 45%;
   margin-bottom: 2%;
 }
 
