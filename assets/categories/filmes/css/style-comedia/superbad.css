@@ -29,16 +29,16 @@ body {
 /* titulo */
 
 .titulo {
-    margin-top: 190px;
+    margin-top: 200px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* /sections/ */
 #s1 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
     border-radius: 6px;
 }
 
@@ -87,7 +87,7 @@ li {
 #s3 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
-    padding: 20px;
+    padding: 15px;
     border-radius: 6px;
 }
 
