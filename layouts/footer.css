@@ -111,7 +111,7 @@ p {
     footer {
         display: flex;
         flex-direction: column;
-        max-height: 620px;
+        max-height: 610px;
     }
     #some {
         display: none;
