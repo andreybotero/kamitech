@@ -3,8 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont,
-     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
-     'Helvetica Neue', sans-serif;
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
 }
 
 
@@ -25,7 +25,7 @@
 }
 
 
-#input{
+#input {
     margin-top: 20%;
     margin-left: 27%;
     border: 1px solid #000000;
@@ -36,14 +36,15 @@
     border-radius: 40px;
 }
 
-h1{
-    text-align: center;
-}
-p{
+h1 {
     text-align: center;
 }
 
-#botao_add{
+p {
+    text-align: center;
+}
+
+#botao_add {
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
     padding: .5em;
     text-transform: uppercase;
@@ -66,7 +67,7 @@ p{
 
 
 
-.edit_desf{
+.edit_desf {
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
     padding: .5em;
     font-weight: 600;
@@ -85,10 +86,10 @@ p{
     border: none;
     text-align: center;
     margin: 5%;
-    
+
 }
 
-.noticia_add{
+.noticia_add {
     margin-top: 5%;
     margin-left: 20%;
     border: 1px solid #000000;
@@ -103,9 +104,9 @@ p{
 
 
 .input-single {
-        position: relative;
+    position: relative;
     margin: 30px 0px;
-    
+
 }
 
 /* estilização dos labels dos inputs */
@@ -114,8 +115,8 @@ p{
     left: 0;
     bottom: 5px;
     transition: all 0.2s;
-    cursor: text; 
-    
+    cursor: text;
+
 }
 
 /* estilização dos labels dos inputs */
@@ -127,6 +128,7 @@ p{
     font-size: 17px;
     outline: none;
 }
+
 #Data {
     width: 100%;
     border: 0px;
@@ -135,6 +137,7 @@ p{
     font-size: 17px;
     outline: none;
 }
+
 #Descricao {
     width: 100%;
     border: 0px;
@@ -143,6 +146,7 @@ p{
     font-size: 17px;
     outline: none;
 }
+
 #Autor {
     width: 100%;
     border: 0px;
@@ -152,7 +156,6 @@ p{
     outline: none;
 }
 
-
 footer iframe {
-    margin-bottom:-50%;
+    margin-bottom: -50%;
 }
