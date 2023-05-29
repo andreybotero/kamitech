@@ -209,6 +209,14 @@ nav ul li:hover .sub-sobre ul li {
         font-size: 15px;
     }
 
+    .sub-menu1 {
+        display: none;
+    }
+
+    .sub-sobre {
+        display: none;
+    }
+
     nav ul li {
         width: 120px;
         margin: 5px;
