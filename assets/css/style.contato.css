@@ -80,6 +80,7 @@ form p {
 .input-single {
     position: relative;
     margin: 30px 0px;
+    
 }
 
 /* estilização dos labels dos inputs */
@@ -88,7 +89,8 @@ form p {
     left: 0;
     bottom: 5px;
     transition: all 0.2s;
-    cursor: text;
+    cursor: text; 
+    
 }
 
 /* estilização dos labels dos inputs */
