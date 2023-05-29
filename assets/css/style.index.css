@@ -57,7 +57,7 @@ main {
 .carrosel .navigation {
     position: absolute;
     bottom: 20px;
-    left: 80%;
+    left: 40%;
     display: flex;
 }
 
@@ -287,7 +287,7 @@ footer iframe {
     }
 
     #slide1sec {
-        margin-top: 1%;
+        margin-top: -10%;
     }
 
     #h2slide2 {
@@ -295,12 +295,12 @@ footer iframe {
     }
 
     #slide2sec {
-        margin-top: 1%;
+        margin-top: -10%;
         height: 17%;
     }
 
     #slide3sec {
-        margin-top: 1%;
+        margin-top: -10%;
     }
 
     #h2slide3 {
@@ -365,6 +365,6 @@ footer iframe {
     }
 
     .view {
-        margin-left: 125px;
+        margin-left: 55%;
     }
 }
