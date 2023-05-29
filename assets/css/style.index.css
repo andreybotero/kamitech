@@ -57,7 +57,7 @@ main {
 .carrosel .navigation {
     position: absolute;
     bottom: 20px;
-    left: 80%;
+    left: 40%;
     display: flex;
 }
 
