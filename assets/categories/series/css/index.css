@@ -160,22 +160,22 @@ footer iframe {
 
     #a1 {
         flex-direction: column;
+
        
     }
 
     #art {
         flex-direction: column;
-        margin: 0;
+        margin: 0px;
         display: flex;
         padding: 0;
 
     }
 
     .linkblock{
-        width: 60%;
+        width: 80%;
         height: 50px;
-        
+        margin: 40px;
     }
-
 
 }
