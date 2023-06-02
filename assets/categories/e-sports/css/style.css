@@ -348,3 +348,7 @@ a:hover {
 footer iframe {
     margin-bottom: -5px;
 }
+
+@media (max-width: 786px) {
+    
+}
