@@ -171,6 +171,7 @@ footer iframe {
 
     .container {
         justify-content: center;
+        width: 110%;
     }
 
     h1 {
