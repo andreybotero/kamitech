@@ -171,6 +171,8 @@ footer iframe {
 
     .container {
         justify-content: center;
+        height: auto;
+    
     }
 
     h1 {
@@ -185,4 +187,8 @@ footer iframe {
     sub {
         margin: 2%;
     }
+    .container main { 
+        margin-top: 0px;
+    }
+
 }
