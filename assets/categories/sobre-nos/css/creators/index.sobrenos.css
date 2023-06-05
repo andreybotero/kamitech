@@ -2,7 +2,7 @@
     .card2{
         display: flex;
     }
-    main {
+    main { margin-top: 280px;
         margin-bottom: 50px;
     }
     body {
@@ -98,11 +98,11 @@
     margin-left: 10px;
 }
 /* padronização main */
-main {
+main { margin-top: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+
     margin-bottom: 50px;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {

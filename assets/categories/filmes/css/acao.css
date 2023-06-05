@@ -29,6 +29,7 @@ main{
   background-color: white;
   width: 100%;
   height: 100%;
+  margin-top: 280px;
 }
 
 /* configuracoes dos cards */
@@ -171,7 +172,7 @@ footer iframe {
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -230,7 +231,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 }
 
-main {
+main { margin-top: 280px;
 background-color: white;
 width: 100%;
 height: 100%;

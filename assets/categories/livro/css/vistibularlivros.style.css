@@ -14,9 +14,8 @@ h1 {
   text-align: center;
 }
 
-main {
+main { margin-top: 280px;
   background-color: white;
-  margin-top: 180px;
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -126,7 +125,7 @@ section {
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {

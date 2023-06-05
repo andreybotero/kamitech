@@ -19,7 +19,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -29,7 +29,7 @@ body {
 /* titulo */
 
 .titulo {
-    margin-top: 100px;
+    margin-top: 280px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -144,7 +144,7 @@ aside .card-2 img {
     margin: 0px 0px;
 }
 
-.containermain {
+.containermain { margin-top: 280px;
     display: flex;
 }
 
@@ -282,9 +282,7 @@ input:checked+.avaliacaoMateria article section #mais {
 }
 
 /* fix footer */
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 
 #elenco {
@@ -348,8 +346,8 @@ footer iframe {
     
     }
     
-    .header-upper iframe {
-        height: 180px;
+   .header-upper iframe {
+        height: 280px;
     }
     
     .header-upper iframe:hover {

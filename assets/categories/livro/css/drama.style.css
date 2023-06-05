@@ -7,9 +7,9 @@ body {
   margin: 0;
 }
 
-main {
+main { margin-top: 280px;
   background-color: white;
-  margin-top: 200px;
+  
 }
 
 /* gambiarra para o header ficar sem bug */
@@ -24,7 +24,7 @@ main {
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {

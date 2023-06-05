@@ -22,7 +22,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -30,10 +30,9 @@ body {
 }
 
 /* configuraçoes do corpo do site */
-main {
+main { margin-top: 280px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
-    margin-top: 170px;
     margin-bottom: 20px;
 }
 
@@ -79,7 +78,7 @@ h1 {
     color: black;
 }
 
-main {
+main { margin-top: 280px;
     align-items: center;
 }
 
