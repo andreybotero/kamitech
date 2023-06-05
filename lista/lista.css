@@ -26,7 +26,7 @@
 
 
 #input {
-    margin-top: 350px;
+    margin-top: 30%;
     margin-left: 27%;
     border: 1px solid #000000;
     background-color: #fff;
@@ -35,6 +35,7 @@
     padding: 40px;
     border-radius: 40px;
     margin-bottom: 100px;
+
 }
 
 h1 {
@@ -72,7 +73,7 @@ p {
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
     padding: .5em;
     font-weight: 600;
-    width: 15%;
+    width: 40%;
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
     border-radius: .5em;
     color: #fff;
@@ -87,7 +88,7 @@ p {
     border: none;
     text-align: center;
     margin: 5%;
-    margin-left: 50%;
+    /* margin-left: 50%; */
 
 }
 
@@ -100,8 +101,8 @@ p {
     height: 25%;
     padding: 40px;
     border-radius: 40px;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 5%;
+    
 }
 
 
@@ -149,6 +150,10 @@ p {
     outline: none;
 }
 
+
+
+
+
 #Autor {
     width: 100%;
     border: 0px;
@@ -162,9 +167,35 @@ p {
     display: flex;
 }
 
-.paragrafos{
+.paragrafos {
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    position: relative;
+    
+}
+
+#infos{
+    display: flex;
+    flex-direction: column;
+    
+}
+#geral {
+   display: flex;
+   flex-direction: inline;
+   justify-content: space-between;
    
     
+}
+
+#div_button {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    font-size: 15px;
+    padding-bottom: 5px;
     text-align: left;
-    
 }

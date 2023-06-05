@@ -167,7 +167,11 @@ main { margin-top: 280px;
 
  .header-upper iframe:hover {
     height: 500px;
-} }
+} 
+footer {
+    margin-bottom: -20px;
+    background-color: #282d32;
+}}
 
 @media (max-width: 600px) {
     .h1vesti {
@@ -267,3 +271,4 @@ main { margin-top: 280px;
     text-align: center;
   }
   }
+  

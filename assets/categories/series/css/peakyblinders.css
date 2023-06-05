@@ -27,11 +27,12 @@ body {
 .header-upper iframe:hover {
   height: 500px;
 }
-main { margin-top: 280px;
+
 
 main {
   background-color: white;
   padding-top: 30px;
+  margin-top: 280px;
 }
 
 /*sections*/

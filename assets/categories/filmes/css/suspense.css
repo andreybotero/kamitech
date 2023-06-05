@@ -163,7 +163,7 @@ main { margin-top: 280px;
   }
   
   .header-upper iframe {
-    height: 180px;
+    height: 280px;
   }
   
   .header-upper iframe:hover {
@@ -267,3 +267,4 @@ main { margin-top: 280px;
     text-align: center;
 }
   }
+  
