@@ -49,25 +49,25 @@ h1{
 #s1{
  border-top: solid 3px hsl(234, 81%, 21%);
   text-align: justify;
-  padding: 20px;
-border-radius: 6px;
-margin-left: 4%;
+  padding: 10px;
+   border-radius: 6px;
+   margin-left: 4%;
 
 }
 
 #s2{
   border-top: solid 5px hsl(234, 81%, 21%);
   text-align: justify;
-  padding: 20px;
-border-radius: 6px;
-width: 50%;
+  padding: 5px;
+  border-radius: 6px;
+  width: 40%;
 }
 #s3{
   border-top: solid 3px hsl(234, 81%, 21%);
   text-align: justify;
-  padding: 20px;
-border-radius: 6px;
-width: 50%;
+  padding: 10px;
+  border-radius: 6px;
+   width: 40%;
 }
 /*centralizando*/
 article{
@@ -290,23 +290,16 @@ footer iframe {
 
   }
 
-  #h2tt{
-    margin: 0;
-    padding: 0;
-    
-  }
 
   #s2 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
-    padding: 20px;
     border-radius: 6px;
 }
 
 #s3 {
     
   text-align: justify;
-  padding: 20px;
   border-top: solid 3px #3c4ffa;
   border-radius: 6px;
 
@@ -314,9 +307,7 @@ footer iframe {
 
 
   p{
-    font-size: 20px;
     text-align: center;
-    margin: 5px;
     margin-top: 0;
     padding: 0;
   }
@@ -342,8 +333,7 @@ footer iframe {
 
      .container{
       text-align: center;
-      margin: 0;
-      padding: 0;
+       width: 30%;
      }
     
      .cards{
