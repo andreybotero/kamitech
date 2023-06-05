@@ -274,6 +274,8 @@ footer iframe {
     width: 100%;
   }
   #s3 {
-    border-top: solid 3px hsl(234, 81%, 21%);}
-    
+    border-top: solid 3px hsl(234, 81%, 21%); 
+    text-align: center;
+  }
+
 }
