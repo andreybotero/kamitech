@@ -14,7 +14,6 @@
     main { margin-top: 280px;
         display: inline;
         justify-content: center;
-        margin-top: 100px;
         margin-bottom: 0px;
     }
     
@@ -158,7 +157,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 250px;
         margin-bottom: 50px;
     }
     
