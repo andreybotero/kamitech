@@ -287,5 +287,6 @@ footer iframe {
   }
   .container2 {
     display: flex;
+    gap: 20px;
   }
 }
