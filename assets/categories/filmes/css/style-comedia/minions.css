@@ -273,6 +273,11 @@ input:checked+.avaliacaoMateria article section #mais {
     gap: 2px;
 }
 
+footer {
+    margin-bottom: -20px;
+    background-color: #282d32;
+}
+
 /* fix footer */
 
 

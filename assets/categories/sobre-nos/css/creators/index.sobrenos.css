@@ -2,7 +2,7 @@
     .card2{
         display: flex;
     }
-    main { margin-top: 280px;
+    main { 
         margin-bottom: 50px;
     }
     body {
@@ -15,6 +15,7 @@
     }
     .card {
         /* width: calc( 100% 5); */
+        
         width: 30%;
         height: 95%;
         background-color: #fff;
