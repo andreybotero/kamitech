@@ -290,4 +290,8 @@ footer iframe {
     gap: 20px;
     margin-left: 0;
   }
+  .cards {
+    flex-direction: column;
+  }
 }
+
