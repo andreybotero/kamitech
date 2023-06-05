@@ -248,12 +248,22 @@ footer iframe {
     text-align: center;
   }
 
+  #s1{
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+    margin: 0;
+  }
+
   #s2 {
     border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
     padding: 20px;
     border-radius: 6px;
-    width: 100%;
+    width: 80%;
+    margin: 0;
   }
 
   #s3 {
@@ -261,19 +271,20 @@ footer iframe {
     text-align: center;
     padding: 20px;
     border-radius: 6px;
-    width: 100%;
+    width: 80%;
+    margin-left: 0;
   }
 
   #img1 {
     justify-content: center;
     width: 75px;
-    height: 100px;
+    height: 75px;
   }
 
   .container {
-    display: flex;
-    width: 20%;
-    text-align: center;
+    width: 30%;
+    padding: 0;
+    margin: 0;
   }
 
   .cards {
