@@ -282,6 +282,19 @@ footer iframe {
   }
   #img1 {
     justify-content: left;
-  
+    width: 20%;
+    height: 40%;
+  }
+  .container2 {
+    display: flex;
+    gap: 20px;
+    margin-left: 0;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card{
+    width: 70%;
   }
 }
+
