@@ -259,7 +259,9 @@ input:checked+.avaliacaoMateria article section #mais {
 footer iframe {
   margin-bottom: -5px;
 }
+
 @media (max-width:768px) {
+
   h2 {
     text-align: center;
   }
@@ -288,7 +290,7 @@ footer iframe {
   .container2 {
     display: flex;
     gap: 20px;
-    margin-left: 0;
+    
   }
   .cards {
     flex-direction: column;
@@ -297,4 +299,3 @@ footer iframe {
     width: 70%;
   }
 }
-
