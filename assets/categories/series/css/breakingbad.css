@@ -280,5 +280,8 @@ footer iframe {
     border-radius: 6px;
     width: 100%;
   }
-
+  #img1 {
+    justify-content: left;
+  
+  }
 }
