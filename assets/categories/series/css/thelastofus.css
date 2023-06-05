@@ -36,7 +36,6 @@ main {
 }
 #img2{
   text-align: center;
-  margin-right: 60%;
 }
 .legend{
   margin-left: 4%;
@@ -270,6 +269,7 @@ footer iframe {
   width: 90%;
   height: 90%;
   text-align: center;
+  margin-right: 70px;
 }
 .container2 {
   display: flex;
@@ -277,7 +277,7 @@ footer iframe {
   margin-left: 0;
 }
 .cards {
-  flex-direction: column;
+  flex-direction:column;
 }
 .cards .card{
   width: 70%;
