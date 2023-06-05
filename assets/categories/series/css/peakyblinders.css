@@ -224,6 +224,7 @@ gap: 2px;
 }
 /*concertando footer*/
 footer iframe {
+  background-color: #282d32;
   margin-bottom: -5px;
 }
 

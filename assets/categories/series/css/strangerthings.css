@@ -256,5 +256,6 @@ width: calc(100% / 3);
 
 /*concertando footer*/
 footer iframe {
-  margin-bottom: -5px;
+  margin-bottom: -20px;
+  background-color: #282d32;
 }
