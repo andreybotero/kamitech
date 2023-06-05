@@ -16,7 +16,12 @@
         justify-content: center;
         margin-bottom: 0px;
     }
-    
+    .button{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
 
     
     .about_container {
