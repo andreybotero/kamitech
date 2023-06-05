@@ -274,9 +274,7 @@ input:checked+.avaliacaoMateria article section #mais {
 }
 
 /* fix footer */
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 
 #elenco {

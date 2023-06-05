@@ -292,9 +292,7 @@ a:hover {
     display: none;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width: 768px) {
     #some {

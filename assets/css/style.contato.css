@@ -231,9 +231,7 @@ form .input-single .input:valid~label {
     animation: animate-modal .3s;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width:600px) {
     form {

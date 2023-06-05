@@ -149,9 +149,7 @@ main { margin-top: 280px;
 }
 
 /* fix footer */
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 /* fix header */
 .header-upper {

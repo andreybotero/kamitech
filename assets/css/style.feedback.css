@@ -260,9 +260,7 @@ form p {
 
 /* animação abrir janela modal */
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width:600px) {
     form {

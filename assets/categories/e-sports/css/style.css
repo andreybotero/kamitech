@@ -345,9 +345,7 @@ a:hover {
     bottom: 0;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width: 786px) {
     

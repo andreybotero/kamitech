@@ -250,9 +250,7 @@ input:checked+.avaliacaoMateria article section #mais {
     gap: 2px;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}}
+}
 @media (max-width: 600px) {
     * {
         margin: 0;
