@@ -273,4 +273,7 @@ footer iframe {
     border-radius: 6px;
     width: 100%;
   }
+  #s3 {
+    border-top: solid 3px hsl(234, 81%, 21%);}
+    
 }
