@@ -260,5 +260,15 @@ footer iframe {
   margin-bottom: -5px;
 }
 @media (max-width:768px) {
-  
+  h2 {
+    text-align: center;
+  }
+  #s1{
+    font-size: 15px;
+  }
+  #s2 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: center;
+    padding: 20px;
+  }
 }
