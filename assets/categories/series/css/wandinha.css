@@ -261,25 +261,26 @@ footer iframe {
   }
   img{
     text-align: center;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
+    padding: 0;
   }
     #a2{
       flex-direction: column;
-      width: 80%;
-      height: 80%;
+      width: 70%;
+      height: 70%;
       display: flex;
       justify-content: center;
     }
 
      #s2{
-      width: 90%;
-      height: 90%;
+      width: 70%;
+      height: 70%;
       justify-content: center;
      }
      #s3{
-      width: 90%;
-      height: 90%;
+      width: 70%;
+      height: 70%;
       justify-content: center;
      
      }
@@ -293,23 +294,28 @@ footer iframe {
      .cards{
       justify-content: center;
       flex-direction: column;
+      padding: 0;
+      
 
      }
 
      .card{
     
       text-align: center;
+      padding: 0;
      }
 
      .avaliacaoMateria{
       width: 100%;
       height: 100%;
+      margin: 0;
+      padding: 0;
 
      }
 
      .depoiments {
       background-color: #f5f5f5;
-      padding: 20px;
+      padding: 15px;
       display: flex;
 
       
