@@ -278,6 +278,7 @@ footer iframe {
     text-align: center;
     padding: 20px;
     border-radius: 6px;
+    width: 100%;
   }
 
 }
