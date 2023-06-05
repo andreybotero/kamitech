@@ -285,4 +285,7 @@ footer iframe {
     width: 20%;
     height: 40%;
   }
+  .container2 {
+    display: flex;
+  }
 }
