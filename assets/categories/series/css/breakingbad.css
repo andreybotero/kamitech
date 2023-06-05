@@ -293,5 +293,8 @@ footer iframe {
   .cards {
     flex-direction: column;
   }
+  .cards .card{
+    width: 70%;
+  }
 }
 
