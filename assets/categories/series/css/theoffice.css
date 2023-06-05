@@ -60,14 +60,14 @@ h1{
   text-align: justify;
   padding: 5px;
   border-radius: 6px;
-  width: 40%;
+  width: 50%;
 }
 #s3{
   border-top: solid 3px hsl(234, 81%, 21%);
   text-align: justify;
   padding: 10px;
   border-radius: 6px;
-   width: 40%;
+   width: 50%;
 }
 /*centralizando*/
 article{
