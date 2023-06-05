@@ -290,6 +290,12 @@ footer iframe {
 
   }
 
+  #h2tt{
+    margin: 0;
+    padding: 0;
+    
+  }
+
   #s2 {
     border-top: solid 3px #3c4ffa;
     text-align: justify;
@@ -321,7 +327,10 @@ footer iframe {
     padding: 0;
     margin: 0;
   }
-
+   
+  #img1{
+    text-align: center;
+  }
       
      #s3{
       justify-content: center;
@@ -333,12 +342,8 @@ footer iframe {
 
      .container{
       text-align: center;
+      margin: 0;
       padding: 0;
-      margin: 20px;
-      height: 80%;
-      width: 80%;
-
-
      }
     
      .cards{
