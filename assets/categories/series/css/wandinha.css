@@ -27,16 +27,15 @@ h1{
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
   height: 500px;
 }
-main {
+main { margin-top: 280px;
   background-color: white;
   padding: 20px;
-  margin-top: 170px;
 }
 /*sections*/
 #s1{

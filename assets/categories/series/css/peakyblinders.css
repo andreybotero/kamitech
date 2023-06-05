@@ -21,17 +21,17 @@ body {
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
   height: 500px;
 }
+main { margin-top: 280px;
 
 main {
   background-color: white;
   padding-top: 30px;
-  margin-top: 170px;
 }
 
 /*sections*/
@@ -239,6 +239,7 @@ input:checked+.avaliacaoMateria article section #mais {
 
 /*concertando footer*/
 footer iframe {
+  background-color: #282d32;
   margin-bottom: -5px;
 }
 

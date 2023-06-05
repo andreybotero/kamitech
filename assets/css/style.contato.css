@@ -27,7 +27,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -35,7 +35,7 @@ body {
 }
 
 .form-container {
-    margin-top: 170px;
+    margin-top: 280px;
     background-color: #f5f5f5;
 }
 
@@ -231,9 +231,7 @@ form .input-single .input:valid~label {
     animation: animate-modal .3s;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width:600px) {
     form {

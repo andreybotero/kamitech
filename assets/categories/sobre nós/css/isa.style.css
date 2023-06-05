@@ -11,10 +11,9 @@
         /* background-color: #2b2a2f; */
     }
     
-    main {
+    main { margin-top: 280px;
         display: inline;
         justify-content: center;
-        margin-top: 100px;
         margin-bottom: 0px;
     }
     
@@ -155,11 +154,10 @@
         /* background-color: #2b2a2f; */
     }
     
-    main {
+    main { margin-top: 280px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 250px;
         margin-bottom: 50px;
     }
     
@@ -172,8 +170,8 @@
     
     }
     
-    .header-upper iframe {
-        height: 180px;
+   .header-upper iframe {
+        height: 280px;
     }
     
     .header-upper iframe:hover {

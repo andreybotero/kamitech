@@ -19,15 +19,14 @@ body {
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
   height: 500px;
 }
 
-main {
-  margin-top: 170px;
+main { margin-top: 280px;
   margin-bottom: 20px;
 }
 
@@ -258,6 +257,8 @@ input:checked+.avaliacaoMateria article section #mais {
 
 footer iframe {
   margin-bottom: -5px;
+  background-color: #282d32;
+}
 }
 
 @media (max-width:768px) {
@@ -282,14 +283,14 @@ footer iframe {
     text-align: center;
     padding: 20px;
     border-radius: 6px;
-    width: 100%;
+    width: 80%;
   }
   #img1 {
     justify-content: center;
     width: 90%;
     height: 110%;
     margin-right: 20px;
-    margin-left: 5%;
+    margin-left: 8%;
 
   }
   .container2 {

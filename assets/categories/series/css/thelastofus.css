@@ -23,19 +23,18 @@ h1{
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
   height: 500px;
 }
-main {
+main { margin-top: 280px;
   background-color: white;
   padding: 20px;
-  margin-top: 170px;
 }
 #img2{
-  text-align: center;
+  text-align:center;
 }
 .legend{
   margin-left: 4%;
@@ -237,7 +236,7 @@ gap: 2px;
 footer iframe {
   margin-bottom: -5px;
 }
-
+/*
 @media (max-width:768px) {
   h2 {
     text-align: center;
@@ -282,4 +281,56 @@ footer iframe {
 .cards .card{
   width: 70%;
 }
+}
+*/
+@media (max-width:768px) {
+
+  h2 {
+    text-align: center;
+  }
+  #s1{
+    font-size: 15px;
+  }
+  #s2 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+    margin-left: -5%;
+  
+  }
+  #s3 {
+    border-top: solid 3px hsl(234, 81%, 21%); 
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+  }
+  #img1 {
+    justify-content: center;
+    width: 90%;
+    height: 110%;
+    margin-right: 20px;
+    margin-left: 8%;
+
+  }
+  .container2 {
+    margin-left: 0%;
+    gap: 20px;
+    
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card{
+    width: 70%;
+  }
+  .stars{
+    justify-content: center;
+  }
+ .container{
+  margin-left: -5px;
+ }
+ 
 }
