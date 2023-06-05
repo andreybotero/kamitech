@@ -39,6 +39,9 @@ function adicionar() {
         var a = i - 1;
         document.getElementById("fo" + a).style.display = "none";
     }
+    var tamanho = [titulo, data, des, autor];
+    var tam = tamanho.length
+   console.log(tamanho); 
 }
 
 
