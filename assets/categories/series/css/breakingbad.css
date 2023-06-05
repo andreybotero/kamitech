@@ -283,12 +283,14 @@ footer iframe {
     width: 100%;
   }
   #img1 {
-    justify-content: left;
-    width: 20%;
-    height: 40%;
+    justify-content: center;
+    width: 90%;
+    height: 110%;
+    margin-right: 20px;
+
   }
   .container2 {
-    display: flex;
+    margin-left: 0%;
     gap: 20px;
     
   }
@@ -297,5 +299,8 @@ footer iframe {
   }
   .cards .card{
     width: 70%;
+  }
+  .stars{
+    justify-content: center;
   }
 }
