@@ -265,3 +265,8 @@ footer iframe {
   width: 20%;
   height: 40%;
 }
+.container2 {
+  display: flex;
+  gap: 20px;
+  margin-left: 0;
+}
