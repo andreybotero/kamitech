@@ -249,6 +249,10 @@ input:checked+.avaliacaoMateria article section #mais {
     justify-content: center;
     gap: 2px;
 }
+footer {
+    margin-bottom: -20px;
+    background-color: #282d32;
+}
 
 }
 @media (max-width: 600px) {
