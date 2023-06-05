@@ -259,3 +259,6 @@ input:checked+.avaliacaoMateria article section #mais {
 footer iframe {
   margin-bottom: -5px;
 }
+@media (max-width:768px) {
+  
+}
