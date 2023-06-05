@@ -282,6 +282,6 @@ footer iframe {
   }
   #img1 {
     justify-content: left;
-  
+    width: 20%;
   }
 }
