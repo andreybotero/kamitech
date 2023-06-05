@@ -1,0 +1,61 @@
+body {
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    overflow-y: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+.sub-menu1 {
+    display: none;
+}
+
+.sub-sobre {
+    display: none;
+}
+
+nav li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #f1f1f1;
+}
+
+nav li:hover .sub-sobre {
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    margin: 20px;
+}
