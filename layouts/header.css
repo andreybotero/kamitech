@@ -152,6 +152,7 @@ nav ul li:hover .sub-sobre ul {
     position: absolute;
     padding: 10px;
     background-color: #282d32;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
 
@@ -172,6 +173,7 @@ nav ul li:hover .sub-sobre {
     background-color: aqua;
     margin-top: 4px;
     margin-left: -35px;
+    
 
 }
 
@@ -181,6 +183,7 @@ nav ul li:hover .sub-sobre {
     margin-top: -40px;
     margin-left: 50px;
     background-color: aqua;
+    
 }
 
 nav ul li:hover .sub-sobre ul li:hover {
