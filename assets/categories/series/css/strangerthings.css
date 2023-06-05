@@ -329,8 +329,8 @@ footer iframe {
   .container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10% ; 
     margin-top: 30px;
+    justify-content: center;
   }
 
   .container a {
@@ -342,10 +342,6 @@ footer iframe {
   .container a:nth-child(4n+2),
   .container a:nth-child(4n+3) {
     flex-basis: 10%;
-  }
-
-  .container a:nth-child(4n+10) {
-    margin-left: 30%;
   }
 
   .container a img {
