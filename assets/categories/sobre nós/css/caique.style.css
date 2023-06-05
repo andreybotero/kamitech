@@ -15,8 +15,13 @@
         display: inline;
         justify-content: center;
         margin-bottom: 0px;
+        
     }
-    
+    .button{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
     
     .about_container {
@@ -140,37 +145,6 @@
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 600px) {
     
 
@@ -347,4 +321,9 @@ main { margin-top: 280px;
 iframe {
     margin-bottom: -5px;
 }
-}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}}
