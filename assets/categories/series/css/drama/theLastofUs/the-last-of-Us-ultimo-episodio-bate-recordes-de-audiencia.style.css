@@ -20,7 +20,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -69,7 +69,7 @@ article #legendaImagem {
     display: flex;
 }
 
-.container main {
+.container main { margin-top: 280px;
     width: 70%;
 }
 
@@ -247,6 +247,3 @@ input:checked+.avaliacaoMateria article section #mais {
     gap: 2px;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}

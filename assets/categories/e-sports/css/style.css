@@ -24,7 +24,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
  .header-upper iframe:hover {
@@ -37,7 +37,7 @@ body {
 }
 
 /*main*/
-main {
+main { margin-top: 280px;
     background-color: white;
     height: 100%;
     padding: 20px;
@@ -345,9 +345,7 @@ a:hover {
     bottom: 0;
 }
 
-footer iframe {
-    margin-bottom: -5px;
-}
+
 
 @media (max-width: 786px) {
     

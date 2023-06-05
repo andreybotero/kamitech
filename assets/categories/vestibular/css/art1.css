@@ -20,7 +20,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -28,7 +28,7 @@ body {
 }
 
 .main2 {
-    margin-top: 190px;
+    margin-top: 280px;
     margin-bottom: 20px;
 }
 
@@ -71,7 +71,7 @@ article #legendaImagem {
     display: flex;
 }
 
-.container main {
+.container main { margin-top: 280px;
     width: 70%;
 }
 
