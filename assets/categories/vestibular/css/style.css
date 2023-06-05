@@ -30,7 +30,7 @@ body {
 }
 
 /* configuraçoes do corpo do site */
-main {
+main { margin-top: 280px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 170px;
@@ -79,7 +79,7 @@ h1 {
     color: black;
 }
 
-main {
+main { margin-top: 280px;
     align-items: center;
 }
 

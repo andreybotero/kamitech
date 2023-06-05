@@ -69,7 +69,7 @@ article #legendaImagem {
     display: flex;
 }
 
-.container main {
+.container main { margin-top: 280px;
     width: 70%;
 }
 

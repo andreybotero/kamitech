@@ -141,7 +141,7 @@ aside .card-2 img {
     margin: 0px 10px;
 }
 
-.containermain {
+.containermain { margin-top: 280px;
     display: flex;
 }
 

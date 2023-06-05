@@ -27,7 +27,7 @@ body {
   height: 500px;
 }
 
-main {
+main { margin-top: 280px;
   background-color: white;
   margin-top: 190px;
 }

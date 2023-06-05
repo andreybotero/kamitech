@@ -14,7 +14,7 @@ h1 {
   text-align: center;
 }
 
-main {
+main { margin-top: 280px;
   background-color: white;
   margin-top: 180px;
   margin-bottom: 20px;
