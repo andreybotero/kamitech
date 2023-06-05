@@ -35,7 +35,8 @@ main {
   margin-top: 170px;
 }
 #img2{
-  margin-left: 4%;
+  text-align: center;
+  margin-right: 60%;
 }
 .legend{
   margin-left: 4%;
@@ -259,6 +260,11 @@ footer iframe {
   padding: 20px;
   border-radius: 6px;
   width: 100%;
+}
+#img2{
+  width: 70;
+  height: 80;
+  text-align: center;
 }
 #img1{
   width: 90%;
