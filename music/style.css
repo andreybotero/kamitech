@@ -176,3 +176,39 @@ main { margin-top: 280px;
 footer iframe {
   margin-bottom: -5px;
 }
+
+@media (max-width: 780px) {
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .music-container {
+    width: 90%;
+    height: 23%;
+  }
+
+  .action-btn {
+    bottom: 0;
+    margin-top: 15%;
+    margin-left: 0;
+  }
+
+  i {
+    color: black;
+    padding: 24px;
+    margin-bottom: 35px;
+  }
+
+  .img-container::after {
+    display: none;
+  }
+
+  .img-container {
+  bottom: 80%;
+  }
+
+  .navegation {
+    justify-content: center;
+  }
+}

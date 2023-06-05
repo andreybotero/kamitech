@@ -259,3 +259,53 @@ footer iframe {
   margin-bottom: -5px;
   background-color: #282d32;
 }
+}
+
+@media (max-width:768px) {
+
+  h2 {
+    text-align: center;
+  }
+  #s1{
+    font-size: 15px;
+  }
+  #s2 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+    margin-left: -5%;
+  
+  }
+  #s3 {
+    border-top: solid 3px hsl(234, 81%, 21%); 
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+  }
+  #img1 {
+    justify-content: center;
+    width: 90%;
+    height: 110%;
+    margin-right: 20px;
+    margin-left: 8%;
+
+  }
+  .container2 {
+    margin-left: 0%;
+    gap: 20px;
+    
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card{
+    width: 70%;
+  }
+  .stars{
+    justify-content: center;
+  }
+ 
+}
