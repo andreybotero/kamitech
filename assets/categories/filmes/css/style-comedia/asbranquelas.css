@@ -287,6 +287,10 @@ input:checked+.avaliacaoMateria article section #mais {
 .container2 {
     text-align: center;
 }
+footer {
+    margin-bottom: -20px;
+    background-color: #282d32;
+}
 
 @media (max-width: 600px) {
     * {
