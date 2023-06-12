@@ -189,6 +189,7 @@ footer iframe {
   .music-container {
     width: 90%;
     height: 23%;
+    margin-bottom: 50px;
   }
 
   .action-btn {
