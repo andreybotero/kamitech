@@ -104,7 +104,7 @@ function editar(id) {
 
     var tudo = title + date + descri + creater + button1 + button2;
 
-    var div = '<div id="Div' + i + '">' + tudo + '</div>';
+    var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/> </div>';
 
     divs.innerHTML = div;
 
