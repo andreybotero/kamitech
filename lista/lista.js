@@ -117,7 +117,7 @@ function editar(id) {
     
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
 }
-var edited = '<p id="edited"> edited <p/>';
+var edited = '<p> edited <p/>';
 
     if (titulo != "") {
         document.getElementById("T" + id ).innerHTML = title;
