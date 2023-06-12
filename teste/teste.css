@@ -12,23 +12,29 @@ body {
     height: 70px;
     background-color: #282d32;
 }
-article{
+
+article {
     margin-left: 50%;
 }
+
 #header1 {
     position: fixed;
     color: white;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 250px;
-    overflow: hidden;
-    transition: 1s;
+    overflow: scroll;
+    height: 500px;
+    width: 240px;
     background-color: #282d32;
 }
 
 nav ul li:hover .sub-sobre ul li:hover {
     background-color: rgb(82, 177, 194);
+}
+
+li {
+margin-top: 10px;
 }
 
 #btn1 {
@@ -72,11 +78,11 @@ nav a {
     color: white;
 }
 
-nav ul li:hover .sub-sobre ul li:hover{
+nav ul li:hover .sub-sobre ul li:hover {
     background-color: rgb(82, 177, 194);
     transition: 1s;
     border-radius: 15px;
-    margin-right: 100px;w
+    margin-right: 100px;
 }
 
 nav a:hover {
