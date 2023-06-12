@@ -11,7 +11,7 @@ function adicionar() {
 
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
-    var title = ' <div id="geral"> <div id="infos"> <p id= "novo" + i> novo </p> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
+    var title = ' <div id="geral"> <div id="infos"> <p id= "novo"' + i +'> novo </p> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
 
     var data = document.getElementById("Data").value;
     document.getElementById("Data").value = '';
@@ -71,10 +71,13 @@ function adicionar() {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
-    var remover = i - 3;
-    if ( remover > 0 ) {
-        Document.getelementbyid("novo" + remover).style.display = "none";
+    var removenovo = i - 3;
+    if ( removenovo > 0 ) {
+        Document.getelementbyid("novo" + removenovo).style.display = "none";
         }
+    
+    console.log(removenovo);
+    console.log(i);
 }
 
 
