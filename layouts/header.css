@@ -37,10 +37,9 @@ ul {
     display: flex;
     justify-content: space-evenly;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /*   */
     text-decoration: none;
 }
-
+        
 /* tirar decoraçoes dos links */
 ul a {
     text-decoration: none;
@@ -50,6 +49,7 @@ ul a {
 
 li {
     list-style-type: none;
+
 }
 
 nav {
@@ -66,18 +66,20 @@ nav ul {
 nav ul li {
     width: 120px;
     margin: 15px;
-    padding: 8px;
+    padding: 10px;
 }
 
 button {
     border: none;
     background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
-    padding: 12px 30px;
+    padding: 12px 25px;
     border-radius: 30px;
     color: #fff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     transition: .4s;
+    margin-left: 5%;
+    margin-bottom: 7%;
 }
 
 button:hover {
@@ -117,30 +119,30 @@ nav ul li:hover .sub-menu1 ul li:hover {
     background-color: rgb(82, 177, 194);
 }
 
-.sub-menu2{
+.sub-menu2 {
     display: none;
 }
 
-.hover-sub:hover .sub-menu2{
+.hover-sub:hover .sub-menu2 {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
 }
 
-.sub-sobre{
+.sub-sobre {
     display: none;
     background-color: rgb(73, 236, 248);
 }
 
-nav ul li:hover .sub-sobre{
+nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
     background-color: aqua;
     margin-top: 4px;
     margin-left: -35px;
-   
+
 }
 
 /* sub-sobre é o menu do sobre nós */
@@ -149,6 +151,7 @@ nav ul li:hover .sub-sobre ul {
     position: absolute;
     padding: 10px;
     background-color: #282d32;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
 
@@ -158,26 +161,28 @@ nav ul li:hover .sub-sobre ul li {
     border-radius: 10px;
 }
 
-.sub-sobre2{
+.sub-sobre2 {
     display: none;
     background-color: aqua;
 }
 
-nav ul li:hover .sub-sobre{
+nav ul li:hover .sub-sobre {
     display: block;
     position: absolute;
-   background-color: aqua;
+    background-color: aqua;
     margin-top: 4px;
-    margin-left: -35px; 
-   
+    margin-left: -35px;
+
+
 }
 
-.hover-sobre:hover .sub-sobre2{
+.hover-sobre:hover .sub-sobre2 {
     display: block;
     position: absolute;
     margin-top: -40px;
-    margin-left: 118px;
+    margin-left: 50px;
     background-color: aqua;
+
 }
 
 nav ul li:hover .sub-sobre ul li:hover {
@@ -191,5 +196,33 @@ nav ul li:hover .sub-sobre ul li {
     transition: 0.7s;
 }
 
+#diff {
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+}
 
- 
+@media (max-width:600px) {
+    img.logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    .sub-menu1 {
+        display: none;
+    }
+
+    .sub-sobre {
+        display: none;
+    }
+
+    nav ul li {
+        width: 120px;
+        margin: 1%;
+        padding: 1%
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,150 +9,58 @@
     <link rel="stylesheet" href="lista.css">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <h1 style="text-align: center;">Lista</h1>
-        <section>
-            <h3>Titulo</h3>
-            <input type="text" id="Titulo">
-        </section>
-        <section>
-            <h3>Data</h3>
-            <input type="date" id="Data">
-        </section>
-        <section>
-            <h3>Descrição</h3>
-            <input type="text" id="Descricao">
-        </section>
-        <section>
-            <h3>Autor</h3>
-            <input type="text" id="Autor">
-        </section>
-        <br>
-        <button onclick="adicionar()">Adicione</button>
-    </div>
-    <div>
-    <section>
-        <p id="T1"></p>
-        <p id="D1"></p>
-        <p id="DD1"></p>
-        <p id="A1"></p>
-    </section>
-    <section>
-        <p id="T2"></p>
-        <p id="D2"></p>
-        <p id="DD2"></p>
-        <p id="A2"></p>
-    </section>
-    <section>
-        <p id="T3"></p>
-        <p id="D3"></p>
-        <p id="DD3"></p>
-        <p id="A3"></p>
-    </section>
-    <section>
-        <p id="T4"></p>
-        <p id="D4"></p>
-        <p id="DD4"></p>
-        <p id="A4"></p>
-    </section>
-    <section>
-        <p id="T5"></p>
-        <p id="D5"></p>
-        <p id="DD5"></p>
-        <p id="A5"></p>
-    </section>
-    <section>
-        <p id="T6"></p>
-        <p id="D6"></p>
-        <p id="DD6"></p>
-        <p id="A6"></p>
-    </section>
-    <section>
-        <p id="T7"></p>
-        <p id="D7"></p>
-        <p id="DD7"></p>
-        <p id="A7"></p>
-    </section>
 
-    <section>
-        <p id="T8"></p>
-        <p id="D8"></p>
-        <p id="DD8"></p>
-        <p id="A8"></p>
-    </section>
-    <section>
-        <p id="T9"></p>
-        <p id="D9"></p>
-        <p id="DD9"></p>
-        <p id="A9"></p>
-    </section>
-    <section>
-        <p id="T10"></p>
-        <p id="D10"></p>
-        <p id="DD10"></p>
-        <p id="A10"></p>
-    </section>
-    <section>
-        <p id="T11"></p>
-        <p id="D11"></p>
-        <p id="DD11"></p>
-        <p id="A11"></p>
-    </section>
-    <section>
-        <p id="T12"></p>
-        <p id="D12"></p>
-        <p id="DD12"></p>
-        <p id="A12"></p>
-    </section>
-    <section>
-        <p id="T13"></p>
-        <p id="D13"></p>
-        <p id="DD13"></p>
-        <p id="A13"></p>
-    </section>
-    <section>
-        <p id="T14"></p>
-        <p id="D14"></p>
-        <p id="DD14"></p>
-        <p id="A14"></p>
-    </section>
-    <section>
-        <p id="T15"></p>
-        <p id="D15"></p>
-        <p id="DD15"></p>
-        <p id="A15"></p>
-    </section>
-    <section>
-        <p id="T16"></p>
-        <p id="D16"></p>
-        <p id="DD16"></p>
-        <p id="A16"></p>
-    </section>
-    <section>
-        <p id="T17"></p>
-        <p id="D17"></p>
-        <p id="DD17"></p>
-        <p id="A17"></p>
-    </section>
-    <section>
-        <p id="T18"></p>
-        <p id="D18"></p>
-        <p id="DD18"></p>
-        <p id="A18"></p>
-    </section>
-    <section>
-        <p id="T19"></p>
-        <p id="D19"></p>
-        <p id="DD19"></p>
-        <p id="A19"></p>
-    </section>
-    <section>
-        <p id="T20"></p>
-        <p id="D20"></p>
-        <p id="DD20"></p>
-        <p id="A20"></p>
-    </section>
-</div>
+<body>
+    <header class="header-upper">
+        <iframe src="../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+    </header>
+
+    <form action="">
+        <div id="input">
+            <h1>Adicione sua notícia</h1>
+            <p> Em breve te daremos retorno
+                e logo poderá ver sua notícia em nosso site!
+            </p>
+            <section class="input-single">
+                <div>
+                   
+                    <section>
+                        <h3>Título</h3>
+                        <input required type="text" id="Titulo">
+                    </section>
+
+                    <section class="input-single">
+                        <h3>Data</h3>
+                        <input required type="date" id="Data">
+                    </section>
+
+                    <section class="input-single">
+                        <h3>Descrição</h3>
+                        <input required type="text" id="Descricao">
+                    </section>
+
+                    <section class="input-single">
+                        <h3>Autor</h3>
+                        <input required type="text" id="Autor">
+                    </section>
+
+                    <br>
+                    <button type="submit" id="botao_add" onclick="adicionar()">Adicione</button>
+                </div>
+
+        </div>
+
+
+
+    </form> 
+
+    </div>
+
+
+
+<footer id="fo">
+    <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
+</footer>
 </body>
+
 </html>

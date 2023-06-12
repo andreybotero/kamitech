@@ -24,7 +24,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
  .header-upper iframe:hover {
@@ -37,7 +37,7 @@ body {
 }
 
 /*main*/
-main {
+main { margin-top: 280px;
     background-color: white;
     height: 100%;
     padding: 20px;
@@ -345,6 +345,7 @@ a:hover {
     bottom: 0;
 }
 
+<<<<<<< HEAD
 footer iframe {
     margin-bottom: -5px;
 }
@@ -369,3 +370,10 @@ footer iframe {
     border-color: #aaabb0;
     background-color: #222025;
 }
+=======
+
+
+@media (max-width: 786px) {
+    
+}
+>>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143

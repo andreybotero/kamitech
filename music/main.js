@@ -22,8 +22,8 @@ function getSongTitle(song) {
 /* function para buscar as músicas e as capas */
 function loadSong(song) {
   title.innerText = getSongTitle(song);
-  audio.src = `../../../assets/categories/music/mp3/${song}.mp3`;
-  cover.src = `../../../assets/categories/music/images/${song}.jpg`;
+  audio.src = `../music/mp3/${song}.mp3`;
+  cover.src = `../music/images/${song}.jpg`;
 }
 
 /* function para o icone e função de dar play na música */

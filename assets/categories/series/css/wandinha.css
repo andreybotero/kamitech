@@ -27,16 +27,15 @@ h1{
 }
 
 .header-upper iframe {
-  height: 180px;
+  height: 280px;
 }
 
 .header-upper iframe:hover {
   height: 500px;
 }
-main {
+main { margin-top: 280px;
   background-color: white;
   padding: 20px;
-  margin-top: 170px;
 }
 /*sections*/
 #s1{
@@ -227,6 +226,7 @@ gap: 2px;
 footer iframe {
   margin-bottom: -5px;
 }
+<<<<<<< HEAD
 #infosection button {
   min-width: 150px;
   padding: 8px 18px;
@@ -248,3 +248,111 @@ footer iframe {
   border-color: #aaabb0;
   background-color: #222025;
 }
+=======
+@media (max-width: 768px) {
+  footer {
+      display: flex;
+      flex-direction: column;
+      max-height: 610px;
+  }
+
+  #some {
+      display: none;
+  }
+
+  .footer-col h4 {
+      font-size: 18px;
+      color: #fff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+      margin-top: 0;
+  }
+
+  .row {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  h1{
+    text-align: center;
+  }
+  #s1{
+    padding: 0;
+    flex-direction: column;
+  }
+  img{
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    padding: 0;
+  }
+    #a2{
+      flex-direction: column;
+      width: 70%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+    }
+
+     #s2{
+      width: 70%;
+      height: 70%;
+      justify-content: center;
+     }
+     #s3{
+      width: 70%;
+      height: 70%;
+      justify-content: center;
+     
+     }
+     .container2{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+
+     }
+    
+     .cards{
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+      
+
+     }
+
+     .card{
+    
+      text-align: center;
+      padding: 0;
+     }
+
+     .avaliacaoMateria{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+     }
+
+     .depoiments {
+      background-color: #f5f5f5;
+      padding: 15px;
+      display: flex;
+
+      
+  }
+  .cards .card {
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 30px;
+    box-shadow: 6px 6px 10px #000;
+    border-radius: 10px;
+    width: calc(100%);
+    }
+}
+
+>>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143

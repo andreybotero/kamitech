@@ -11,8 +11,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 /* gambiarra para o header ficar sem bug */
@@ -27,21 +25,15 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
     height: 500px;
 }
 
-.form-container {
-    margin-top: 170px;
-    background-color: #f5f5f5;
-}
-
 /* estilização div pai para alinhar o contéudo */
 .container {
-    
     width: 100%;
     height: 100vh;
     display: flex;
@@ -54,7 +46,7 @@ body {
 
 /* estilização do formulário */
 form {
-
+    margin-top: 40%;
     border: 1px solid #000000;
     background-color: #fff;
     max-width: 500px;
@@ -79,7 +71,7 @@ form p {
 /* estilização dos inputs */
 .input-single {
     position: relative;
-    margin: 30px 0px;
+    margin: 30px 0px;    
 }
 
 /* estilização dos labels dos inputs */
@@ -88,7 +80,7 @@ form p {
     left: 0;
     bottom: 5px;
     transition: all 0.2s;
-    cursor: text;
+    cursor: text; 
 }
 
 /* estilização dos labels dos inputs */
@@ -229,6 +221,14 @@ form .input-single .input:valid~label {
     animation: animate-modal .3s;
 }
 
-footer iframe {
-    margin-bottom: -5px;
+@media (max-width:780px) {
+    form {
+        width: 400px;
+    }
+
+    .container {
+        margin: 0px;
+        margin-top: 60px;
+}
+
 }

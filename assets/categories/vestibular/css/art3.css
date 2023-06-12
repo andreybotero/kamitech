@@ -20,7 +20,7 @@ body {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
  .header-upper iframe:hover {
@@ -28,7 +28,7 @@ body {
 } 
 
 .main2 {
-    margin-top: 190px;
+    margin-top: 290px;
     margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@ article #legendaImagem {
     display: flex;
 }
 
-.container main {
+.container main { margin-top: 280px;
     width: 70%;
 }
 
@@ -179,4 +179,31 @@ p {
 footer iframe {
     margin-bottom: -5px;
     width: 100%;
+}
+
+
+@media (max-width:780px) {
+    aside {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        margin: 2%;
+    }
+
+    sub {
+        margin: 2%;
+    }
+    .container main { 
+        margin-top: 0px;
+    }
 }

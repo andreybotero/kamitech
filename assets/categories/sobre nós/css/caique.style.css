@@ -1,3 +1,153 @@
+@media (max-width: 600px)
+ {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* background-color: #2b2a2f; */
+    }
+    
+    main { margin-top: 280px;
+        display: inline;
+        justify-content: center;
+        margin-bottom: 0px;
+        
+    }
+    .button{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    
+    .about_container {
+        width: 100%;
+        padding: 10px 5%;
+    }
+    
+    .about_container .about_contents {
+        display: inline;
+    }
+    
+    .about_contents .imageSection {
+        position: relative;
+        min-width: 200px;
+        height: 180px;
+        margin-bottom: 30%;
+    }
+    
+    .imageSection img {
+        
+        margin-left: 70px;
+            width: 14em;
+            height: 14em;
+            border-radius: 50%;
+            border: 5px solid #5361dd;
+            padding: 3px;
+            margin-bottom: 10px;
+        
+    }
+    
+    .about_contents .imageSection::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        outline: 0px transparent;
+    }
+    
+    .Infosection h1 {
+        color: #dedce1;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 5px;
+        position: relative;
+        color: #2b2a2f;
+    }
+    
+    .Infosection h1::before {
+        content: "";
+        position: relative;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background-color: #aaabb0;
+    }
+    
+    .Infosection h1::after {
+        content: "";
+        position: relative;
+        width: 40%;
+        height: 3px;
+        top: calc(110% -1px);
+        left: 0px;
+        background-color: #787cb5;
+    }
+    
+    .Infosection h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #787cb5;
+        padding: 14px 0px 15px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    
+    .Infosection p {
+        color: #aaabb0;
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: justify;
+        padding-bottom: 8px;
+        color: #2b2a2f;
+    }
+    
+    .personalinfo {
+        display: inline;
+        margin-top: 14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #555;
+        color: #2b2a2f;
+        
+    }
+    
+    
+    
+    
+    
+    .Infosection button {
+        min-width: 150px;
+        padding: 8px 18px;
+        border: 1px solid #787cb5;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: #2b2a2f;
+        color: #aaabb0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-top: 20px;
+    }
+    
+    .Infosection button:hover {
+        color: #787cb5;
+        border-color: #aaabb0;
+        background-color: #dedce1;
+    }
+    
+    
+    iframe {
+        margin-bottom: -5px;
+    }
+
+}
+@media (min-width: 600px) {
+    
+
 * {
     padding: 0;
     margin: 0;
@@ -9,11 +159,10 @@ body {
     /* background-color: #2b2a2f; */
 }
 
-main {
+main { margin-top: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
     margin-bottom: 50px;
 }
 
@@ -27,7 +176,7 @@ main {
 }
 
 .header-upper iframe {
-    height: 180px;
+    height: 280px;
 }
 
 .header-upper iframe:hover {
@@ -40,15 +189,14 @@ main {
 }
 
 .about_container .about_contents {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-    grid-gap: 70px;
+    display: flex;
 }
 
 .about_contents .imageSection {
     position: relative;
     min-width: 300px;
     height: 380px;
+    margin-right: 100px;
 }
 
 .imageSection img {
@@ -57,6 +205,7 @@ main {
     object-fit: cover;
     position: relative;
     z-index: 2;
+    margin-right: 100px;
 }
 
 .about_contents .imageSection::after {
@@ -66,7 +215,7 @@ main {
     height: 100%;
     outline: 3px solid #787cb5;
     top: 13px;
-    left: 15px;
+    left: 20px;
     z-index: 1;
 }
 
@@ -119,20 +268,28 @@ main {
 }
 
 .personalinfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
+    display: flex;
     margin-top: 14px;
     padding-bottom: 10px;
     border-bottom: 1px solid #555;
     color: #2b2a2f;
+    
+}
+#i {
+    margin-left: 15px;
+
+}
+#g {
+    margin-left: 15px;
+}
+#e{
+    margin-left: 15px;
 }
 
 
 
 .personalinfo div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 
 .personalinfo div span {
@@ -164,3 +321,9 @@ main {
 iframe {
     margin-bottom: -5px;
 }
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}}

@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre nós - KamiNews</title>
   <link rel="icon" href="../../../../assets/images/logokami-semFundo.png" type="image/x-icon">
-  <link rel="stylesheet" href="../../../../assets/categories/sobre-nos/css/creators/index.sobrenos.css" />
+  <link rel="stylesheet" href="../../../../assets/categories/sobre-nos/css/creators/index.sobrenos.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -13,27 +15,29 @@
   <main>
     <!-- config header -->
     <div class="header-upper">
-      <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+      <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0" height="300px"></iframe>
     </div>
     <section class="swiper mySwiper">
 
       <!-- div para os slides swipers -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper"><div class="card2">
+        
         <!-- div para cada card de membro -->
         <div class="card swiper-slide">
           <div class="card_image">
             <img src="../../../../assets/images/Andrey2foto.png" alt="card image" />
           </div>
+          
 
           <div class="card_content">
-            <span class="card_title">Andrey Botero</span>
+            <span class="card_title">Andrey Botero</span><br>
             <span class="card_name">Tech lead da kamitech</span>
             <p class="card_text">
               Andrey é aluno do SESI e SENAI Valinhos apaixonado pela área de TI no geral,sempre buscando
               aprender mais sobre esse extenso mundo.
             </p>
             <form action="../../../categories/sobre-nos/creators/caique.html">
-              <button class="card_btn">Ver mais</button>
+              <button class="card_btn" id="bnt1">Ver mais</button>
             </form>
           </div>
         </div>
@@ -44,17 +48,18 @@
           </div>
           <!-- div para cada card de membro -->
           <div class="card_content">
-            <span class="card_title">Ana Cavalcante</span>
+            <span class="card_title">Ana Cavalcante</span><br>
             <span class="card_name">Membro da kamitech</span>
             <p class="card_text">
               Ana é estudante do SESI e SENAI Valinhos fascinado pela área de programação e deseja sempre
-              aprender mais sobre.
+              aprender e conhecer sobre.
             </p>
             <form action="../../../categories/sobre-nos/creators/gabriel.html">
-              <button class="card_btn">Ver mais</button>
+              <button class="card_btn" id="bnt2">Ver mais</button>
             </form>
           </div>
-        </div>
+        </div></div>
+        <div class="card2">
 
         <div class="card swiper-slide">
           <div class="card_image">
@@ -62,7 +67,7 @@
           </div>
           <!-- div para cada card de membro -->
           <div class="card_content">
-            <span class="card_title">Giulia Marques</span>
+            <span class="card_title">Giulia Marques</span><br>
             <span class="card_name">Membra da kamitech</span>
             <p class="card_text">
               Giulia é aluna do SESI e SENAI Valinhos muito focada em seguir na área e talvez investir na carreira
@@ -80,7 +85,7 @@
           </div>
           <!-- div para cada card de membro -->
           <div class="card_content">
-            <span class="card_title">Marina Moraes</span>
+            <span class="card_title">Marina Moraes</span><br>
             <span class="card_name">Membra da kamitech</span>
             <p class="card_text">
               Marina é aluna do SESI e SENAI Valinhos com muita vontade de aprender e seguir na área de desenvolvimento
@@ -90,15 +95,16 @@
               <button class="card_btn">Ver mais</button>
             </form>
           </div>
-        </div>
+        </div></div>
+        <div class="card2">
 
         <div class="card swiper-slide">
           <div class="card_image">
-            <img src="../../../../assets/images/Scaranellofoto3.jpg" alt="card image" />
+            <img src="../../../../assets/images/Imagem-Scaranello.jpg" alt="card image" />
           </div>
           <!-- div para cada card de membro -->
           <div class="card_content">
-            <span class="card_title">Matheus Scaranello</span>
+            <span class="card_title">Matheus Scaranello</span><br>
             <span class="card_name">Membro da kamitech</span>
             <p class="card_text">
               Scaranello é aluno do SESI e SENAI Valinhos e desde pequeno gostou de mexer com computadores,  adora aprender e programar.
@@ -115,7 +121,7 @@
             </div>
             <!-- div para cada card de membro -->
             <div class="card_content">
-              <span class="card_title">Matheus Zambon</span>
+              <span class="card_title">Matheus Zambon</span><br>
               <span class="card_name">Membro da kamitech</span>
               <p class="card_text">
                 Zambon é aluno do SESI e SENAI Valinhos e desde pequeno gostou de mexer com computadores, adora aprender e programar.
@@ -125,9 +131,10 @@
               </form>
   
             </div>
-        </div>
+        </div></div>
       </div>
     </section>
+    
     <!-- link codigo swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
