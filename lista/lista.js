@@ -40,7 +40,7 @@ function adicionar() {
     var dataselecionada = new Date(data); 
 
     if (dataselecionada < dataatual) {
-        alert("A data é inválida ou é anterior à data atual.");
+        alert("Digite uma data válida.");
     } else {
         certos++;
     }
@@ -116,7 +116,7 @@ function editar(id) {
     var tudo = title + date + descri + creater + button1 + button2;
     
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
-    
+}
 var edited = '<p> edited <p/>';
 
     if (titulo != "") {
@@ -133,7 +133,6 @@ var edited = '<p> edited <p/>';
     }
     divs.innerHTML += edited;
 
-}
 
 function desfazer(id) {
     document.getElementById("div" + id).style.display = "none";

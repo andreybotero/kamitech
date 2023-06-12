@@ -201,6 +201,10 @@ p {
     text-align: left;
 }
 
+#edited{
+    background-color: aqua;
+}
+
 @media (max-width:780px) {
     #input {
         margin-top: 50%;
