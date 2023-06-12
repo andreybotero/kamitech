@@ -133,7 +133,6 @@ var edited = '<p id="edited"> edited <p/>';
     }
     divs.innerHTML += edited;
 
-}
 
 function desfazer(id) {
     document.getElementById("div" + id).style.display = "none";
