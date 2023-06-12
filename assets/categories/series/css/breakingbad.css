@@ -274,7 +274,7 @@ footer iframe {
     text-align: center;
     padding: 15px;
     border-radius: 6px;
-    width: 100%;
+    width: 90%;
     margin-left: -5%;
   
   }
@@ -307,6 +307,14 @@ footer iframe {
   .stars{
     justify-content: center;
   }
- 
+  .elenco {
+    text-align: center;
+    border-top:transparent;
+    
+  }
+  .jorge{
+    width: 50%;
+    justify-content: center;
+  }
 }
 

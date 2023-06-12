@@ -1,4 +1,6 @@
 var i = 0;
+var certos = 0;
+var removenovo = i - 3;
 var text1 = '<h1 class="result"> Título:    </h1>';
 var text2 = '<h1 class="result"> Data:      </h1>';
 var text3 = '<h1 class="result"> Descrição: </h1>';
@@ -10,7 +12,7 @@ function adicionar() {
 
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
-    var title = ' <div id="geral"> <div id="infos">'+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
+    var title = ' <div id="geral"> <div id="infos"> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
 
     var data = document.getElementById("Data").value;
     document.getElementById("Data").value = '';
@@ -29,7 +31,7 @@ function adicionar() {
 
     var tudo = title + date + descri + creater + button1 + button2;
 
-    var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '</div>';
+    var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '<p id= "novo' + i +'"> novo </p></div>';
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
 
@@ -38,7 +40,42 @@ function adicionar() {
     if (i > 1) {
         var a = i - 1;
         document.getElementById("fo" + a).style.display = "none";
+    } 
+    var list = [titulo, data, des, autor];
+    if (list[0].length == 0) {
+        certos ++;
+        alert("Está faltando o titulo!");
     }
+    if (list[0].length != 0) {
+        certos ++;
+    }
+    if (list[1].length == 0) {
+        alert("Está faltando a data!");
+    }
+    if (list[1].length != 0) {
+        certos ++;
+    }
+    if (list[2].length == 0) {
+        alert("Está faltando a descrição!");
+    }
+    if (list[2].length != 0) {
+        certos ++;
+    }
+    if (list[3].length == 0) {
+        certos ++;
+        alert("Está faltando o autor!");
+    }
+    if (list[3].length != 0) {
+        certos ++;
+    }
+    if (certos != 4) {
+        document.getElementById("div" + i).style.display = "none";
+    }
+    certos = 0;
+    if ( removenovo > 0 ) {
+        document.getElementById("novo" + removenovo).hidden = true;
+        }
+    
 }
 
 
@@ -66,8 +103,14 @@ function editar(id) {
     var button2 = '<button class="edit_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button> </div> ';
 
     var tudo = title + date + descri + creater + button1 + button2;
+    if (removenovo < 3) {
+        var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/> <p id= "novo' + i +'"> novo </p></div>';
+    }
+    if (removenovo > 3) {
+    var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
+}
 
-    var div = '<div id="Div' + i + '">' + tudo + '</div>';
+    
 
     divs.innerHTML = div;
 
