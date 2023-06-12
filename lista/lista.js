@@ -120,10 +120,21 @@ function editar(id) {
     if (removenovo > 3) {
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
 }
+var edited = '<p> edited <p/>';
 
-    
-
-    divs.innerHTML = div;
+    if (titulo != "") {
+        document.getElementById("T" + id ).innerHTML = title;
+    }
+    if (data != "") {
+        document.getElementById("D" + id ).innerHTML = date;
+    }
+    if (des != "") {
+        document.getElementById("DD" + id ).innerHTML = descri;
+    }
+    if (autor != "") {
+        document.getElementById("A" + id ).innerHTML = creater;
+    }
+    divs.innerHTML += edited;
 
 }
 
