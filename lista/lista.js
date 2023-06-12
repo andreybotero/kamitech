@@ -1,5 +1,6 @@
 var i = 0;
 var certos = 0;
+var removenovo = i - 3;
 var text1 = '<h1 class="result"> Título:    </h1>';
 var text2 = '<h1 class="result"> Data:      </h1>';
 var text3 = '<h1 class="result"> Descrição: </h1>';
@@ -11,7 +12,7 @@ function adicionar() {
 
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
-    var title = ' <div id="geral"> <div id="infos"> <p id= "novo' + i +'"> novo </p> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
+    var title = ' <div id="geral"> <div id="infos"> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
 
     var data = document.getElementById("Data").value;
     document.getElementById("Data").value = '';
@@ -30,7 +31,7 @@ function adicionar() {
 
     var tudo = title + date + descri + creater + button1 + button2;
 
-    var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '</div>';
+    var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '<p id= "novo' + i +'"> novo </p></div>';
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
 
@@ -71,7 +72,6 @@ function adicionar() {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
-    var removenovo = i - 3;
     if ( removenovo > 0 ) {
         document.getElementById("novo" + removenovo).hidden = true;
         }
@@ -103,8 +103,14 @@ function editar(id) {
     var button2 = '<button class="edit_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button> </div> ';
 
     var tudo = title + date + descri + creater + button1 + button2;
+    if (removenovo < 3) {
+        var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/> <p id= "novo' + i +'"> novo </p></div>';
+    }
+    if (removenovo > 3) {
+    var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
+}
 
-    var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/> </div>';
+    
 
     divs.innerHTML = div;
 
