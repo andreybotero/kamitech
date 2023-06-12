@@ -7,6 +7,7 @@ var text3 = '<h1 class="result"> Descrição: </h1>';
 var text4 = '<h1 class="result"> Autor:     </h1>';
 
 function adicionar() {
+
     i++
     document.getElementById("fo").style.display = "none";
 
@@ -35,6 +36,15 @@ function adicionar() {
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
 
+    var dataatual = new Date();
+    var dataselecionada = new Date(data); 
+
+    if (dataselecionada < dataatual) {
+        alert("A data é inválida ou é anterior à data atual.");
+    } else {
+        certos++;
+    }
+
 
     document.body.innerHTML += div + footer;
     if (i > 1) {
@@ -42,7 +52,7 @@ function adicionar() {
         document.getElementById("fo" + a).style.display = "none";
     } 
     var list = [titulo, data, des, autor];
-    
+
     if (list[0].length == 0) {
         certos ++;
         alert("Está faltando o titulo!");
@@ -69,7 +79,7 @@ function adicionar() {
     if (list[3].length != 0) {
         certos ++;
     }
-    if (certos != 4) {
+    if (certos != 5) {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
@@ -110,10 +120,21 @@ function editar(id) {
     if (removenovo > 3) {
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
 }
+var edited = '<p> edited <p/>';
 
-    
-
-    divs.innerHTML = div;
+    if (titulo != "") {
+        document.getElementById("T" + id ).innerHTML = title;
+    }
+    if (data != "") {
+        document.getElementById("D" + id ).innerHTML = date;
+    }
+    if (des != "") {
+        document.getElementById("DD" + id ).innerHTML = descri;
+    }
+    if (autor != "") {
+        document.getElementById("A" + id ).innerHTML = creater;
+    }
+    divs.innerHTML += edited;
 
 }
 
