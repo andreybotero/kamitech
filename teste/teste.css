@@ -14,6 +14,10 @@ body {
     background-color: #282d32;
 }
 
+nav ul li:hover .sub-sobre ul li:hover {
+    background-color: rgb(82, 177, 194);
+}
+
 #btn1  {
     margin: 10px;
 }
@@ -56,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: gray;
+        background-color: rgb(82, 177, 194);
 }
 
 #msbutton {
