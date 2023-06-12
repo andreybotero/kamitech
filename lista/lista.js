@@ -42,6 +42,7 @@ function adicionar() {
         document.getElementById("fo" + a).style.display = "none";
     } 
     var list = [titulo, data, des, autor];
+    
     if (list[0].length == 0) {
         certos ++;
         alert("Está faltando o titulo!");
@@ -75,7 +76,7 @@ function adicionar() {
     if ( removenovo > 0 ) {
         document.getElementById("novo" + removenovo).hidden = true;
         }
-    
+        
 }
 
 
