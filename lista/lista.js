@@ -114,10 +114,7 @@ function editar(id) {
     var button2 = '<button class="edit_desf" id="bt2' + i + '" onclick="editar(' + i + ')">Editar</button> </div> ';
 
     var tudo = title + date + descri + creater + button1 + button2;
-    if (removenovo < 3) {
-        var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/> <p id= "novo' + i +'"> novo </p></div>';
-    }
-    if (removenovo > 3) {
+    
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
 }
 var edited = '<p id="edited"> edited <p/>';
