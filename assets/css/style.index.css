@@ -276,12 +276,24 @@ article .container aside .card-2 img {
 
 }
 
+#iframe2 {
+    display: none;
+}
+
 
 
 @media (max-width:768px) {
     header {
         height: 50%;
 
+    }
+
+    #iframe1 {
+        display: none;
+    }
+
+    #iframe2 {
+        display: inline;
     }
     .centralizarCards {
         display: flex;
