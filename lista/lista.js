@@ -40,7 +40,7 @@ function adicionar() {
     var dataselecionada = new Date(data); 
 
     if (dataselecionada < dataatual) {
-        alert("A data é inválida ou é anterior à data atual.");
+        alert("Digite uma data válida.");
     } else {
         certos++;
     }
