@@ -107,11 +107,11 @@ p {
 
 /* responsividade */
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     footer {
         display: flex;
         flex-direction: column;
-        max-height: 610px;
+        max-height: 780px;
     }
 
     #some {
