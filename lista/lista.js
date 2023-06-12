@@ -1,4 +1,5 @@
 var i = 0;
+var certos = 0;
 var text1 = '<h1 class="result"> Título:    </h1>';
 var text2 = '<h1 class="result"> Data:      </h1>';
 var text3 = '<h1 class="result"> Descrição: </h1>';
@@ -10,7 +11,7 @@ function adicionar() {
 
     var titulo = document.getElementById("Titulo").value;
     document.getElementById("Titulo").value = '';
-    var title = ' <div id="geral"> <div id="infos">'+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
+    var title = ' <div id="geral"> <div id="infos"> <p id= "novo"' + i +'> novo </p> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
 
     var data = document.getElementById("Data").value;
     document.getElementById("Data").value = '';
@@ -38,7 +39,45 @@ function adicionar() {
     if (i > 1) {
         var a = i - 1;
         document.getElementById("fo" + a).style.display = "none";
+    } 
+    var list = [titulo, data, des, autor];
+    if (list[0].length == 0) {
+        certos ++;
+        alert("Está faltando o titulo!");
     }
+    if (list[0].length != 0) {
+        certos ++;
+    }
+    if (list[1].length == 0) {
+        alert("Está faltando a data!");
+    }
+    if (list[1].length != 0) {
+        certos ++;
+    }
+    if (list[2].length == 0) {
+        alert("Está faltando a descrição!");
+    }
+    if (list[2].length != 0) {
+        certos ++;
+    }
+    if (list[3].length == 0) {
+        certos ++;
+        alert("Está faltando o autor!");
+    }
+    if (list[3].length != 0) {
+        certos ++;
+    }
+    if (certos != 4) {
+        document.getElementById("div" + i).style.display = "none";
+    }
+    certos = 0;
+    var removenovo = i - 3;
+    if ( removenovo > 0 ) {
+        Document.getelementbyid("novo" + removenovo).style.display = "none";
+        }
+    
+    console.log(removenovo);
+    console.log(i);
 }
 
 

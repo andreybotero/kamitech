@@ -11,8 +11,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 /* gambiarra para o header ficar sem bug */
@@ -34,11 +32,6 @@ body {
     height: 500px;
 }
 
-.form-container {
-    margin-top: 280px;
-    background-color: #f5f5f5;
-}
-
 /* estilização div pai para alinhar o contéudo */
 .container {
     
@@ -54,7 +47,7 @@ body {
 
 /* estilização do formulário */
 form {
-
+    margin-top: 25%;
     border: 1px solid #000000;
     background-color: #fff;
     max-width: 500px;
@@ -79,8 +72,7 @@ form p {
 /* estilização dos inputs */
 .input-single {
     position: relative;
-    margin: 30px 0px;
-    
+    margin: 30px 0px;    
 }
 
 /* estilização dos labels dos inputs */
@@ -90,7 +82,6 @@ form p {
     bottom: 5px;
     transition: all 0.2s;
     cursor: text; 
-    
 }
 
 /* estilização dos labels dos inputs */
@@ -231,10 +222,12 @@ form .input-single .input:valid~label {
     animation: animate-modal .3s;
 }
 
-
-
-@media (max-width:600px) {
+@media (max-width:780px) {
     form {
         width: 400px;
+    }
+
+    .container {
+        margin-top: 0px;
     }
 }
