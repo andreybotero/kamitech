@@ -1,8 +1,10 @@
+var i = 0;
+
 function Open() {
+    i ++;
     document.getElementById("header1").hidden = false;
-    document.getElementById("header2").hidden = true;
-}
-function Close() {
-    document.getElementById("header1").hidden = true;
-    document.getElementById("header2").hidden = false;
+    if (i > 1) {
+        document.getElementById("header1").hidden = true;
+        i = 0;
+    }
 }
