@@ -1,5 +1,4 @@
-    
-    /* tirar espaços brancos por volta do site */
+/* tirar espaços brancos por volta do site */
 * {
     padding: 0;
     margin: 0;
@@ -173,7 +172,7 @@ nav ul li:hover .sub-sobre {
     background-color: aqua;
     margin-top: 4px;
     margin-left: -35px;
-    
+
 
 }
 
@@ -183,7 +182,7 @@ nav ul li:hover .sub-sobre {
     margin-top: -40px;
     margin-left: 50px;
     background-color: aqua;
-    
+
 }
 
 nav ul li:hover .sub-sobre ul li:hover {
@@ -227,5 +226,5 @@ nav ul li:hover .sub-sobre ul li {
         padding: 1%
     }
 
-    
-}   
+
+}
