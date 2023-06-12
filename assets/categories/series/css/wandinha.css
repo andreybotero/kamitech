@@ -1,4 +1,6 @@
-*{
+  
+    
+    *{
   margin:0;
   padding:0;
 box-sizing: border-box;
@@ -226,29 +228,6 @@ gap: 2px;
 footer iframe {
   margin-bottom: -5px;
 }
-<<<<<<< HEAD
-#infosection button {
-  min-width: 150px;
-  padding: 8px 18px;
-  border: 1px solid #0b0b0b;
-  border-radius: 25px;
-  font-size: 18px;
-  background-color: #2b2a2f;
-  color: #aaabb0;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.4s;
-  margin-top: 2%;
-  margin-left: 45%;
-  margin-bottom: 2%;
-}
-
-#infosection button:hover {
-  color: #787cb5;
-  border-color: #aaabb0;
-  background-color: #222025;
-}
-=======
 @media (max-width: 768px) {
   footer {
       display: flex;
@@ -355,4 +334,3 @@ footer iframe {
     }
 }
 
->>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143
