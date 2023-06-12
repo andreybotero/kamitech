@@ -120,7 +120,7 @@ function editar(id) {
     if (removenovo > 3) {
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
 }
-var edited = '<p> edited <p/>';
+var edited = '<p id="edited"> edited <p/>';
 
     if (titulo != "") {
         document.getElementById("T" + id ).innerHTML = title;
