@@ -38,12 +38,8 @@ nav ul li:hover .sub-sobre ul li:hover {
     background-color: rgb(82, 177, 194);
 }
 
-li {
-    margin-top: 10px;
-}
-
-#btn1 {
-    margin: 10px;
+#espaco {
+    margin-top: 60px;
 }
 
 ul {
