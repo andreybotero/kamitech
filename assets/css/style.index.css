@@ -384,6 +384,7 @@ article .container aside .card-2 img {
 
     #footer {
         height: 355px;
+        margin-bottom: -10px;
     }
 
     #h2slide1 {
