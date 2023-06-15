@@ -280,6 +280,10 @@ article .container aside .card-2 img {
     display: none;
 }
 
+#footer {
+    margin-bottom: -10px;
+}
+
 
 
 @media (max-width:768px) {
