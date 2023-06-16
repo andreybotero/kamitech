@@ -1,3 +1,19 @@
+#infosection button {
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
 @media (min-width: 600px) {
     * {
         padding: 0;
@@ -26,7 +42,7 @@
         height: 100%;
         
     }
-
+    
 
     .webinar-grid {
         max-width: 1170px;
@@ -195,6 +211,25 @@
         box-sizing: border-box;
 
     }
+    
+    #infosection button {
+        min-width: 150px;
+        padding: 8px 10px;
+        border: 1px solid #0b0b0b;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: #2b2a2f;
+        color: #aaabb0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-top: 2%;
+        margin-left: 35%;
+        margin-bottom: 2%;
+    }
+      
+        
+  
 
     div {
         grid: none;
