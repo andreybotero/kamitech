@@ -247,7 +247,6 @@ input:checked+.avaliacaoMateria article section #mais {
     gap: 2px;
 }
 
-<<<<<<< HEAD
 footer iframe {
     margin-bottom: -5px;
 }
@@ -272,5 +271,18 @@ footer iframe {
     border-color: #aaabb0;
     background-color: #222025;
 }
-=======
->>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143
+
+#iframe2 {
+    display: none;
+}
+
+
+@media (max-width: 780px) {
+    #iframe2 {
+        display: inline;
+    }
+
+    iframe {
+    display: none;
+    }
+}
