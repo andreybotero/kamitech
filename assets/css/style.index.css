@@ -201,7 +201,7 @@ article .container section .botao form button {
     display: flex;
     justify-content: space-evenly;
     margin-left: 100px;
-
+    margin-top: 50px;
 }
 
 article .container section .card {
@@ -212,13 +212,11 @@ article .container section .card {
     height: auto;
     display: inline-block;
     text-align: center;
-
 }
 
 article .container section .card img {
     width: 100%;
     object-fit: cover;
-
 }
 
 article .container section .card form button {
@@ -280,12 +278,20 @@ article .container aside .card-2 img {
     display: none;
 }
 
+#footer {
+    margin-bottom: -10px;
+}
+
 
 
 @media (max-width:768px) {
     header {
-        height: 50%;
+        height: 100%;
+    }
 
+    .navigation {
+        position: absolute;
+        top: 90%;
     }
 
     #iframe1 {
@@ -295,13 +301,13 @@ article .container aside .card-2 img {
     #iframe2 {
         display: inline;
     }
+
     .centralizarCards {
         display: flex;
         justify-content: space-evenly;
         margin-left: 0px;
-    
     }
-    
+
 
     #slide1sec {
         margin-top: -10%;
@@ -334,6 +340,10 @@ article .container aside .card-2 img {
         height: 60vh;
     }
 
+    main {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
 
     aside {
         display: none;
@@ -374,7 +384,8 @@ article .container aside .card-2 img {
     }
 
     #footer {
-        height: 360px;
+        height: 355px;
+        margin-bottom: -10px;
     }
 
     #h2slide1 {

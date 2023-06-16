@@ -8,3 +8,5 @@ function Open() {
         i = 0;
     }
 }
+
+document.getElementById("header2").style.transition = "all 2s";
