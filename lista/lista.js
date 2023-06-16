@@ -36,6 +36,14 @@ function adicionar() {
     var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '<p id= "novo' + i +'"> novo </p></div>';
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
+    var dataatual = new Date();
+    var dataselecionada = new Date(data); 
+
+    if (dataselecionada < dataatual) {
+        alert("Digite uma data válida.");
+    } else {
+        certos++;
+    }
 
 
 
@@ -72,7 +80,7 @@ function adicionar() {
     if (list[3].length != 0) {
         certos ++;
     }
-    if (certos != 4) {
+    if (certos != 5) {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
