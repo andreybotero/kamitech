@@ -40,9 +40,13 @@ function adicionar() {
     document.getElementById("fo").style.display = "none";
     var dataatual = new Date();
     var dataselecionada = new Date(data);
+    
+
+
+    
 
     if (dataselecionada < dataatual) {
-        alert("Digite uma data válida.");
+        alert("Digite a data de hoje ou maior.");
     } else {
         certos++;
     }
