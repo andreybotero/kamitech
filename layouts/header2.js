@@ -1,12 +1,29 @@
-var i = 0;
+var header = document.getElementById('header');
+var navigationHeader = document.getElementById('navigation_header');
+var showSidebar = false;
 
-function Open() {
-    i ++;
-    document.getElementById("header1").hidden = false;
-    if (i > 1) {
-        document.getElementById("header1").hidden = true;
-        i = 0;
-    }
+function toggleSidebar() {
+  showSidebar = !showSidebar;
+  if (showSidebar) {
+    navigationHeader.style.marginLeft = '-10vw';
+    navigationHeader.style.animationName = 'showSidebar';
+  } else {
+    navigationHeader.style.marginLeft = '-100vw';
+    navigationHeader.style.animationName = 'showSidebar';
+  }
 }
 
-document.getElementById("header2").style.transition = "all 2s";
+function closeSidebar() {
+  if (showSidebar) {
+    showSidebar = false; // Corrigido: alterado para false
+    toggleSidebar();
+  }
+}
+
+window.addEventListener('resize', function (event) {
+  if (window.innerWidth > 768 && showSidebar) {
+    showSidebar = false; // Corrigido: alterado para false
+    toggleSidebar();
+  }
+});
+    
