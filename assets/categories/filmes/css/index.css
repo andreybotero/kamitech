@@ -215,10 +215,6 @@ h1 {
     }
 
     #iframe2 {
-        display: inline;
-    }
-
-    iframe {
         display: none;
     }
 }
