@@ -23,8 +23,9 @@ body {
     background-color: #282d32;
     justify-content: space-between;
     padding: 0 10%;
-    height: 10%;
+    height: 13%;
     box-shadow: 1px 1px 4px #353c43;
+    overflow: scroll;
 }
 
 .navigation_header {
@@ -32,11 +33,16 @@ body {
     z-index: 2;
 }
 
-.content {
-    padding-top: 5em;
-    text-align: center;
-    height: 100vh;
-    transition: 1s;
+button {
+    list-style-type: none;
+    border: none;
+    background-image: linear-gradient(45deg, #c1d8f6, #509bfa);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .4s;
 }
 
 .navigation_header a {
@@ -65,11 +71,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
     .navigation_header {
         position: absolute;
-        flex-direction: column !important;
+        flex-direction: column;
         top: 0;
-        background: var(--color-dark5);
+        background: #282d32;
         height: 100%;
         width: 35vw;
         padding: 1em;

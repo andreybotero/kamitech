@@ -262,11 +262,12 @@ form p {
     form {
         width: 400px;
         height: 450px;
+        
     
     }
     .container{
         margin: 0px;
-        margin-top: 60px;
+        margin-top: 90px;
     }
     
 }
