@@ -243,6 +243,11 @@ p {
    p{
     text-align: center;
    }
-
+#ifame{
+    display: none;
+}
+iframe2{
+    display: inline;
+}
    
 }
