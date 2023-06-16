@@ -170,7 +170,7 @@ footer iframe {
 
 .header-upper iframe:hover {
   height: 500px;
-<<<<<<< HEAD
+
 } 
 
 #infosection button {
@@ -190,10 +190,10 @@ footer iframe {
 }
 
 #infosection button:hover {
-  color: #787cb5;
+  
   border-color: #aaabb0;
   background-color: #222025;
-=======
+
 } }
 @media (max-width: 600px) {
   * {
@@ -290,5 +290,5 @@ border-top-left-radius: 5px;
 .h1titulo{
   text-align: center;
 }
->>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143
+
 }

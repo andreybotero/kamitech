@@ -237,12 +237,17 @@ p {
    }
    .edit_desf {
     width: 80%;
-    
+    font-size: 13px;
    }
 
    p{
     text-align: center;
    }
-
+#ifame{
+    display: none;
+}
+iframe2{
+    display: inline;
+}
    
 }

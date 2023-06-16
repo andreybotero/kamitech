@@ -328,5 +328,11 @@ a:hover {
         width: 70%;
         height: 50%;
     }
+    #ifame{
+display: none;
+    }
+    #iframe2{
+        display: inline;
+    }
 
 }

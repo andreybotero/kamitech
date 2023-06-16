@@ -294,7 +294,7 @@ footer {
 .container2 {
     text-align: center;
 }
-<<<<<<< HEAD
+
 #infosection button {
     min-width: 150px;
     padding: 8px 18px;
@@ -316,7 +316,7 @@ footer {
     border-color: #aaabb0;
     background-color: #222025;
 }
-=======
+
 
 @media (max-width: 768px){
     
@@ -543,4 +543,3 @@ footer {
             display: none;
         }
     }
->>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143
