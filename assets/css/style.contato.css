@@ -233,4 +233,11 @@ form .input-single .input:valid~label {
         margin-top: 90px;
     }
     
+    .footer{
+        position: fixed;
+        width: 90%;
+        text-align: center;
+    }
+
+    }
 }
