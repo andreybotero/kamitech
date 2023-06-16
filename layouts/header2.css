@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     padding: 0 10%;
     height: 10%;
-    box-shadow: 1px 1px 4px #282d32;
+    box-shadow: 1px 1px 4px #353c43;
 }
 
 .navigation_header {
@@ -41,17 +41,17 @@ body {
 
 .navigation_header a {
     text-decoration: none;
-    color: var(--color-purple);
+    color: white;
     transition: 1s;
     font-weight: bold;
 }
 
 .navigation_header a:hover {
-    color: var(--color-white);
+    color: white;
 }
 
 .active {
-    background: var(--color-dark3);
+    background: #282d32;
     padding: 10px;
     border-radius: 10px;
 }
@@ -59,7 +59,7 @@ body {
 .btn_icon_header {
     background: transparent;
     border: none;
-    color: var(--color-white);
+    color: white;
     cursor: pointer;
     display: none;
 }
