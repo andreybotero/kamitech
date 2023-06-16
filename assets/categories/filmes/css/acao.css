@@ -197,7 +197,7 @@ footer iframe {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   * {
     padding: 0;
     margin: 0;
