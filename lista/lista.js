@@ -109,7 +109,7 @@ function editar(id) {
     var tudo = title + date + descri + creater + button1 + button2;
     
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
-}
+
 var edited = '<p> edited <p/>';
 
     if (titulo != "") {
@@ -124,7 +124,7 @@ var edited = '<p> edited <p/>';
     if (autor != "") {
         document.getElementById("A" + id ).innerHTML = creater;
     }
-    divs.innerHTML += edited;
+    divs.innerHTML += edited;}
 
 
 function desfazer(id) {
