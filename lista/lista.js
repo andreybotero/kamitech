@@ -1,19 +1,20 @@
 var i = 0;
 var edit = 0;
 var certos = 0;
-var removenovo = i - 3;
 var text1 = '<h1 class="result"> Título:    </h1>';
 var text2 = '<h1 class="result"> Data:      </h1>';
 var text3 = '<h1 class="result"> Descrição: </h1>';
 var text4 = '<h1 class="result"> Autor:     </h1>';
 var dataarr = [];
+var geral = [];
 
 
 function adicionar() {
+    var removenovo = i - 1;
     
 
     i++
-    document.getElementById("fo").style.display = "none";
+    //document.getElementById("fo").style.display = "none";
 
     var titulo = document.getElementById("Titulo").value;
     var title = ' <div id="geral"> <div id="infos"> ' + text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
@@ -44,6 +45,7 @@ function adicionar() {
         var tudo = title + date + descri + creater + button1 + button2;
         var div = '<div class="noticia_add" id="div' + i + '">' + tudo + '<p id= "novo' + i + '"> novo </p></div>';
     }
+    geral.push(div);
 
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
@@ -63,11 +65,10 @@ function adicionar() {
          else {
           certos++;
         }
-      
 
-
-
-    document.body.innerHTML += div + footer;
+    document.getElementById("body").innerHTML += geral[i - 1]; 
+    document.body.innerHTML += footer;   
+    
     if (i > 1) {
         var a = i - 1;
         document.getElementById("fo" + a).style.display = "none";
@@ -109,9 +110,12 @@ function adicionar() {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
-    if (removenovo > 0) {
-        document.getElementById("novo" + removenovo).hidden = true;
+    if (i > 2) {
+        document.getElementById("novo" + removenovo).innerHTML = "";
     }
+
+     
+     console.log(removenovo);
 
     document.getElementById("botao_add").innerHTML = "Adicione";
 

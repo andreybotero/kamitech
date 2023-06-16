@@ -22,6 +22,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    
 
     
 
@@ -147,6 +148,7 @@
     iframe {
         margin-bottom: -5px;
     }
+    
 
 }
 @media (min-width: 600px) {
