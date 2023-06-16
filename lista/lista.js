@@ -79,8 +79,6 @@ function adicionar() {
     if ( removenovo > 0 ) {
         document.getElementById("novo" + removenovo).hidden = true;
         }
-
-        console.log(datearray.reverse());
         
 }
 
