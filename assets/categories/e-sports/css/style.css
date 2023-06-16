@@ -20,24 +20,24 @@ body {
     left: 0;
     position: absolute;
     width: 100%;
-    
+
 }
 
 .header-upper iframe {
     height: 280px;
 }
 
- .header-upper iframe:hover {
+.header-upper iframe:hover {
     height: 500px;
-} 
+}
 
 .main2 {
-    margin-top: 185px;
     margin-bottom: 20px;
 }
 
 /*main*/
-main { margin-top: 280px;
+main {
+    margin-top: 80px;
     background-color: white;
     height: 100%;
     padding: 20px;
@@ -57,7 +57,7 @@ h1 {
     -moz-box-shadow: 1px 2px 21px 1px rgba(0, 0, 0, 0.73);
     box-shadow: 1px 2px 21px 1px rgba(0, 0, 0, 0.73);
 
-    
+
     text-align: justify;
     margin-right: 10px;
     margin-left: 10px;
@@ -100,16 +100,11 @@ h2 {
 }
 
 a {
-
-
-
     text-align: justify;
     margin-right: 10px;
     margin-left: 10px;
     width: 50%;
     height: 500px;
-    background-color: white;
-
     text-decoration: none;
     color: black;
 }
@@ -121,7 +116,7 @@ a:hover {
 }
 
 /* fazendo novo card*/
-.container{
+.container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -156,7 +151,7 @@ a:hover {
     width: auto;
     position: relative;
     top: 70px;
-    
+
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -171,10 +166,6 @@ a:hover {
     background: white;
     color: rgb(15, 121, 177) !important;
 }
-
-
-
-
 
 .linkblock .img1 {
     width: 100%;
@@ -200,9 +191,10 @@ a:hover {
     font-size: 15px;
     padding: 0 10px;
     opacity: 1;
-    
+
 }
-.linkblock .sub2{
+
+.linkblock .sub2 {
     position: absolute;
     top: 350px;
     transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
@@ -214,11 +206,13 @@ a:hover {
     padding: 0 10px;
     opacity: 1;
 }
-.linkblock:hover .sub2{
+
+.linkblock:hover .sub2 {
     top: -20px;
     opacity: 0;
 }
-.linkblock .sub3{
+
+.linkblock .sub3 {
     position: absolute;
     top: 220px;
     transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
@@ -230,15 +224,18 @@ a:hover {
     padding: 0 10px;
     opacity: 1;
 }
-.linkblock:hover .sub3{
+
+.linkblock:hover .sub3 {
     top: -20px;
     opacity: 0;
 }
+
 .linkblock:hover .sub1 {
     top: -20px;
     opacity: 0;
 }
-.linkblock .sub4{
+
+.linkblock .sub4 {
     position: absolute;
     top: 270px;
     transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
@@ -250,7 +247,8 @@ a:hover {
     padding: 0 10px;
     opacity: 1;
 }
-.linkblock:hover .sub4{
+
+.linkblock:hover .sub4 {
     top: -20px;
     opacity: 0;
 }
@@ -286,6 +284,7 @@ a:hover {
     height: auto;
     border-radius: 5px 5px 0 0;
 }
+
 #s2 .img1 {
     width: 100%;
     height: auto;
@@ -296,10 +295,6 @@ a:hover {
 .archive {
     display: none;
 }
-
-
-
-/* .webinar-content-box p {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;} */
 
 
 /* TABLET PORTRAIT */
@@ -346,7 +341,20 @@ a:hover {
 }
 
 
+#iframe2 {
+    display: none;
+}
 
 @media (max-width: 786px) {
-    
+
+
+    #iframe2 {
+        display: inline;
+    }
+
+    #ifame {
+        display: none;
+    }
+
+
 }
