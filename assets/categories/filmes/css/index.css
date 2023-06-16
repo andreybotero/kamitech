@@ -235,10 +235,6 @@ h1 {
         display: inline;
     }
 
-    iframe {
-        display: none;
-    }
-    
     #infosection button {
         min-width: 150px;
         padding: 8px 10px;
@@ -354,5 +350,8 @@ h1 {
     .h1vesti {
         text-align: center;
         font-size: xx-large;
+    }
+    #ifame{
+        display: none;
     }
 }
