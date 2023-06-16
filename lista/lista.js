@@ -15,9 +15,10 @@ function adicionar() {
     document.getElementById("Titulo").value = '';
     var title = ' <div id="geral"> <div id="infos"> '+ text1 + '<p id="T' + i + '" class="paragrafos">' + titulo + '</p>';
 
-    var data = document.getElementById("Data").value;
-    document.getElementById("Data").value = '';
-    var date =  text2 +'<p id="D' + i + '" class="paragrafos">' + data + '</p>';
+    var inputData = document.getElementById("Data").value;
+    var data = inputData.split("-");
+    var dataFormatada = data[2] + "/" + data[1] + "/" + data[0];
+    var date = text2 + '<p id="D' + i + '" class="paragrafos">' + dataFormatada + '</p>';
 
     var des = document.getElementById("Descricao").value;
     document.getElementById("Descricao").value = '';
@@ -36,14 +37,6 @@ function adicionar() {
     var footer = '<footer id="fo' + i + '"> <iframe src="../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe></footer>'
     document.getElementById("fo").style.display = "none";
 
-    var dataatual = new Date();
-    var dataselecionada = new Date(data); 
-
-    if (dataselecionada < dataatual) {
-        alert("Digite uma data válida.");
-    } else {
-        certos++;
-    }
 
 
     document.body.innerHTML += div + footer;
@@ -79,7 +72,7 @@ function adicionar() {
     if (list[3].length != 0) {
         certos ++;
     }
-    if (certos != 5) {
+    if (certos != 4) {
         document.getElementById("div" + i).style.display = "none";
     }
     certos = 0;
@@ -116,7 +109,7 @@ function editar(id) {
     var tudo = title + date + descri + creater + button1 + button2;
     
     var div = '<div id="Div' + i + '">' + tudo + '<p> edited <p/></div>';
-}
+
 var edited = '<p> edited <p/>';
 
     if (titulo != "") {
@@ -131,7 +124,7 @@ var edited = '<p> edited <p/>';
     if (autor != "") {
         document.getElementById("A" + id ).innerHTML = creater;
     }
-    divs.innerHTML += edited;
+    divs.innerHTML += edited;}
 
 
 function desfazer(id) {
