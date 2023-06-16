@@ -24,7 +24,6 @@ body {
   left: 0;
   position: absolute;
   width: 100%;
-
 }
 
 .header-upper iframe {
@@ -55,7 +54,7 @@ main {
   padding: 20px 30px;
   position: relative;
   margin: 100px 0;
-  z-index: 10;
+  z-index: 0;
 }
 
 .img-container {
@@ -179,6 +178,12 @@ footer iframe {
   margin-bottom: -5px;
 }
 
+#ifame{
+  display: inline;
+}
+#iframe2{
+  display: none;
+}
 @media (max-width: 780px) {
 
   h1 {
@@ -215,4 +220,11 @@ footer iframe {
   .navegation {
     justify-content: center;
   }
+  #ifame{
+    display: none;
+}
+#iframe2{
+    display: inline;
+}
+
 }
