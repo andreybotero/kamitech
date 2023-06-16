@@ -70,6 +70,7 @@ button {
     display: none;
 }
 
+
 @media screen and (max-width: 768px) {
 
     .navigation_header {
@@ -86,6 +87,10 @@ button {
 
     .btn_icon_header {
         display: block;
+    }
+
+    .linkblock {
+        z-index: 1;
     }
 }
 
