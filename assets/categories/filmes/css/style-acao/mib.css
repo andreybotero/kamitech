@@ -1,3 +1,18 @@
+#infosection button{
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 47%;
+    margin-bottom: 2%;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -309,6 +324,23 @@ input:checked+.avaliacaoMateria article section #mais {
     
     }
     
+    /* button*/
+
+    #infosection button{
+        padding: 6px;
+        border: 1px solid #0b0b0b;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: #2b2a2f;
+        color: #aaabb0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-top: 2%;
+        margin-left: 40%;
+        margin-bottom: 2%;
+      }
+
    .header-upper iframe {
         height: 280px;
     }
