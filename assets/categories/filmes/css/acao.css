@@ -317,5 +317,8 @@ footer iframe {
   .h1titulo {
     text-align: center;
   }
+  #ifame{
+    display: none;
+  }
 
 }
