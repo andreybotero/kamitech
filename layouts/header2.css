@@ -71,12 +71,13 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+
     .navigation_header {
         position: absolute;
         flex-direction: column;
         top: 0;
         background: #282d32;
-        height: 90%;
+        height: 100%;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;

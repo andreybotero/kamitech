@@ -14,6 +14,16 @@
     margin-bottom: 2%;
 }
 
+#iframe2 {
+    display: none;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+
+
 @media (min-width: 600px) {
     * {
         padding: 0;
@@ -126,6 +136,7 @@
         opacity: 0;
     }
 
+
     .link-block h2 {
         position: absolute;
         margin-top: 98%;
@@ -202,6 +213,14 @@
         margin-bottom: -5px;
         width: 100%;
     }
+
+    #iframe2 {
+        display: inline;
+    }
+
+    iframe {
+        display: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -210,6 +229,14 @@
         margin: 0;
         box-sizing: border-box;
 
+    }
+
+    #iframe2 {
+        display: inline;
+    }
+
+    iframe {
+        display: none;
     }
     
     #infosection button {
