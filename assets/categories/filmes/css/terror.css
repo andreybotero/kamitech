@@ -192,12 +192,10 @@
     cursor: pointer;
     transition: all 0.4s;
     margin-top: 2%;
-    margin-left: 45%;
     margin-bottom: 2%;
   }
   
   #infosection button:hover {
-    color: #787cb5;
     border-color: #aaabb0;
     background-color: #222025;
   }
