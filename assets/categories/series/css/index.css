@@ -180,10 +180,16 @@ footer iframe {
         box-sizing: border-box;
     }
 
+    a{
+background-color: pink !important;
+    }
     #a1 {
-        flex-direction: column;
 
-       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+       background-color: blue;
     }
 
     #art {
@@ -205,6 +211,11 @@ footer iframe {
     
     #iframe2{
         display: inline;
+        z-index: 9999;
+    }
+
+    .container2{
+        background-color: green;
     }
 
 }
