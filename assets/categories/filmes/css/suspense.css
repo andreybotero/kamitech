@@ -201,6 +201,9 @@
     border-color: #aaabb0;
     background-color: #222025;
   }
+  #ifame{
+    display: none;
+  }
   }
   
   @media (max-width: 768px) {
@@ -303,5 +306,11 @@
   }
   .h1titulo{
     text-align: center;
+  }
+  #iframe2{
+    display: inline;
+  }
+  #ifame{
+    display: none;
   }
   }
