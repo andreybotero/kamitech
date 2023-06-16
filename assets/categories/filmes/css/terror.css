@@ -1,10 +1,4 @@
-@media (min-width: 600px) {
-    * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
-}
 
 .linha{
     border: solid 1px #2155a8;
@@ -159,7 +153,6 @@ main { margin-top: 280px;
     left: 0;
     position: absolute;
     width: 100%;
-    
 }
 
 .header-upper iframe {
@@ -168,7 +161,6 @@ main { margin-top: 280px;
 
  .header-upper iframe:hover {
     height: 500px;
-<<<<<<< HEAD
 } 
 #infosection button {
     min-width: 150px;
@@ -191,48 +183,50 @@ main { margin-top: 280px;
     border-color: #aaabb0;
     background-color: #222025;
 }
-=======
-} }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
     * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
-  
-  }
+      }
+
   div {
       grid: none;
-  }
+      }
   
+     
   #some {
       display: none;
-  }
+     }
   
   #a2 {
       display: flex;
       flex-direction: column;
-  }
+      }
   
   .link-block .sub1 {
       font-size: 30px;
-  }
+      }
   main{
       display: flex;
       flex-direction: column;
-  
-  }
+     }
+
   .webinar-grid {
-  
       display: flex;
       flex-direction: column;
-     
+      width: 70%;
   }
+
   .link-block  {
       flex-direction: column;
       margin: 10%;
       width: 50%;
+      
   }
+
   #bnt1 {
       margin-top: 100px;
   }
@@ -248,6 +242,7 @@ main { margin-top: 280px;
   width: 100%;
   height: 100%;
   }
+
   .link-block {
   position: relative;
   width: 70%;
@@ -291,6 +286,4 @@ main { margin-top: 280px;
   .h1vesti {
     text-align: center;
 }
-  }
-  
->>>>>>> 3b8a487c4f559e40598cd46b0ede1cc08b259143
+}
