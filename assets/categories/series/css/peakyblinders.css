@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+#infosection button{
+  padding: 6px;
+  border: 1px solid #0b0b0b;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: #2b2a2f;
+  color: #aaabb0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-top: 2%;
+  margin-left: 47%;
+  margin-bottom: 2%;
+}
+
 body {
   font-family: system-ui;
   font-size: 20px;
@@ -266,6 +281,21 @@ footer iframe {
     width: 100%;
   }
 
+  #infosection button{
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 47%;
+    margin-bottom: 2%;
+  }
+  
   #img1 {
     justify-content: left;
     width: 50%;
