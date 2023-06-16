@@ -212,13 +212,11 @@ article .container section .card {
     height: auto;
     display: inline-block;
     text-align: center;
-
 }
 
 article .container section .card img {
     width: 100%;
     object-fit: cover;
-
 }
 
 article .container section .card form button {
@@ -308,7 +306,6 @@ article .container aside .card-2 img {
         display: flex;
         justify-content: space-evenly;
         margin-left: 0px;
-
     }
 
 
