@@ -6,14 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../assets/categories/filmes/css/suspemse/fragmentado.css">
     <title>Fragmentado - KamiNews</title>
+    <link rel="stylesheet" href="../../../../layouts/header2.css">
 </head>
 
 <body>
 
     <body>
         <header class="header-upper">
-            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
+                id="ifame"></iframe>
         </header>
+
+        <header id="iframe2">
+
+            <body id="body">
+                <div class="header" id="header">
+                    <button onclick="toggleSidebar()" class="btn_icon_header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <div class="logo_header">
+                        <img src="../../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech"
+                            class="img_logo_header">
+                    </div>
+                    <div class="navigation_header" id="navigation_header">
+                        <button onclick="toggleSidebar()" class="btn_icon_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <a href="../../../../index.html">Início</a>
+                        <a href="../../../../.pages/categories/filmes/index.html">Filmes</a>
+                        <a href="../../../../pages/categories/series/index.html">Séries</a>
+                        <a href="../../../../pages/categories/livros/index.html">Livros</a>
+                        <a href="../../../../pages/categories/e-sports/index.html">E-sports</a>
+                        <a href="../../../../pages/categories/vestibular/index.html">Vestibular</a>
+                        <a href="../../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre
+                            nós</a>
+                        <a href="../../../../pages/contato.html">Contato</a>
+                        <a href="../../../../pages/feedback.html">Feedback</a>
+                        <a href="../../../../lista/lista.html">Lista</a>
+
+                        <a target="_parent" href="../../../../music/musica.html">
+                            <button type="button" id="music">Música</button>
+                        </a>
+
+                    </div>
+                </div>
+
+            </body>
+            <script>
+                var header = document.getElementById('header');
+                var navigationHeader = document.getElementById('navigation_header');
+                var content = document.getElementById('content');
+                var showSidebar = false;
+
+                function toggleSidebar() {
+                    showSidebar = !showSidebar;
+                    if (showSidebar) {
+                        navigationHeader.style.marginLeft = '-10vw';
+                        navigationHeader.style.animationName = 'showSidebar';
+                    }
+                    else {
+                        navigationHeader.style.marginLeft = '-100vw';
+                        navigationHeader.style.animationName = '';
+                    }
+                }
+
+                function closeSidebar() {
+                    if (showSidebar) {
+                        showSidebar = false;
+                        toggleSidebar();
+                    }
+                }
+
+                window.addEventListener('resize', function (event) {
+                    if (window.innerWidth > 768 && showSidebar) {
+                        showSidebar = false;
+                        toggleSidebar();
+                    }
+                });
+
+            </script>
+
+        </header>
+
         <!-- titulo -->
         <h1 class="titulo">Fragmentado</h1>
 
@@ -23,9 +105,12 @@
             <div class="container">
                 <section id="s1">
                     <h2 class="h21">Sinopse</h2>
-                    <p>Kevin, um homem com 23 personalidades sequestra 3 garotas e as tranca em um cativeiro onde a
-                        chance de escapar é mínima, mas juntas elas bolam um plano para tentar escapar. Fragmentado
-                        discute principalmente Kevin (James McAvoy) e seu Transtorno Dissociativo de Identidade.b</p>
+                    <p>Kevin, um homem com 23 personalidades sequestra 3 garotas e as tranca em um cativeiro
+                        onde a
+                        chance de escapar é mínima, mas juntas elas bolam um plano para tentar escapar.
+                        Fragmentado
+                        discute principalmente Kevin (James McAvoy) e seu Transtorno Dissociativo de
+                        Identidade.b</p>
                 </section>
                 <!-- imagem do filme juntamente com a legenda -->
                 <article id="a3">
@@ -54,11 +139,13 @@
                             <h2>Curiosidades</h2>
                             <ul>
                                 <li>James McAvoy quebrou sua mão durante a produção do filme;</li>
-                                <li>O protagonista do filme é inspirado em Billy Milligan, um assassino que alegou ter
+                                <li>O protagonista do filme é inspirado em Billy Milligan, um assassino que
+                                    alegou ter
                                     múltiplas personalidades para seus crimes;
                                 </li>
 
-                                <li>Refilmaram várias vezes uma mesma cena até que a sombra das 23 escovas de dentes
+                                <li>Refilmaram várias vezes uma mesma cena até que a sombra das 23 escovas de
+                                    dentes
                                     formassem uma pessoa.</li>
 
 
@@ -77,7 +164,8 @@
                             </p>
                             <div class="legend">
                                 <h1>Vestibular</h1>
-                                <p>Conheça nosso tópico sobre vestibular e veja todas as informações que precisa.
+                                <p>Conheça nosso tópico sobre vestibular e veja todas as informações que
+                                    precisa.
                                 </p>
                             </div>
                         </a>
@@ -89,7 +177,8 @@
                             </p>
                             <div class="legend">
                                 <h1>Filmes</h1>
-                                <p>Conheça nosso tópico sobre filmes e veja algumas sugestões para assistir na sua
+                                <p>Conheça nosso tópico sobre filmes e veja algumas sugestões para assistir na
+                                    sua
                                     própria
                                     casa.
                                 </p>
@@ -103,7 +192,8 @@
                             </p>
                             <div class="legend">
                                 <h1>Livros</h1>
-                                <p>Conheça nosso tópico sobre livros e veja algumas sugestões dos mais variados gêneros.
+                                <p>Conheça nosso tópico sobre livros e veja algumas sugestões dos mais variados
+                                    gêneros.
                                 </p>
                             </div>
                         </a>
@@ -115,7 +205,8 @@
                             </p>
                             <div class="legend">
                                 <h1>Esports</h1>
-                                <p>Conheça nosso tópico sobre e-sports e veja as principais notícias sobre o competitivo
+                                <p>Conheça nosso tópico sobre e-sports e veja as principais notícias sobre o
+                                    competitivo
                                     de
                                     CS:GO e Valorant.
                                 </p>
@@ -124,12 +215,13 @@
                         <hr>
                         <a href="../../../categories/series/index.html" target="_parent" class="card-2">
                             <p>
-                                <img src="../../../../assets/images/theLastofUs - newNoticias.jpg"
-                                    width="80px" alt="imagemTheLastOfUs">
+                                <img src="../../../../assets/images/theLastofUs - newNoticias.jpg" width="80px"
+                                    alt="imagemTheLastOfUs">
                             </p>
                             <div class="legend">
                                 <h1>Series</h1>
-                                <p>Conheça nosso tópico sobre séries e veja algumas sugestões para assistir na sua
+                                <p>Conheça nosso tópico sobre séries e veja algumas sugestões para assistir na
+                                    sua
                                     própria
                                     casa.
                                 </p>
@@ -158,11 +250,11 @@
             </div>
 
             <div id="infosection">
-                <form  action="../../../categories/filmes/index.html">
+                <form action="../../../categories/filmes/index.html">
                     <div class="button">
-                      <button>Voltar</button>
-                  </form>
-                </div>
+                        <button>Voltar</button>
+                </form>
+            </div>
 
             <!--   checkbox para abrir e fechar os depoimentos -->
             <input type="checkbox" id="veja">
@@ -209,7 +301,8 @@
                                         alt="estrela">
                                 </div>
                                 <span>"The film is great, it has a very good and very complex context.
-                                    I really liked him for the story and the moments he has. I realy realy loveeeee this film"</span>
+                                    I really liked him for the story and the moments he has. I realy realy
+                                    loveeeee this film"</span>
                                 <p>Publicado em 05 de março de 2023</p>
                             </div>
                             <!-- depoimento 2 -->
@@ -232,13 +325,15 @@
                                         alt="estrela">
                                 </div>
                                 <span> "I really liked this movie because it shows about a crazy man who
-                                    he doesn't even know what's going on in the world or is out of his head in real life"
+                                    he doesn't even know what's going on in the world or is out of his head in
+                                    real life"
                                 </span>
                                 <p>Publicado em 4 de março de 2023</p>
                             </div>
                             <!-- depoimento 3 -->
                             <div class="card">
-                                <img class="user" src="../../../../assets/categories/filmes/images/Mark Ruffalo.jpg" alt="Mark Ruffalo">
+                                <img class="user" src="../../../../assets/categories/filmes/images/Mark Ruffalo.jpg"
+                                    alt="Mark Ruffalo">
                                 <h3>Mark Ruffalo </h3>
                                 <div class="stars">
                                     <img class="stars"
@@ -258,7 +353,8 @@
                                         alt="estrela">
                                 </div>
                                 <span>"A very good sensational film I learned a lot from this film it passes a
-                                    very good image a lesson in life the movie is incredible one of the best I've ever seen
+                                    very good image a lesson in life the movie is incredible one of the best
+                                    I've ever seen
                                     I attended. "</span>
                                 <p>Publicado em 06 de março de 2023</p>
                             </div>
