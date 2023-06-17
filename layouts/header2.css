@@ -23,15 +23,41 @@ body {
     background-color: #282d32;
     justify-content: space-between;
     padding: 0 10%;
-    height: 8%;
+    height: 13%;
     box-shadow: 1px 1px 4px #353c43;
     overflow: scroll;
 }
 
 .navigation_header {
     gap: 3em;
-    z-index: 999;
+    z-index: 2;
 }
+
+.linkblock {
+    margin-top: 250px;
+}
+
+/* fix footer */
+footer iframe {
+    margin-bottom: -10px;
+}
+
+
+#infosection button {
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
 #music {
     list-style-type: none;

@@ -93,6 +93,31 @@ h2 {
 
 
 
+.linkblock {
+    margin-top: 250px;
+}
+
+/* fix footer */
+footer iframe {
+    margin-bottom: -10px;
+}
+
+
+#infosection button {
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
 #a4 {
     display: flex;
@@ -299,7 +324,7 @@ a:hover {
 
 /* TABLET PORTRAIT */
 
-@media only screen and (min-width: 569px) and (max-width: 880px) {
+@media only screen and (min-width: 780px) and (max-width: 880px) {
     .linkblock {
         position: relative;
         width: 45%;
@@ -314,7 +339,34 @@ a:hover {
 
 /* MOBILE LANDSCAPE */
 
-@media only screen and (min-width: 0) and (max-width: 568px) {
+@media only screen and (min-width: 0) and (max-width: 578px) {
+
+    .linkblock {
+        margin-top: 0;
+    }
+
+    /* fix footer */
+    footer iframe {
+        margin-bottom: -10px;
+    }
+
+
+    #infosection button {
+        min-width: 150px;
+        padding: 8px 18px;
+        border: 1px solid #0b0b0b;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: #2b2a2f;
+        color: #aaabb0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+
     .linkblock {
         position: relative;
         width: 90%;
@@ -346,7 +398,30 @@ a:hover {
 }
 
 @media (max-width: 786px) {
-
+    .linkblock {
+        margin-top: 0;
+    }
+    
+    /* fix footer */
+    footer iframe {
+        margin-bottom: -10px;
+    }
+    
+    
+    #infosection button {
+        min-width: 150px;
+        padding: 8px 18px;
+        border: 1px solid #0b0b0b;
+        border-radius: 25px;
+        font-size: 18px;
+        background-color: #2b2a2f;
+        color: #aaabb0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 2%;
+    }
+    
 
     #iframe2 {
         display: inline;
