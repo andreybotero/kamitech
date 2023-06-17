@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../assets/categories/filmes/css/style-romance/acinco.css">
+    <link rel="stylesheet" href="../../../../layouts/header2.css">
     <title>A cinco passos de você - KamiNews</title>
 </head>
 
@@ -12,7 +13,87 @@
 
     <body>
         <header class="header-upper">
-            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0" id="ifame" ></iframe>
+
+            <header id="iframe2">
+
+                <body id="body">
+                    <div class="header" id="header">
+                        <button onclick="toggleSidebar()" class="btn_icon_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <div class="logo_header">
+                            <img src="../../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech"
+                                class="img_logo_header">
+                        </div>
+                        <div class="navigation_header" id="navigation_header">
+                            <button onclick="toggleSidebar()" class="btn_icon_header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-x" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                            <a href="../../../../index.html">Início</a>
+                            <a href="../../../../pages/categories/filmes/index.html">Filmes</a>
+                            <a href="../../../../pages/categories/series/index.html">Séries</a>
+                            <a href="../../../../pages/categories/livros/index.html">Livros</a>
+                            <a href="../../../../pages/categories/e-sports/index.html">E-sports</a>
+                            <a href="../../../../pages/categories/vestibular/index.html">Vestibular</a>
+                            <a href="../../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
+                            <a href="../../../../pages/contato.html">Contato</a>
+                            <a href="../../../../pages/feedback.html">Feedback</a>
+                            <a href="../../../../lista/lista.html">Lista</a>
+
+                            <a target="_parent" href="../../../../music/musica.html">
+                                <button type="button" id="music">Música</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </body>
+                <script>
+                    var header = document.getElementById('header');
+                    var navigationHeader = document.getElementById('navigation_header');
+                    var content = document.getElementById('content');
+                    var showSidebar = false;
+
+                    function toggleSidebar() {
+                        showSidebar = !showSidebar;
+                        if (showSidebar) {
+                            navigationHeader.style.marginLeft = '-10vw';
+                            navigationHeader.style.animationName = 'showSidebar';
+                        }
+                        else {
+                            navigationHeader.style.marginLeft = '-100vw';
+                            navigationHeader.style.animationName = '';
+                        }
+                    }
+
+                    function closeSidebar() {
+                        if (showSidebar) {
+                            showSidebar = false;
+                            toggleSidebar();
+                        }
+                    }
+
+                    window.addEventListener('resize', function (event) {
+                        if (window.innerWidth > 768 && showSidebar) {
+                            showSidebar = false;
+                            toggleSidebar();
+                        }
+                    });
+
+                </script>
+
+            </header>
+
+        </header>
         </header>
         <!-- titulo -->
         <h1 class="titulo">A cinco passos de você</h1>
@@ -23,7 +104,9 @@
             <div class="container">
                 <section id="s1">
                     <h2 class="h21">Sinopse</h2>
-                    <p>Stella passa muito tempo no hospital por causa de uma fibrose cística. Lá, ela conhece Will, que sofre da mesma doença. Eles são obrigados a manter 5 passos de distância, mas mesmo assim se apaixonam e tentar lidar com essa distância tão curta e tão longe ao mesmo tempo.</p>
+                    <p>Stella passa muito tempo no hospital por causa de uma fibrose cística. Lá, ela conhece Will, que
+                        sofre da mesma doença. Eles são obrigados a manter 5 passos de distância, mas mesmo assim se
+                        apaixonam e tentar lidar com essa distância tão curta e tão longe ao mesmo tempo.</p>
                 </section>
                 <!-- imagem do filme juntamente com a legenda -->
                 <article id="a3">
@@ -50,7 +133,8 @@
                             <h2>Curiosidades</h2>
                             <ul>
                                 <li>A Cinco Passos de Você é dedicado à Claire Wineland;</li>
-                                <li>No longa em questão, a personagem de Woodley havia sido inspirada na amiga de John Green, Esther Earl;
+                                <li>No longa em questão, a personagem de Woodley havia sido inspirada na amiga de John
+                                    Green, Esther Earl;
                                 </li>
 
 
@@ -134,127 +218,129 @@
             <!-- foto do elenco -->
 
             <h2 id="elenco">Elenco</h2>
-        <div class="container2">
-            <a><img id="img2" src="../../../../assets/categories/filmes/images/cole.jpg" width="107px" height="120px"
-                    alt="foto will"></a>
-            <a><img id="img2" src="../../../../assets/categories/filmes/images/julie.jpg" width="107px" height="120px"
-                    alt="foto julie "></a>
-            <a><img id="img2" src="../../../../assets/categories/filmes/images/enfermeira.jpg" width="107px"
-                    height="120px" alt="foto enfermeira "></a>
-            <a><img id="img2" src="../../../../assets/categories/filmes/images/stella.jpg" width="107px" height="120px"
-                    alt="foto stella   "></a>
-            <a><img id="img2" src="../../../../assets/categories/filmes/images/poe.jpg" width="107px" height="120px"
-                    alt="foto poe ramirez   "></a>
+            <div class="container2">
+                <a><img id="img2" src="../../../../assets/categories/filmes/images/cole.jpg" width="107px"
+                        height="120px" alt="foto will"></a>
+                <a><img id="img2" src="../../../../assets/categories/filmes/images/julie.jpg" width="107px"
+                        height="120px" alt="foto julie "></a>
+                <a><img id="img2" src="../../../../assets/categories/filmes/images/enfermeira.jpg" width="107px"
+                        height="120px" alt="foto enfermeira "></a>
+                <a><img id="img2" src="../../../../assets/categories/filmes/images/stella.jpg" width="107px"
+                        height="120px" alt="foto stella   "></a>
+                <a><img id="img2" src="../../../../assets/categories/filmes/images/poe.jpg" width="107px" height="120px"
+                        alt="foto poe ramirez   "></a>
 
-                    <div id="infosection">
-                        <form  action="../../../categories/filmes/romance/romance.html">
-                            <div class="button">
-                              <button>Voltar</button>
-                          </form>
-                        </div>
+                <div id="infosection">
+                    <form action="../../../categories/filmes/romance/romance.html">
+                        <div class="button">
+                            <button>Voltar</button>
+                    </form>
+                </div>
 
-        </div>
-        <!--   checkbox para abrir e fechar os depoimentos -->
-        <input type="checkbox" id="veja">
-        <!--   avaliacao dos depoimentos -->
-        <div class="avaliacaoMateria">
-            <article>
-                <section>
-                    <h1>Depoimentos (3)</h1>
-                    <label id="mais" for="veja">Veja todos</label>
-                    <label id="menos" for="veja">Veja menos</label>
-                </section>
-                <section class="notas">
-                    <h2>Média:</h2>
-                    <div class="media">
-                        <img class="stars"
-                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                            alt="estrela">
-                        <h2>9.5</h2>
-                    </div>
-                </section>
-                <!-- depoimentos -->
-                <div class="depoiments">
-                    <section class="cards">
-                        <!-- depoimento 1 -->
-                        <div class="card">
-                            <img class="user" src="../../../../assets/categories/filmes/images/hugh jackman.jpg"
-                                alt="Hugh Jackman">
-                            <h3>Hugh Jackman</h3>
-                            <div class="stars">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span>"I really liked the movie it brings a very good feeling. and very sad at the end more
-                                we can not take the merit. of the movie because it’s really very good."</span>
-                            <p>Publicado em 05 de março de 2023</p>
-                        </div>
-                        <!-- depoimento 2 -->
-                        <div class="card">
-                            <img class="user" src="../../../../assets/categories/filmes/images/eva mendes.jpg"
-                                alt="eva mendes">
-                            <h3>Eva Mendes</h3>
-                            <div class="stars">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span> "Perfect amazing fantastico these are my words about the movie. the way people
-                                squeeze, but the ending made me sad but the. movie is amazing."
-                            </span>
-                            <p>Publicado em 19 de março de 2023</p>
-                        </div>
-                        <!-- depoimento 3 -->
-                        <div class="card">
-                            <img class="user" src="../../../../assets/categories/filmes/images/kim basinger.jpg" alt="">
-                            <h3>Kim Basinger</h3>
-                            <div class="stars">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span>"I loved the movie very good liked a lot but I think. the end could have been a
-                                different way. the movie could end in a happy way, more was. the opposite."</span>
-                            <p>Publicado em 19 de março de 2023</p>
+            </div>
+            <!--   checkbox para abrir e fechar os depoimentos -->
+            <input type="checkbox" id="veja">
+            <!--   avaliacao dos depoimentos -->
+            <div class="avaliacaoMateria">
+                <article>
+                    <section>
+                        <h1>Depoimentos (3)</h1>
+                        <label id="mais" for="veja">Veja todos</label>
+                        <label id="menos" for="veja">Veja menos</label>
+                    </section>
+                    <section class="notas">
+                        <h2>Média:</h2>
+                        <div class="media">
+                            <img class="stars"
+                                src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                alt="estrela">
+                            <h2>9.5</h2>
                         </div>
                     </section>
-                </div>
-            </article>
-        </div>
+                    <!-- depoimentos -->
+                    <div class="depoiments">
+                        <section class="cards">
+                            <!-- depoimento 1 -->
+                            <div class="card">
+                                <img class="user" src="../../../../assets/categories/filmes/images/hugh jackman.jpg"
+                                    alt="Hugh Jackman">
+                                <h3>Hugh Jackman</h3>
+                                <div class="stars">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                </div>
+                                <span>"I really liked the movie it brings a very good feeling. and very sad at the end
+                                    more
+                                    we can not take the merit. of the movie because it’s really very good."</span>
+                                <p>Publicado em 05 de março de 2023</p>
+                            </div>
+                            <!-- depoimento 2 -->
+                            <div class="card">
+                                <img class="user" src="../../../../assets/categories/filmes/images/eva mendes.jpg"
+                                    alt="eva mendes">
+                                <h3>Eva Mendes</h3>
+                                <div class="stars">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                </div>
+                                <span> "Perfect amazing fantastico these are my words about the movie. the way people
+                                    squeeze, but the ending made me sad but the. movie is amazing."
+                                </span>
+                                <p>Publicado em 19 de março de 2023</p>
+                            </div>
+                            <!-- depoimento 3 -->
+                            <div class="card">
+                                <img class="user" src="../../../../assets/categories/filmes/images/kim basinger.jpg"
+                                    alt="">
+                                <h3>Kim Basinger</h3>
+                                <div class="stars">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                    <img class="stars"
+                                        src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                                        alt="estrela">
+                                </div>
+                                <span>"I loved the movie very good liked a lot but I think. the end could have been a
+                                    different way. the movie could end in a happy way, more was. the opposite."</span>
+                                <p>Publicado em 19 de março de 2023</p>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
         </main>
         <footer>
             <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px"
