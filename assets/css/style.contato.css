@@ -256,36 +256,42 @@ form p {
 
 /* animação abrir janela modal */
 
-#ifame{
+#ifame {
     display: inline;
 }
-#iframe2{
+
+#iframe2 {
     display: none;
 }
 
 @media (max-width:780px) {
     form {
+        margin-top: -500px;
+        border: 1px solid #000000;
+        background-color: #fff;
         width: 400px;
         height: 450px;
-        
-    
+        padding: 40px;
+        border-radius: 40px;
     }
-    .container{
+
+    .container {
         margin: 0px;
         margin-top: 90px;
     }
-    
-    .footer{
+
+    .footer {
         position: fixed;
         width: 90%;
         text-align: center;
-        bottom: 0;
-    }
-    #ifame{
-        display: none;
-    }
-    #iframe2{
-        display: inline;
+        top: 100;
     }
 
+    #ifame {
+        display: none;
     }
+
+    #iframe2 {
+        display: inline;
+    }
+}
