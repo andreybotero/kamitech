@@ -1,4 +1,6 @@
-
+#iframe2 {
+    display: none;
+}
 
 
 #infosection button {
@@ -306,7 +308,16 @@ input:checked+.avaliacaoMateria article section #mais {
 .container2 {
     text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 780px) {
+    
+    #iframe2 {
+        display: inline;
+    }
+
+    #ifame{
+        display: none;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -325,7 +336,7 @@ input:checked+.avaliacaoMateria article section #mais {
         cursor: pointer;
         transition: all 0.4s;
         margin-top: 2%;
-        margin-left: 45%;
+        margin-left: 32%;
         margin-bottom: 2%;
     }
     
