@@ -293,7 +293,9 @@ input:checked+.avaliacaoMateria article section #mais {
 
 /* fix footer */
 
-
+footer iframe {
+    margin-bottom: -10px;
+}
 
 #elenco {
     margin-bottom: 15px;
@@ -477,7 +479,7 @@ input:checked+.avaliacaoMateria article section #mais {
 
     /* fix footer */
     footer iframe {
-        margin-bottom: -5px;
+        margin-bottom: -10px;
     }
 
 
