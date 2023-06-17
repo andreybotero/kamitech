@@ -178,12 +178,14 @@ footer iframe {
   margin-bottom: -5px;
 }
 
-#ifame{
+#ifame {
   display: inline;
 }
-#iframe2{
+
+#iframe2 {
   display: none;
 }
+
 @media (max-width: 780px) {
 
   h1 {
@@ -220,11 +222,13 @@ footer iframe {
   .navegation {
     justify-content: center;
   }
-  #ifame{
+
+  #ifame {
     display: none;
-}
-#iframe2{
+  }
+
+  #iframe2 {
     display: inline;
-}
+  }
 
 }
