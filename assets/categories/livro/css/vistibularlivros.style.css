@@ -384,6 +384,21 @@ input:checked+.avaliacaoMateria article section #mais {
 
 @media (max-width: 780px) {
 
+  #infosection button {
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+  }
+
   #iframe2 {
     display: inline;
   }
