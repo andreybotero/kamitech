@@ -360,7 +360,8 @@ footer iframe {
   }
 
   .cards .card {
-    width: 90%;
+    width: 100%;
+    margin-left: -10%;
   }
 
   #infosection button {
