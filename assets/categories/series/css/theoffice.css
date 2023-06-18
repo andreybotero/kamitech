@@ -368,11 +368,12 @@ footer iframe {
     margin-left: 33%;
   }
 
-}
+  #img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    padding: 20px;
+  }
 
-#img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 25px;
 }
