@@ -1,5 +1,4 @@
-
-#infosection button{
+#infosection button {
   padding: 6px;
   border: 1px solid #0b0b0b;
   border-radius: 25px;
@@ -67,7 +66,6 @@ main {
   text-align: justify;
   padding: 20px;
   border-radius: 6px;
-
 }
 
 .container {
@@ -265,7 +263,20 @@ footer iframe {
   margin-bottom: -5px;
 }
 
+#ifram2 {
+  display: none;
+}
+
 @media (max-width: 768px) {
+
+  #ifame {
+    display: none;
+  }
+
+  #ifram2 {
+    display: inline;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
