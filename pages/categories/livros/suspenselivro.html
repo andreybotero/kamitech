@@ -13,234 +13,233 @@
 
 <body>
   <header class="header-upper">
-      <iframe id="ifame" src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
-          height="300px"></iframe>
-      <header id="iframe2">
+    <iframe id="ifame" src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
+      height="300px"></iframe>
+  </header>
+  <header id="iframe2">
 
-          <body id="body">
-              <div class="header" id="header">
-                  <button onclick="toggleSidebar()" class="btn_icon_header">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                          class="bi bi-list" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd"
-                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                      </svg>
-                  </button>
-                  <div class="logo_header">
-                      <img src="../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech"
-                          class="img_logo_header">
-                  </div>
-                  <div class="navigation_header" id="navigation_header">
-                      <button onclick="toggleSidebar()" class="btn_icon_header">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                              class="bi bi-x" viewBox="0 0 16 16">
-                              <path
-                                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                          </svg>
-                      </button>
-                      <a href="../../../index.html">Início</a>
-                      <a href="../../../pages/categories/filmes/index.html">Filmes</a>
-                      <a href="../../../pages/categories/series/index.html">Séries</a>
-                      <a href="../../../pages/categories/livros/index.html">Livros</a>
-                      <a href="../../../pages/categories/e-sports/index.html">E-sports</a>
-                      <a href="../../../pages/categories/vestibular/index.html">Vestibular</a>
-                      <a href="../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
-                      <a href="../../../pages/contato.html">Contato</a>
-                      <a href="../../../pages/feedback.html">Feedback</a>
-                      <a href="../../../lista/lista.html">Lista</a>
+    <body id="body">
+      <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="logo_header">
+          <img src="../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+          <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          <a href="../../../index.html">Início</a>
+          <a href="../../../pages/categories/filmes/index.html">Filmes</a>
+          <a href="../../../pages/categories/series/index.html">Séries</a>
+          <a href="../../../pages/categories/livros/index.html">Livros</a>
+          <a href="../../../pages/categories/e-sports/index.html">E-sports</a>
+          <a href="../../../pages/categories/vestibular/index.html">Vestibular</a>
+          <a href="../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
+          <a href="../../../pages/contato.html">Contato</a>
+          <a href="../../../pages/feedback.html">Feedback</a>
+          <a href="../../../lista/lista.html">Lista</a>
 
-                      <a target="_parent" href="../../../music/musica.html">
-                          <button type="button" id="music"  >Música</button>
-                      </a>
+          <a target="_parent" href="../../../music/musica.html">
+            <button type="button" id="music">Música</button>
+          </a>
 
-                  </div>
-              </div>
+        </div>
+      </div>
 
-          </body>
-          <script>
-              var header = document.getElementById('header');
-              var navigationHeader = document.getElementById('navigation_header');
-              var content = document.getElementById('content');
-              var showSidebar = false;
+    </body>
+    <script>
+      var header = document.getElementById('header');
+      var navigationHeader = document.getElementById('navigation_header');
+      var content = document.getElementById('content');
+      var showSidebar = false;
 
-              function toggleSidebar() {
-                  showSidebar = !showSidebar;
-                  if (showSidebar) {
-                      navigationHeader.style.marginLeft = '-10vw';
-                      navigationHeader.style.animationName = 'showSidebar';
-                  }
-                  else {
-                      navigationHeader.style.marginLeft = '-100vw';
-                      navigationHeader.style.animationName = '';
-                  }
-              }
+      function toggleSidebar() {
+        showSidebar = !showSidebar;
+        if (showSidebar) {
+          navigationHeader.style.marginLeft = '-10vw';
+          navigationHeader.style.animationName = 'showSidebar';
+        }
+        else {
+          navigationHeader.style.marginLeft = '-100vw';
+          navigationHeader.style.animationName = '';
+        }
+      }
 
-              function closeSidebar() {
-                  if (showSidebar) {
-                      showSidebar = false;
-                      toggleSidebar();
-                  }
-              }
+      function closeSidebar() {
+        if (showSidebar) {
+          showSidebar = false;
+          toggleSidebar();
+        }
+      }
 
-              window.addEventListener('resize', function (event) {
-                  if (window.innerWidth > 768 && showSidebar) {
-                      showSidebar = false;
-                      toggleSidebar();
-                  }
-              });
+      window.addEventListener('resize', function (event) {
+        if (window.innerWidth > 768 && showSidebar) {
+          showSidebar = false;
+          toggleSidebar();
+        }
+      });
 
-          </script>
-
-      </header>
+    </script>
 
   </header>
 
-    <div class="container">
-      <!-- article -->
-      <article id="a1">
-        <h1 id="title">Suspense</h1>
-        <!-- card -->
-        <section id="s1">
-          <h2>Explicação do do gênero suspense:</h2>
-          <p>È um gênero que tem como objetivo causar situação de aflição e questionamento ao leitor, em que o
-            protagonista se encontra em situações de perigo que a mesma não se da conta.</p>
-        </section>
-        <section id="s2">
-          <h2>Características</h2>
-          <p>A linguagem é recheada de descrições e detalhamentos. Geralmente com capitúlos que acabam em partes
-            angustiantes. Acontece em ambientes sombrios.</p>
-        </section>
-        <section id="s3">
-          <h2>Alguns autores:</h2>
-          <ul>
-            <li>Agatha Cristie</li>
-            <li>Charlie Donlea</li>
-            <li>Alex Michaelides</li>
-        </section>
-      </article>
-      <!-- aside que ficara do lado afins de mostrar os topicos do site -->
-      <aside>
-        <h2 id="maisLidos">Tópicos KamiNews</h2>
-        <a href="../../vestibular/index.html" target="_parent" class="card-2">
-          <p>
-            <img src="../../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
-              alt="imagem Vestibular - https://www.ufms.br/manual-do-candidato-apresenta-orientacoes-sobre-o-vestibular-e-passe-2023/">
-          </p>
-          <div class="legend">
-            <h1>Vestibular</h1>
-            <p>Conheça nosso tópico sobre vestibular e veja todas as informações que precisa.
-            </p>
-          </div>
-        </a>
-        <hr>
-        <a href="../../filmes/index.html" target="_parent" class="card-2">
-          <p>
-            <img src="../../../../assets/images/filmeTopico.jpg" width="80px"
-              alt="filme TUDO EM TODO O LUGAR AO MESMO TEMPO">
-          </p>
-          <div class="legend">
-            <h1>Filmes</h1>
-            <p>Conheça nosso tópico sobre filmes e veja algumas sugestões para assistir na sua própria
-              casa.
-            </p>
-          </div>
-        </a>
-        <hr>
-        <a href="../../livros/index.html" target="_parent" class="card-2">
-          <p>
-            <img src="../../../../assets/images/diarioDeumBananaLivros.jpg" width="80px"
-              alt="Livro Diario de um banana">
-          </p>
-          <div class="legend">
-            <h1>Livros</h1>
-            <p>Conheça nosso tópico sobre livros e veja algumas sugestões dos mais variados gêneros.
-            </p>
-          </div>
-        </a>
-        <hr>
-        <a href="../../e-sports/index.html" target="_parent" class="card-2">
-          <p>
-            <img src="../../../../assets/images/esportsTopico.jpg" width="80px" alt="Livro Diario de um banana">
-          </p>
-          <div class="legend">
-            <h1>Esports</h1>
-            <p>Conheça nosso tópico sobre e-sports e veja as principais notícias sobre o competitivo de
-              CS:GO e Valorant.
-            </p>
-          </div>
-        </a>
-        <hr>
-        <a href="../../e-sports/index.html" target="_parent" class="card-2">
-          <p>
-            <img src="../../../../assets/categories/series/images/theLastofUs - topicos.jpg" width="80px"
-              alt="imagemTheLastOfUs">
-          </p>
-          <div class="legend">
-            <h1>Series</h1>
-            <p>Conheça nosso tópico sobre séries e veja algumas sugestões para assistir na sua própria
-              casa.
-            </p>
-          </div>
-        </a>
-        <hr>
-      </aside>
-    </div>
-    <div class="books">
-      <h2 class="tt2">LIVROS FAMOSOS DE SUSPENSE</h2>
 
-      <!-- carrossel -->
-      <section class="slider">
-        <input type="radio" id="first" name="slide" class="input-radio" value="value1">
-        <label for="first">
-          <div class="radio-btn"></div>
 
-        </label>
-        <input id="second" class="input-radio" value="value2" name="slide" type="radio" checked>
-        <label for="second">
-          <div class="radio-btn"></div>
-        </label>
-        <input class="input-radio" value="value3" name="slide" type="radio" id="third">
-        <label for="third">
-          <div class="radio-btn"></div>
-        </label>
-        <input class="input-radio" value="value4" name="slide" type="radio" id="fourth">
-        <label for="fourth">
-          <div class="radio-btn"></div>
-        </label>
-        <div class="slider-content">
-          <div class="slider-item">
-            <p class="p1">Paciente Silenciosa</p> <img
-              src="../../../../assets/categories/livro/images/pacientesilenciosa.jpg" width="15%" height="70%"
-              alt="foto da capa do livro 'Paciente Silenciosa'">
-            <p>Após a uma mulher assassinar seu marido e se recusa a falar sobre deixando a cidade curioasa querendo
-              saber da vida da artista. Quando um psicoterapeuta começa uma investigação sobre o caso.</p>
-          </div>
-          <div class="slider-item">
-            <p class="p1">A Garota Do Lago</p><img src="../../../../assets/categories/livro/images/agarotadolago.jpg"
-              width="15%" height="70%" alt="capa do livro 'A Garota Do Lago'">
-            <p>Este livro traz o relato do assassinato de uma garota chamada Beca e a narrativa de uma jovem jornalista
-              que na intenção de escrever um artigo sobre o caso acaba se envolvendo em uma longa investigação.</p>
-          </div>
+  <div class="container">
+    <!-- article -->
+    <article id="a1">
+      <h1 id="title">Suspense</h1>
+      <!-- card -->
+      <section id="s1">
+        <h2>Explicação do do gênero suspense:</h2>
+        <p>È um gênero que tem como objetivo causar situação de aflição e questionamento ao leitor, em que o
+          protagonista se encontra em situações de perigo que a mesma não se da conta.</p>
+      </section>
+      <section id="s2">
+        <h2>Características</h2>
+        <p>A linguagem é recheada de descrições e detalhamentos. Geralmente com capitúlos que acabam em partes
+          angustiantes. Acontece em ambientes sombrios.</p>
+      </section>
+      <section id="s3">
+        <h2>Alguns autores:</h2>
+        <ul>
+          <li>Agatha Cristie</li>
+          <li>Charlie Donlea</li>
+          <li>Alex Michaelides</li>
+      </section>
+    </article>
+    <!-- aside que ficara do lado afins de mostrar os topicos do site -->
+    <aside>
+      <h2 id="maisLidos">Tópicos KamiNews</h2>
+      <a href="../../vestibular/index.html" target="_parent" class="card-2">
+        <p>
+          <img src="../../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
+            alt="imagem Vestibular - https://www.ufms.br/manual-do-candidato-apresenta-orientacoes-sobre-o-vestibular-e-passe-2023/">
+        </p>
+        <div class="legend">
+          <h1>Vestibular</h1>
+          <p>Conheça nosso tópico sobre vestibular e veja todas as informações que precisa.
+          </p>
+        </div>
+      </a>
+      <hr>
+      <a href="../../filmes/index.html" target="_parent" class="card-2">
+        <p>
+          <img src="../../../../assets/images/filmeTopico.jpg" width="80px"
+            alt="filme TUDO EM TODO O LUGAR AO MESMO TEMPO">
+        </p>
+        <div class="legend">
+          <h1>Filmes</h1>
+          <p>Conheça nosso tópico sobre filmes e veja algumas sugestões para assistir na sua própria
+            casa.
+          </p>
+        </div>
+      </a>
+      <hr>
+      <a href="../../livros/index.html" target="_parent" class="card-2">
+        <p>
+          <img src="../../../../assets/images/diarioDeumBananaLivros.jpg" width="80px" alt="Livro Diario de um banana">
+        </p>
+        <div class="legend">
+          <h1>Livros</h1>
+          <p>Conheça nosso tópico sobre livros e veja algumas sugestões dos mais variados gêneros.
+          </p>
+        </div>
+      </a>
+      <hr>
+      <a href="../../e-sports/index.html" target="_parent" class="card-2">
+        <p>
+          <img src="../../../../assets/images/esportsTopico.jpg" width="80px" alt="Livro Diario de um banana">
+        </p>
+        <div class="legend">
+          <h1>Esports</h1>
+          <p>Conheça nosso tópico sobre e-sports e veja as principais notícias sobre o competitivo de
+            CS:GO e Valorant.
+          </p>
+        </div>
+      </a>
+      <hr>
+      <a href="../../e-sports/index.html" target="_parent" class="card-2">
+        <p>
+          <img src="../../../../assets/categories/series/images/theLastofUs - topicos.jpg" width="80px"
+            alt="imagemTheLastOfUs">
+        </p>
+        <div class="legend">
+          <h1>Series</h1>
+          <p>Conheça nosso tópico sobre séries e veja algumas sugestões para assistir na sua própria
+            casa.
+          </p>
+        </div>
+      </a>
+      <hr>
+    </aside>
+  </div>
+  <div class="books">
+    <h2 class="tt2">LIVROS FAMOSOS DE SUSPENSE</h2>
 
-          <div class="slider-item">
-            <p class="p1">Coraline</p> <img src="../../../../assets/categories/livro/images/coraline.jpg" width="15%"
-              height="70%" alt="foto da capa do livro 'Coraline'">
-            <p>Ao se mudar para casa nova a garota curiosa abre uma porta antiga em sua sala de estar, ela descobre um
-              outro mundo repleto de magia e coisas fantasiosas. Ela vive muitas aventuras nesse outro mundo , junto com
-              pessoas macabras e fantasiosas.</p>
-          </div>
+    <!-- carrossel -->
+    <section class="slider">
+      <input type="radio" id="first" name="slide" class="input-radio" value="value1">
+      <label for="first">
+        <div class="radio-btn"></div>
 
-          <div class="slider-item">
-            <p class="p1">O Iluminado</p><img src="../../../../assets/categories/livro/images/oiluminado.jpg"
-              width="15%" height="70%" alt="foto da capa livro 'O Iluminado'">
-            <p>Quando um pai decide por problemas financeiros ir trabalhar de zelador durantes as férias de inverno,
-              quando a neve bloqueia as estradas e deixa o local inacessível por dias, é assim que a história começa.
-            </p>
-          </div>
+      </label>
+      <input id="second" class="input-radio" value="value2" name="slide" type="radio" checked>
+      <label for="second">
+        <div class="radio-btn"></div>
+      </label>
+      <input class="input-radio" value="value3" name="slide" type="radio" id="third">
+      <label for="third">
+        <div class="radio-btn"></div>
+      </label>
+      <input class="input-radio" value="value4" name="slide" type="radio" id="fourth">
+      <label for="fourth">
+        <div class="radio-btn"></div>
+      </label>
+      <div class="slider-content">
+        <div class="slider-item">
+          <p class="p1">Paciente Silenciosa</p> <img
+            src="../../../../assets/categories/livro/images/pacientesilenciosa.jpg" width="15%" height="70%"
+            alt="foto da capa do livro 'Paciente Silenciosa'">
+          <p>Após a uma mulher assassinar seu marido e se recusa a falar sobre deixando a cidade curioasa querendo
+            saber da vida da artista. Quando um psicoterapeuta começa uma investigação sobre o caso.</p>
+        </div>
+        <div class="slider-item">
+          <p class="p1">A Garota Do Lago</p><img src="../../../../assets/categories/livro/images/agarotadolago.jpg"
+            width="15%" height="70%" alt="capa do livro 'A Garota Do Lago'">
+          <p>Este livro traz o relato do assassinato de uma garota chamada Beca e a narrativa de uma jovem jornalista
+            que na intenção de escrever um artigo sobre o caso acaba se envolvendo em uma longa investigação.</p>
         </div>
 
-      </section>
-    </div>
+        <div class="slider-item">
+          <p class="p1">Coraline</p> <img src="../../../../assets/categories/livro/images/coraline.jpg" width="15%"
+            height="70%" alt="foto da capa do livro 'Coraline'">
+          <p>Ao se mudar para casa nova a garota curiosa abre uma porta antiga em sua sala de estar, ela descobre um
+            outro mundo repleto de magia e coisas fantasiosas. Ela vive muitas aventuras nesse outro mundo , junto com
+            pessoas macabras e fantasiosas.</p>
+        </div>
+
+        <div class="slider-item">
+          <p class="p1">O Iluminado</p><img src="../../../../assets/categories/livro/images/oiluminado.jpg" width="15%"
+            height="70%" alt="foto da capa livro 'O Iluminado'">
+          <p>Quando um pai decide por problemas financeiros ir trabalhar de zelador durantes as férias de inverno,
+            quando a neve bloqueia as estradas e deixa o local inacessível por dias, é assim que a história começa.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </div>
 
 
 
@@ -327,11 +326,11 @@
     </article>
   </div>
   <div id="infosection">
-    <form  action="../../categories/livros/index.html">
-        <div class="button">
-          <button>Voltar</button>
-      </form>
-    </div>
+    <form action="../../categories/livros/index.html">
+      <div class="button">
+        <button>Voltar</button>
+    </form>
+  </div>
   <footer>
     <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
   </footer>
