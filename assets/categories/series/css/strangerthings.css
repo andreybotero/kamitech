@@ -299,17 +299,19 @@ footer iframe {
   }
 
   #s1 {
+
     border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
     justify-content: center;
     padding: 20px;
     border-radius: 6px;
-    width: 350px;
+    width: 90%;
   }
 
   #s1 p {
     text-align: justify;
-    width: 100%;
+    width: 90%;
+    margin-left: 22px;
   }
 
   #s2 {
@@ -318,12 +320,13 @@ footer iframe {
     justify-content: center;
     padding: 20px;
     border-radius: 6px;
-    width: 350px;
+    width: 130%;
   }
 
   #s2 p {
     text-align: justify;
-    width: 100%;
+    width: 90%;
+    margin-left: 22px;
   }
 
   #s3 {
@@ -332,13 +335,14 @@ footer iframe {
     justify-content: center;
     padding: 20px;
     border-radius: 6px;
-    width: 350px;
+    width: 130%;
   }
 
   #s3 li {
     list-style-type: none;
     text-align: justify;
-    width: 100%;
+    margin-left: 22px;
+    width: 90%;
   }
 
   #img1 {
@@ -409,4 +413,3 @@ footer iframe {
     margin-top: -200px;
   }
 }
-
