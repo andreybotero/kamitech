@@ -273,8 +273,6 @@ footer iframe {
   display: none;
 }
 
-@media (max-width: 768px) {
-
   #ifame {
     display: none;
   }
