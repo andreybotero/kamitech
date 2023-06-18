@@ -7,90 +7,11 @@
     <link rel="icon" href="../../../assets/images/logowhite-semFundo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KamiNews </title>
-    <link rel="stylesheet" href="../../../layouts/header2.css">
-
 </head>
 
 <body>
     <header class="header-upper">
-        <iframe id="ifame" src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
-            height="300px"></iframe>
-    </header>
-    <header id="iframe2">
-
-        <body id="body">
-            <div class="header" id="header">
-                <button onclick="toggleSidebar()" class="btn_icon_header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-                <div class="logo_header">
-                    <img src="../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech" class="img_logo_header">
-                </div>
-                <div class="navigation_header" id="navigation_header">
-                    <button onclick="toggleSidebar()" class="btn_icon_header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-x" viewBox="0 0 16 16">
-                            <path
-                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                    </button>
-                    <a href="../../../index.html">Início</a>
-                    <a href="../../../pages/categories/filmes/index.html">Filmes</a>
-                    <a href="../../../pages/categories/series/index.html">Séries</a>
-                    <a href="../../../pages/categories/livros/index.html">Livros</a>
-                    <a href="../../../pages/categories/e-sports/index.html">E-sports</a>
-                    <a href="../../../pages/categories/vestibular/index.html">Vestibular</a>
-                    <a href="../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
-                    <a href="../../../pages/contato.html">Contato</a>
-                    <a href="../../../pages/feedback.html">Feedback</a>
-                    <a href="../../../lista/lista.html">Lista</a>
-
-                    <a target="_parent" href="../../../music/musica.html">
-                        <button type="button" id="music">Música</button>
-                    </a>
-
-                </div>
-            </div>
-
-        </body>
-        <script>
-            var header = document.getElementById('header');
-            var navigationHeader = document.getElementById('navigation_header');
-            var content = document.getElementById('content');
-            var showSidebar = false;
-
-            function toggleSidebar() {
-                showSidebar = !showSidebar;
-                if (showSidebar) {
-                    navigationHeader.style.marginLeft = '-10vw';
-                    navigationHeader.style.animationName = 'showSidebar';
-                }
-                else {
-                    navigationHeader.style.marginLeft = '-100vw';
-                    navigationHeader.style.animationName = '';
-                }
-            }
-
-            function closeSidebar() {
-                if (showSidebar) {
-                    showSidebar = false;
-                    toggleSidebar();
-                }
-            }
-
-            window.addEventListener('resize', function (event) {
-                if (window.innerWidth > 768 && showSidebar) {
-                    showSidebar = false;
-                    toggleSidebar();
-                }
-            });
-
-        </script>
-
+        <iframe src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
     </header>
     <div class="main2">
         <article>
@@ -103,105 +24,107 @@
                 alt="imagem campus vunesp" width="100%" height="100%">
             <p id="legendaImagem">Imagem ilustrativa</p>
         </article>
-        <main>
-            <article>
-                <h1 class="h1artigos">Datas</h1>
+        <div class="container">
+            <main>
+                <article>
+                    <h1 class="h1artigos">Datas</h1>
+                   
+                    <ul>
+                        <li> pedido de isenção de taxa: 29/08 à 04/09;</li>
+                        <li>inscrições para a prova: 05/09 à 10/10;</li>
+                        <li>1ª Fase: 15 de novembro de 2023;</li>
+                        <li>2ª Fase: 19 de dezembro de 2023.</li>
+                    </ul>
+                   
+                    <h1 class="h1artigos">Inscrições Vunesp </h1>
+                    <p class="textosvest">Através do seu portal online no site da Unesp é possível ter acesso a todos os
+                        tipos de informações, incluindo a inscrição para o vestibular da Unesp.
 
-                <ul>
-                    <li> pedido de isenção de taxa: 29/08 à 04/09;</li>
-                    <li>inscrições para a prova: 05/09 à 10/10;</li>
-                    <li>1ª Fase: 15 de novembro de 2023;</li>
-                    <li>2ª Fase: 19 de dezembro de 2023.</li>
-                </ul>
-
-                <h1 class="h1artigos">Inscrições Vunesp </h1>
-                <p class="textosvest">Através do seu portal online no site da Unesp é possível ter acesso a todos os
-                    tipos de informações, incluindo a inscrição para o vestibular da Unesp.
-
-                </p>
-                <h1 class="h1artigos">Quem pode fazer Vunesp 2023?</h1>
-                <p class="textosvest">Todos os candidatos que finalizaram o ensino médio podem fazer a inscrição
-                    VUNESP 2023.
-
-                    Tem a opção para candidatos de baixa renda, eles não precisam pagar a taxa de inscrição, basta
-                    acessar o edital e seguir os procedimentos citados no site ofical.</p>
-                <h1 class="h1artigos">O que levar no dia da prova?</h1>
-                <ul>
-                    <li>Documento original com foto;</li>
-                    <li>Régua transparente;</li>
-                    <li>Caneta preta;</li>
-                    <li>Alimentos.</li>
-                </ul>
-            </article>
-        </main>
-        <aside>
-            <h2 id="maisLidos">Tópicos KamiNews</h2>
-            <a href="../../../../pages/categories/vestibular/index.html" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
-                        alt="imagem Vestibular - https://www.ufms.br/manual-do-candidato-apresenta-orientacoes-sobre-o-vestibular-e-passe-2023/" />
-                </p>
-                <div class="legend">
-                    <h1>Vestibular</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
                     </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-            <a href="../../../../pages/categories/filmes/index.html" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../../assets/images/filmeTopico.jpg" width="80px"
-                        alt="filme TUDO EM TODO O LUGAR AO MESMO TEMPO" />
-                </p>
-                <div class="legend">
-                    <h1>Filmes</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
-                    </p>
-                </div>
-            </a>
+                    <h1 class="h1artigos">Quem pode fazer Vunesp 2023?</h1>
+                    <p class="textosvest">Todos os candidatos que finalizaram o ensino médio podem fazer a inscrição
+                        VUNESP 2023.
 
-            <div class="divaside"></div>
-            <a href="../../../../pages/categories/livros/index.html" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../../assets/images/diarioDeumBananaLivros.jpg" width="80px"
-                        alt="Livro Diario de um banana" />
-                </p>
-                <div class="legend">
-                    <h1>Livros</h1>
+                         Tem a opção para candidatos de baixa renda, eles não precisam pagar a taxa de inscrição, basta
+                        acessar o edital e seguir os procedimentos citados no site ofical.</p>
+                    <h1 class="h1artigos">O que levar no dia da prova?</h1>
+                    <ul>
+                        <li>Documento original com foto;</li>
+                        <li>Régua transparente;</li>
+                        <li>Caneta preta;</li>
+                        <li>Alimentos.</li>
+                    </ul>
+                </article>
+            </main>
+            <aside>
+                <h2 id="maisLidos">Tópicos KamiNews</h2>
+                <a href="../../../../pages/categories/vestibular/index.html" target="_parent" class="card-2">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
+                        <img src="../../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
+                            alt="imagem Vestibular - https://www.ufms.br/manual-do-candidato-apresenta-orientacoes-sobre-o-vestibular-e-passe-2023/" />
                     </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-            <a href="../../../../pages/categories/e-sports/valorant/#" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../../assets/images/esportsTopico.jpg" width="80px"
-                        alt="Livro Diario de um banana" />
-                </p>
-                <div class="legend">
-                    <h1>Esports</h1>
+                    <div class="legend">
+                        <h1>Vestibular</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+                <a href="../../../../pages/categories/filmes/index.html" target="_parent" class="card-2">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
+                        <img src="../../../../assets/images/filmeTopico.jpg" width="80px"
+                            alt="filme TUDO EM TODO O LUGAR AO MESMO TEMPO" />
                     </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-        </aside>
+                    <div class="legend">
+                        <h1>Filmes</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+
+                <div class="divaside"></div>
+                <a href="../../../../pages/categories/livros/index.html" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../../assets/images/diarioDeumBananaLivros.jpg" width="80px"
+                            alt="Livro Diario de um banana" />
+                    </p>
+                    <div class="legend">
+                        <h1>Livros</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+                <a href="../../../../pages/categories/e-sports/valorant/#" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../../assets/images/esportsTopico.jpg" width="80px"
+                            alt="Livro Diario de um banana" />
+                    </p>
+                    <div class="legend">
+                        <h1>Esports</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+            </aside>
+        </div>
     </div>
 
     <div id="infosection">
-        <form action="../../../pages/categories/vestibular/index.html">
+        <form  action="../../../pages/categories/vestibular/index.html">
             <div class="button">
-                <button>Voltar</button>
-        </form>
-    </div>
+              <button>Voltar</button>
+          </form>
+        </div>
 
     <footer>
         <iframe src="../../../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>

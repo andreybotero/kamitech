@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#infosection button {
+#infosection button{
   padding: 6px;
   border: 1px solid #0b0b0b;
   border-radius: 25px;
@@ -271,30 +271,17 @@ footer iframe {
     padding: 20px;
     border-radius: 6px;
     width: 100%;
-    margin-left: -25px;
-  }
-
-  #s2 li {
-    text-align: justify;
-    list-style-type: none
   }
 
   #s3 {
     border-top: solid 3px hsl(234, 81%, 21%);
-    text-align: justify;
+    text-align: center;
     padding: 20px;
     border-radius: 6px;
     width: 100%;
-    margin-left: -25px;
   }
 
-  #tt2 {
-    border-top: solid 3px hsl(234, 81%, 21%);
-    border-radius: 6px;
-    margin-left: -15px;
-  }
-
-  #infosection button {
+  #infosection button{
     padding: 6px;
     border: 1px solid #0b0b0b;
     border-radius: 25px;
@@ -305,10 +292,10 @@ footer iframe {
     cursor: pointer;
     transition: all 0.4s;
     margin-top: 2%;
-    margin-left: 0%;
+    margin-left: 47%;
     margin-bottom: 2%;
   }
-
+  
   #img1 {
     justify-content: left;
     width: 50%;
@@ -325,13 +312,8 @@ footer iframe {
     flex-direction: column;
   }
 
-  .cards .card {
+  .cards .card{
     width: 90%;
+
   }
-
-  #infosection button {
-    margin-left: 33%;
-  }
-
-
 }

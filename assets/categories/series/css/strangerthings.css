@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#infosection button {
+#infosection button{
   padding: 6px;
   border: 1px solid #0b0b0b;
   border-radius: 25px;
@@ -42,8 +42,7 @@ body {
   height: 500px;
 }
 
-main {
-  margin-top: 280px;
+main { margin-top: 280px;
   background-color: white;
 }
 
@@ -298,51 +297,20 @@ footer iframe {
     text-align: center;
   }
 
-  #s1 {
-
-    border-top: solid 3px hsl(234, 81%, 21%);
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 6px;
-    width: 90%;
-  }
-
-  #s1 p {
-    text-align: justify;
-    width: 90%;
-    margin-left: 22px;
-  }
-
   #s2 {
     border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
-    justify-content: center;
     padding: 20px;
     border-radius: 6px;
-    width: 130%;
-  }
-
-  #s2 p {
-    text-align: justify;
-    width: 90%;
-    margin-left: 22px;
+    width: 100%;
   }
 
   #s3 {
     border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
-    justify-content: center;
     padding: 20px;
     border-radius: 6px;
-    width: 130%;
-  }
-
-  #s3 li {
-    list-style-type: none;
-    text-align: justify;
-    margin-left: 22px;
-    width: 90%;
+    width: 100%;
   }
 
   #img1 {
@@ -395,21 +363,5 @@ footer iframe {
   .container a img {
     width: 100px;
     height: 150px;
-  }
-
-  #infosection button {
-    margin-left: 33%;
-  }
-
-  #iframe2 {
-    display: inline;
-  }
-
-  #ifame {
-    display: none;
-  }
-
-  h1 {
-    margin-top: -200px;
   }
 }

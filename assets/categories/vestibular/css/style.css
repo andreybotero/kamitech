@@ -30,8 +30,7 @@ body {
 }
 
 /* configuraçoes do corpo do site */
-main {
-    margin-top: 280px;
+main { margin-top: 280px;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin-bottom: 20px;
@@ -79,8 +78,7 @@ h1 {
     color: black;
 }
 
-main {
-    margin-top: 280px;
+main { margin-top: 280px;
     align-items: center;
 }
 
@@ -259,11 +257,7 @@ main {
     display: none;
 }
 
-#iframe2 {
-    display: none;
-}
-
-@media only screen and (min-width: 780px) and (max-width: 880px) {
+@media only screen and (min-width: 569px) and (max-width: 880px) {
     .link-block {
         position: relative;
         width: 45%;
@@ -275,7 +269,7 @@ main {
     }
 }
 
-@media only screen and (min-width: 0) and (max-width: 780px) {
+@media only screen and (min-width: 0) and (max-width: 568px) {
     .link-block {
         position: relative;
         width: 90%;
@@ -289,34 +283,6 @@ main {
     #artweb {
         display: flex;
         flex-direction: column;
-    }
-
-    #ifame {
-        display: none;
-    }
-
-    #iframe2 {
-        display: inline;
-    }
-
-    .sec2 {
-        margin-top: -175px;
-    }
-
-    #infosection button {
-        min-width: 150px;
-        padding: 8px 18px;
-        border: 1px solid #0b0b0b;
-        border-radius: 25px;
-        font-size: 18px;
-        background-color: #2b2a2f;
-        color: #aaabb0;
-        letter-spacing: 1px;
-        cursor: pointer;
-        transition: all 0.4s;
-        margin-top: 2%;
-        margin-left: 33%;
-        margin-bottom: 2%;
     }
 }
 
@@ -393,7 +359,7 @@ li {
     cursor: pointer;
     transition: all 0.4s;
     margin-top: 2%;
-    margin-left: 33%;
+    margin-left: 45%;
     margin-bottom: 2%;
 }
 

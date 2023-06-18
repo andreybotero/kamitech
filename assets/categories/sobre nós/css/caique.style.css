@@ -1,5 +1,7 @@
 @media (max-width: 600px)
- {
+ {.header-upper{
+    display: none;
+ }
     * {
         padding: 0;
         margin: 0;

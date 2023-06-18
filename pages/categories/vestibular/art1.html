@@ -7,90 +7,11 @@
     <link rel="icon" href="../../../assets/images/logowhite-semFundo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KamiNews</title>
-    <link rel="stylesheet" href="../../../layouts/header2.css">
-
 </head>
 
 <body>
     <header class="header-upper">
-        <iframe id="ifame" src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
-            height="300px"></iframe>
-    </header>
-    <header id="iframe2">
-
-        <body id="body">
-            <div class="header" id="header">
-                <button onclick="toggleSidebar()" class="btn_icon_header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-                <div class="logo_header">
-                    <img src="../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech" class="img_logo_header">
-                </div>
-                <div class="navigation_header" id="navigation_header">
-                    <button onclick="toggleSidebar()" class="btn_icon_header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-x" viewBox="0 0 16 16">
-                            <path
-                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                    </button>
-                    <a href="../../../index.html">Início</a>
-                    <a href="../../../pages/categories/filmes/index.html">Filmes</a>
-                    <a href="../../../pages/categories/series/index.html">Séries</a>
-                    <a href="../../../pages/categories/livros/index.html">Livros</a>
-                    <a href="../../../pages/categories/e-sports/index.html">E-sports</a>
-                    <a href="../../../pages/categories/vestibular/index.html">Vestibular</a>
-                    <a href="../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
-                    <a href="../../../pages/contato.html">Contato</a>
-                    <a href="../../../pages/feedback.html">Feedback</a>
-                    <a href="../../../lista/lista.html">Lista</a>
-
-                    <a target="_parent" href="../../../music/musica.html">
-                        <button type="button" id="music">Música</button>
-                    </a>
-
-                </div>
-            </div>
-
-        </body>
-        <script>
-            var header = document.getElementById('header');
-            var navigationHeader = document.getElementById('navigation_header');
-            var content = document.getElementById('content');
-            var showSidebar = false;
-
-            function toggleSidebar() {
-                showSidebar = !showSidebar;
-                if (showSidebar) {
-                    navigationHeader.style.marginLeft = '-10vw';
-                    navigationHeader.style.animationName = 'showSidebar';
-                }
-                else {
-                    navigationHeader.style.marginLeft = '-100vw';
-                    navigationHeader.style.animationName = '';
-                }
-            }
-
-            function closeSidebar() {
-                if (showSidebar) {
-                    showSidebar = false;
-                    toggleSidebar();
-                }
-            }
-
-            window.addEventListener('resize', function (event) {
-                if (window.innerWidth > 768 && showSidebar) {
-                    showSidebar = false;
-                    toggleSidebar();
-                }
-            });
-
-        </script>
-
+        <iframe src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
     </header>
     <div class="main2">
         <article>
@@ -103,108 +24,111 @@
                 height="100%">
             <p id="legendaImagem">Imagem ilustrativa</p>
         </article>
-        <main>
-            <article>
-                <h1 class="h1artigos">Datas</h1>
-                <p class="textosvest">
-                <ul>
-                    <li>Pedido de isenção de taxa: à divulgar;</li>
-                    <li>Inscrições para a prova: 08/5 a 19/5;</li>
-                    <li>Pagamento da inscrição: à divulgar;</li>
-                    <li>Data de realização das provas: 05 e 12/11</li>
-                </ul>
-                </p>
-                <h1 class="h1artigos">Inscrições Enem 2023</h1>
-                <p class="textosvest">Na inscrição, é preciso que tudo seja preenchido corretamente, para que o
-                    estudante não tenha
-                    problemas na hora da prova ou até mesmo no pós-Enem, na hora de usar o resultado para tentar uma
-                    vaga na universidade por meio do Sisu, Prouni ou Fies.</p>
-                <h1 class="h1artigos">Quem pode fazer o Enem 2023?</h1>
-                <p class="textosvest">Qualquer pessoa que quiser fazer o Enem pode participar do exame. Ele é aberto
-                    ao
-                    público em geral e
-                    a sua nota pode ser usada das mais variadas formas.
-                    Seja para testar os conhecimentos, tentar uma vaga em universidade pública por meio do Sisu, uma
-                    bolsa de estudos em instituição particular usando o Prouni ou até mesmo o financiamento
-                    estudantil
-                    do Fies.
-                    Os estudantes que ainda não estiverem no 3º ano do Ensino Médio e quiserem conhecer o exame
-                    podem
-                    prestá-lo como treineiros, sem que a nota possa ser usada nos programas do governo.</p>
-                <h1 class="h1artigos">Documentação Enem 2023</h1>
-                <p class="textosvest">Você deve digitalizar todos os documentos necessários no formado de PDF, JPG
-                    ou
-                    PNG, em até 2MB,
-                    fazendo o upload no site do Inep. Os documentos serão analisados pelo Instituto, de maneira que,
-                    caso seja encontrada alguma irregularidade, o candidato deverá arcar com os custos da prova.</p>
-            </article>
-        </main>
-        <aside>
-            <h2 id="maisLidos">Tópicos KamiNews</h2>
-            <a href="../../../pages/categories/vestibular/#" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
+        <div class="container">
+            <main>
+                <article>
+                    <h1 class="h1artigos">Datas</h1>
+                    <p class="textosvest">
+                    <ul>
+                        <li>Pedido de isenção de taxa: à divulgar;</li>
+                        <li>Inscrições para a prova: 08/5 a 19/5;</li>
+                        <li>Pagamento da inscrição: à divulgar;</li>
+                        <li>Data de realização das provas: 05 e 12/11</li>
+                    </ul>
+                    </p>
+                    <h1 class="h1artigos">Inscrições Enem 2023</h1>
+                    <p class="textosvest">Na inscrição, é preciso que tudo seja preenchido corretamente, para que o
+                        estudante não tenha
+                        problemas na hora da prova ou até mesmo no pós-Enem, na hora de usar o resultado para tentar uma
+                        vaga na universidade por meio do Sisu, Prouni ou Fies.</p>
+                    <h1 class="h1artigos">Quem pode fazer o Enem 2023?</h1>
+                    <p class="textosvest">Qualquer pessoa que quiser fazer o Enem pode participar do exame. Ele é aberto
+                        ao
+                        público em geral e
+                        a sua nota pode ser usada das mais variadas formas.
+                        Seja para testar os conhecimentos, tentar uma vaga em universidade pública por meio do Sisu, uma
+                        bolsa de estudos em instituição particular usando o Prouni ou até mesmo o financiamento
+                        estudantil
+                        do Fies.
+                        Os estudantes que ainda não estiverem no 3º ano do Ensino Médio e quiserem conhecer o exame
+                        podem
+                        prestá-lo como treineiros, sem que a nota possa ser usada nos programas do governo.</p>
+                    <h1 class="h1artigos">Documentação Enem 2023</h1>
+                    <p class="textosvest">Você deve digitalizar todos os documentos necessários no formado de PDF, JPG
+                        ou
+                        PNG, em até 2MB,
+                        fazendo o upload no site do Inep. Os documentos serão analisados pelo Instituto, de maneira que,
+                        caso seja encontrada alguma irregularidade, o candidato deverá arcar com os custos da prova.</p>
+                </article>
+            </main>
+            <aside>
+                <h2 id="maisLidos">Tópicos KamiNews</h2>
+                <a href="../../../pages/categories/vestibular/#" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../assets/images/vestibularTopico.jpg" width="80px" height="100px"
                         alt="imagem Vestibular - https://www.ufms.br/manual-do-candidato-apresenta-orientacoes-sobre-o-vestibular-e-passe-2023/" />
-                </p>
-                <div class="legend">
-                    <h1>Vestibular</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
                     </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-            <a href="../../../pages/categories/filmes/#" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../assets/images/filmeTopico.jpg" width="80px"
+                    <div class="legend">
+                        <h1>Vestibular</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+                <a href="../../../pages/categories/filmes/#" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../assets/images/filmeTopico.jpg" width="80px"
                         alt="filme TUDO EM TODO O LUGAR AO MESMO TEMPO" />
-                </p>
-                <div class="legend">
-                    <h1>Filmes</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
                     </p>
-                </div>
-            </a>
-
-            <div class="divaside"></div>
-            <a href="../../../pages/categories/livros/#" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../assets/images/diarioDeumBananaLivros.jpg" width="80px"
+                    <div class="legend">
+                        <h1>Filmes</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                
+                <div class="divaside"></div>
+                <a href="../../../pages/categories/livros/#" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../assets/images/diarioDeumBananaLivros.jpg" width="80px"
+                            alt="Livro Diario de um banana" />
+                    </p>
+                    <div class="legend">
+                        <h1>Livros</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+                <a href="../../../pages/categories/e-sports/#" target="_parent" class="card-2">
+                    <p>
+                        <img src="../../../assets/images/esportsTopico.jpg" width="80px"
                         alt="Livro Diario de um banana" />
-                </p>
-                <div class="legend">
-                    <h1>Livros</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
                     </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-            <a href="../../../pages/categories/e-sports/#" target="_parent" class="card-2">
-                <p>
-                    <img src="../../../assets/images/esportsTopico.jpg" width="80px" alt="Livro Diario de um banana" />
-                </p>
-                <div class="legend">
-                    <h1>Esports</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        atque cumque perspiciatis quibusdam provident illo
-                    </p>
-                </div>
-            </a>
-            <div class="divaside"></div>
-        </aside>
+                    <div class="legend">
+                        <h1>Esports</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            atque cumque perspiciatis quibusdam provident illo
+                        </p>
+                    </div>
+                </a>
+                <div class="divaside"></div>
+            </aside>
+        </div>
     </div>
     <div id="infosection">
-        <form action="../../../pages/categories/vestibular/index.html">
+        <form  action="../../../pages/categories/vestibular/index.html">
             <div class="button">
-                <button>Voltar</button>
-        </form>
-    </div>
+              <button>Voltar</button>
+          </form>
+        </div>
     <footer>
         <iframe src="../../../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
     </footer>
