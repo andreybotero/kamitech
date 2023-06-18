@@ -376,6 +376,10 @@ footer iframe {
     padding: 20px;
   }
 
+  #img a {
+    padding: 50px;
+  }
+
 }
 
 #img {
@@ -383,5 +387,9 @@ footer iframe {
   align-items: center;
   justify-content: center;
   margin: 25px;
-  padding: 20px;
+
+}
+
+#img a {
+  padding: 50px;
 }
