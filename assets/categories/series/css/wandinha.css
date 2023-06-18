@@ -263,9 +263,12 @@ footer iframe {
   margin-bottom: -5px;
 }
 
-<<<<<<< HEAD
+
 @media (max-width:768px) {
-=======
+  main {
+    margin-top: 0%;
+  }
+
 #ifram2 {
   display: none;
 }
@@ -285,7 +288,6 @@ footer iframe {
     flex-direction: column;
     max-height: 610px;
   }
->>>>>>> d75197c3e01a6fa04306475613af096afeec12a9
 
   h2 {
     text-align: center;
