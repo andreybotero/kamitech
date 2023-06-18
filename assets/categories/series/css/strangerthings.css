@@ -396,4 +396,17 @@ footer iframe {
   #infosection button {
     margin-left: 33%;
   }
+
+  #iframe2 {
+    display: inline;
+  }
+
+  #ifame {
+    display: none;
+  }
+
+  h1 {
+    margin-top: -200px;
+  }
 }
+
