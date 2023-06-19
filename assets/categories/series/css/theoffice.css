@@ -290,37 +290,92 @@ footer iframe {
     display: none;
   }
 
-  main {
-    margin-top: 10px;
-  }
 
   h2 {
     text-align: center;
   }
 
+  h1 {
+    margin-top: 75px;
+  }
+
+
+
+  #infosection button {
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+  }
+
+  #ifame {
+    display: none;
+  }
+
+  #iframe2 {
+    display: inline;
+  }
+
+  #img1 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33%;
+  }
+
+  a p {
+    margin-left: 37%;
+  }
+
   #s1 {
-    width: 90%;
-    text-align: center;
-    margin: 0;
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
     padding: 20px;
+    border-radius: 6px;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  #s1 p {
+    text-align: justify;
+    margin-left: 25px;
   }
 
   #s2 {
     border-top: solid 3px hsl(234, 81%, 21%);
-    text-align: center;
+    text-align: justify;
     padding: 20px;
     border-radius: 6px;
-    width: 80%;
-    margin: 0;
+    width: 90%;
+    margin-left: 25px;
+  }
+
+  #s2 li {
+    text-align: justify;
+    list-style-type: none;
   }
 
   #s3 {
     border-top: solid 3px hsl(234, 81%, 21%);
-    text-align: center;
+    text-align: justify;
     padding: 20px;
     border-radius: 6px;
-    width: 80%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 25px;
+  }
+
+  #s3 p {
+    text-align: justify;
   }
 
   #img1 {
@@ -340,7 +395,15 @@ footer iframe {
   }
 
   .cards .card {
-    width: 90%;
+    width: 120%;
+    margin-left: -40px;
+  }
+
+  #img1 {
+    margin-left: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
