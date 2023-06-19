@@ -1,163 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <link href="../../../../assets/categories/series/css/peakyblinders.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  meta
-    <title>Document</title>
-</head>
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../layouts/header2.css">
+
 <body>
+
+  <body>
     <header class="header-upper">
-        <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+      <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0" id="ifame"></iframe>
+    </header>
+
+    <header id="iframe2">
+
+      <body id="body">
+        <div class="header" id="header">
+          <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+          <div class="logo_header">
+            <img src="../../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech" class="img_logo_header">
+          </div>
+          <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+            <a href="../../../../index.html">Início</a>
+            <a href="../../../../pages/categories/filmes/index.html">Filmes</a>
+            <a href="../../../../pages/categories/series/index.html">Séries</a>
+            <a href="../../../../pages/categories/livros/index.html">Livros</a>
+            <a href="../../../../pages/categories/e-sports/index.html">E-sports</a>
+            <a href="../../../../pages/categories/vestibular/index.html">Vestibular</a>
+            <a href="../../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
+            <a href="../../../../pages/contato.html">Contato</a>
+            <a href="../../../../pages/feedback.html">Feedback</a>
+            <a href="../../../../lista/lista.html">Lista</a>
+
+            <a target="_parent" href="../../../../music/musica.html">
+              <button type="button" id="music">Música</button>
+            </a>
+
+          </div>
+        </div>
+
+      </body>
+      <script>
+        var header = document.getElementById('header');
+        var navigationHeader = document.getElementById('navigation_header');
+        var content = document.getElementById('content');
+        var showSidebar = false;
+
+        function toggleSidebar() {
+          showSidebar = !showSidebar;
+          if (showSidebar) {
+            navigationHeader.style.marginLeft = '-10vw';
+            navigationHeader.style.animationName = 'showSidebar';
+          }
+          else {
+            navigationHeader.style.marginLeft = '-100vw';
+            navigationHeader.style.animationName = '';
+          }
+        }
+
+        function closeSidebar() {
+          if (showSidebar) {
+            showSidebar = false;
+            toggleSidebar();
+          }
+        }
+
+        window.addEventListener('resize', function (event) {
+          if (window.innerWidth > 768 && showSidebar) {
+            showSidebar = false;
+            toggleSidebar();
+          }
+        });
+
+      </script>
+
     </header>
     <!-- titulo -->
     <main>
-    <h1>Peaky Blinders</h1>
-    <div class="container">
+      <h1>Peaky Blinders</h1>
+
         <section id="s1">
-            <h2>Sinopse</h2>
-            <p>Se passa na Inglaterra, retratando a vida de Tommy Shelby e seus irmãos, uma família de origem cigana, que formam uma gangue de apostas e aterrorizam a cidade onde vivem.</p>
+          <h2>Sinopse</h2>
+          <p>Se passa na Inglaterra, retratando a vida de Tommy Shelby e seus irmãos, uma família de origem cigana, que
+            formam uma gangue de apostas e aterrorizam a cidade onde vivem.</p>
         </section>
-    </div>
-    <article id="a1">
+
+      <article id="a1">
         <article id="a3">
-            <img src="../../../../assets/categories/series/images/peakyblinderssite.jpg" width="90%"
-                height="80%" alt="foto série peaky blinders">
-            <p class="legend"> Foto da gangue</p>
+          <img src="../../../../assets/categories/series/images/peakyblinderssite.jpg" width="90%" height="80%"
+            alt="foto série peaky blinders">
+          <p class="legend"> Foto da gangue</p>
         </article>
         <article id="a1">
-            <section id="s2">
-                <h2>Curiosidades</h2>
-                <ul>
-                  <li>Os membros da gangue possuem uma faca em suas boinas para usarem contra os inimigos;</li>
-                  <li>A maior parte da série foi filmada no Liverpool;</li>
-                  <li>O turismo de Birmingham aumentou por causa da série.</li>
-                </ul>
-            </section>
-            <section id="s3">
-                <h2>Sobre</h2>
-                <p>A trama possuí origem Inglesa e é inspirada em uma gangue que existiu na vida real, assim como na série os membros dessa também participaram da primeira guerra mundial. Lançada em 2013, possuí 6 temporadas e faz suceesso até hoje.</p>
-            </section>
+          <section id="s2">
+            <h2>Curiosidades</h2>
+            <ul>
+              <li>Os membros da gangue possuem uma faca em suas boinas para usarem contra os inimigos;</li>
+              <li>A maior parte da série foi filmada no Liverpool;</li>
+              <li>O turismo de Birmingham aumentou por causa da série.</li>
+            </ul>
+          </section>
+          <section id="s3">
+            <h2>Sobre</h2>
+            <p>A trama possuí origem Inglesa e é inspirada em uma gangue que existiu na vida real, assim como na série
+              os membros dessa também participaram da primeira guerra mundial. Lançada em 2013, possuí 6 temporadas e
+              faz suceesso até hoje.</p>
+          </section>
         </article>
         <h2 id="tt2">Personagens Principais</h2>
-        <div class="container2">
-            <a><img id="img1" src="../../../../assets/categories/series/images/cillianmurphypeakyblinders.jpg" width="100px" height="150px"
-                    alt="foto Cillian Murphy">
-                <p>
-                    Cillian Murphy</p>
-            </a>
-            <a><img id="img1" src="../../../../assets/categories/series/images/helenmccrorypb.jpg" width="100px" height="150px"
-                    alt="foto Helen Mc Crory">
-                <p> Helen Mc Crory</p>
-            </a>
-            <a><img id="img1" src="../../../../assets/categories/series/images/paulandersonpb.jpg" width="100px" height="150px"
-                    alt="foto Paul Anderson">
-                <p> Paul Anderson</p>
-            </a>
-            <a><img id="img1" src="../../../../assets/categories/series/images/finncolepb.jpg" width="100px" height="150px"
-                    alt="foto Finn Cole">
-                <p> Finn Cole</p>
-            </a>
-        </div>
+
+          <a><img id="img1" src="../../../../assets/categories/series/images/cillianmurphypeakyblinders.jpg"
+              width="100px" height="150px" alt="foto Cillian Murphy">
+            <p>
+              Cillian Murphy</p>
+          </a>
+          <a><img id="img1" src="../../../../assets/categories/series/images/helenmccrorypb.jpg" width="100px"
+              height="150px" alt="foto Helen Mc Crory">
+            <p> Helen Mc Crory</p>
+          </a>
+          <a><img id="img1" src="../../../../assets/categories/series/images/paulandersonpb.jpg" width="100px"
+              height="150px" alt="foto Paul Anderson">
+            <p> Paul Anderson</p>
+          </a>
+          <a><img id="img1" src="../../../../assets/categories/series/images/finncolepb.jpg" width="100px"
+              height="150px" alt="foto Finn Cole">
+            <p> Finn Cole</p>
+          </a>
+
 
         <div id="infosection">
-          <form  action="../../series/index.html">
-              <div class="button">
-                <button>Voltar</button>
-            </form>
-          </div>
-
-
-          <!--   checkbox para abrir e fechar os depoimentos -->
-  <input type="checkbox" id="veja">
-  <!--   avaliacao dos depoimentos -->
-  <div class="avaliacaoMateria">
-    <article>
-      <section>
-        <h1>Depoimentos (3)</h1>
-        <label id="mais" for="veja">Veja todos</label>
-        <label id="menos" for="veja">Veja menos</label>
-      </section>
-      <section class="notas">
-        <h2>Média:</h2>
-        <div class="media">
-          <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-            alt="estrela">
-          <h2>9.5</h2>
+          <form action="../../series/index.html">
+            <div class="button">
+              <button>Voltar</button>
+          </form>
         </div>
-      </section>
-      <!-- depoimentos -->
-      <div class="depoiments">
-        <section class="cards">
-          <!-- depoimento 1 -->
-          <div class="card">
-            <img class="user" src="../../../../assets/categories/series/images/luanabelão.jpg" alt="foto de Luana Belão e seu comentário">
-            <h3>Luana Belão</h3>
-            <div class="stars">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
+
+
+        <!--   checkbox para abrir e fechar os depoimentos -->
+        <input type="checkbox" id="veja">
+        <!--   avaliacao dos depoimentos -->
+        <div class="avaliacaoMateria">
+          <article>
+            <section>
+              <h1>Depoimentos (3)</h1>
+              <label id="mais" for="veja">Veja todos</label>
+              <label id="menos" for="veja">Veja menos</label>
+            </section>
+            <section class="notas">
+              <h2>Média:</h2>
+              <div class="media">
                 <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
+                  alt="estrela">
+                <h2>9.5</h2>
+              </div>
+            </section>
+            <!-- depoimentos -->
+            <div class="depoiments">
+              <section class="cards">
+                <!-- depoimento 1 -->
+                <div class="card">
+                  <img class="user" src="../../../../assets/categories/series/images/luanabelão.jpg"
+                    alt="foto de Luana Belão e seu comentário">
+                  <h3>Luana Belão</h3>
+                  <div class="stars">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/" alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                  </div>
+                  <span>"Amei a série! Falei sobre no ouvido da minha irmã por dias!
+
+                    "</span>
+                  <p>Publicado em 02 de fevereiro de 2023</p>
+                </div>
+                <!-- depoimento 2 -->
+                <div class="card">
+                  <img class="user" src="../../../../assets/categories/series/images/joaoguilherme.jpg"
+                    alt="foto comentário de joão guilherme">
+                  <h3>João Guilherme</h3>
+                  <div class="stars">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                  </div>
+                  <span> "Eu amei a série, novo objetivo de vida: me tornar um Peaky Blinder!"
+                  </span>
+                  <p>Publicado em 05 de março de 2023</p>
+                </div>
+                <!-- depoimento 3 -->
+                <div class="card">
+                  <img class="user" src="../../../../assets/categories/series/images/mrios.jpg"
+                    alt="Foto comentário Maria Clara Rios">
+                  <h3>Mrios</h3>
+                  <div class="stars">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                    <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                      alt="estrela">
+                  </div>
+                  <span>"Amei a série, principalmente em questão dos figurinos que estão incriveis!"</span>
+                  <p>Publicado em 20 de janeito de 2023</p>
+                </div>
+              </section>
             </div>
-            <span>"Amei a série! Falei sobre no ouvido da minha irmã por dias!
-             
-                "</span>
-            <p>Publicado em 02 de fevereiro de 2023</p>
-          </div>
-          <!-- depoimento 2 -->
-          <div class="card">
-            <img class="user" src="../../../../assets/categories/series/images/joaoguilherme.jpg" alt="foto comentário de joão guilherme">
-            <h3>João Guilherme</h3>
-            <div class="stars">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-            </div>
-            <span> "Eu amei a série, novo objetivo de vida: me tornar um Peaky Blinder!"
-            </span>
-            <p>Publicado em 05 de março de 2023</p>
-          </div>
-          <!-- depoimento 3 -->
-          <div class="card">
-            <img class="user" src="../../../../assets/categories/series/images/mrios.jpg" alt="Foto comentário Maria Clara Rios">
-            <h3>Mrios</h3>
-            <div class="stars">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-              <img class="stars" src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                alt="estrela">
-            </div>
-            <span>"Amei a série, principalmente em questão dos figurinos que estão incriveis!"</span>
-            <p>Publicado em 20 de janeito de 2023</p>
-          </div>
-        </section>
-      </div>
-    </article>
-  </div>
-</main>
-  <!-- footer -->
-  <footer>
-    <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px frameborder="0"></iframe>
-</footer>
-</body>
+          </article>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px frameborder=" 0"></iframe>
+    </footer>
+  </body>
+
 </html>
