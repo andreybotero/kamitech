@@ -102,7 +102,7 @@ p {
     padding: 40px;
     border-radius: 40px;
     margin-bottom: 5%;
-    
+
 }
 
 
@@ -165,7 +165,7 @@ p {
 
 .footer {
     display: flex;
-    
+
 }
 
 .paragrafos {
@@ -173,42 +173,43 @@ p {
     border-bottom: 2px solid #ccc;
     width: 100%;
     position: relative;
-    
+
 }
 
-#infos{
+#infos {
     display: flex;
     flex-direction: column;
-    
+
 }
+
 #geral {
-   display: flex;
-   flex-direction: inline;
-   justify-content: space-between;
-   
-    
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-between;
+
+
 }
 
 #div_button {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.result{
+.result {
     font-size: 18px;
     text-align: left;
 }
 
-#edited{
+#edited {
     background-color: aqua;
 }
 
 @media (max-width:780px) {
     #input {
         margin-top: 50%;
-        width: 80% ;
+        width: 80%;
         justify-content: center;
         margin-left: 10%;
     }
@@ -216,38 +217,42 @@ p {
     #geral {
         display: flex;
         flex-direction: column;
-     }
+    }
 
-     #div_button {
+    #div_button {
         width: 80%;
         display: flex;
         justify-content: center;
         margin-top: 5%;
         flex-direction: row;
     }
-     #geral {
+
+    #geral {
         display: block;
         flex-direction: inline;
         justify-content: space-between;
     }
-    
-   h1{
-    text-align: center;
-    font-size: 25px;
-   }
-   .edit_desf {
-    width: 80%;
-    font-size: 13px;
-   }
 
-   p{
-    text-align: center;
-   }
-#ifame{
-    display: none;
-}
-iframe2{
-    display: inline;
-}
-   
+    h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .edit_desf {
+        width: 80%;
+        font-size: 13px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #ifame {
+        display: none;
+    }
+
+    #iframe2 {
+        display: inline;
+    }
+
 }
