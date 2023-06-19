@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#infosection button{
+#infosection button {
   padding: 6px;
   border: 1px solid #0b0b0b;
   border-radius: 25px;
@@ -42,7 +42,8 @@ body {
   height: 500px;
 }
 
-main { margin-top: 280px;
+main {
+  margin-top: 280px;
   background-color: white;
 }
 
@@ -313,12 +314,6 @@ footer iframe {
     width: 100%;
   }
 
-  #img1 {
-    justify-content: left;
-    width: 75px;
-    height: 100px;
-  }
-
   .container2 {
     display: flex;
     gap: 20px;
@@ -354,14 +349,101 @@ footer iframe {
     box-sizing: border-box;
   }
 
+
+  .container a img {
+    width: 100px;
+    height: 150px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #infosection button {
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+  }
+
+  #ifame {
+    display: none;
+  }
+
+  #iframe2 {
+    display: inline;
+  }
+
+  #s1 {
+    width: 90%;
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  #s1 p {
+    width: 90%;
+    text-align: justify;
+    margin-left: 25px;
+  }
+
+  #s2 {
+    width: 90%;
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  #s2 p {
+    text-align: justify;
+
+  }
+
+  #infosection button {
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+  }
+
+  #s3 {
+    width: 90%;
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  #s3 li {
+    width: 120%;
+    text-align: justify;
+    list-style-type: none;
+  }
+
+
   .container a:nth-child(4n+1),
   .container a:nth-child(4n+2),
   .container a:nth-child(4n+3) {
     flex-basis: 10%;
   }
 
-  .container a img {
-    width: 100px;
-    height: 150px;
-  }
 }
