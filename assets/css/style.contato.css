@@ -266,7 +266,6 @@ form p {
 
 @media (max-width:780px) {
     form {
-        margin-top: -500px;
         border: 1px solid #000000;
         background-color: #fff;
         width: 400px;
