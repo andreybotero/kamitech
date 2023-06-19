@@ -8,13 +8,93 @@
     <title>
         kaminews
     </title>
-    
-</head>
+
+    <link rel="stylesheet" href="../../../../layouts/header2.css">
 
 <body>
-    <main>
+
+    <body>
         <header class="header-upper">
-            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+            <iframe src="../../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
+                id="ifame"></iframe>
+        </header>
+
+        <header id="iframe2">
+
+            <body id="body">
+                <div class="header" id="header">
+                    <button onclick="toggleSidebar()" class="btn_icon_header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <div class="logo_header">
+                        <img src="../../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech"
+                            class="img_logo_header">
+                    </div>
+                    <div class="navigation_header" id="navigation_header">
+                        <button onclick="toggleSidebar()" class="btn_icon_header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                        <a href="../../../../index.html">Início</a>
+                        <a href="../../../../pages/categories/filmes/index.html">Filmes</a>
+                        <a href="../../../../pages/categories/series/index.html">Séries</a>
+                        <a href="../../../../pages/categories/livros/index.html">Livros</a>
+                        <a href="../../../../pages/categories/e-sports/index.html">E-sports</a>
+                        <a href="../../../../pages/categories/vestibular/index.html">Vestibular</a>
+                        <a href="../../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
+                        <a href="../../../../pages/contato.html">Contato</a>
+                        <a href="../../../../pages/feedback.html">Feedback</a>
+                        <a href="../../../../lista/lista.html">Lista</a>
+
+                        <a target="_parent" href="../../../../music/musica.html">
+                            <button type="button" id="music">Música</button>
+                        </a>
+
+                    </div>
+                </div>
+
+            </body>
+            <script>
+                var header = document.getElementById('header');
+                var navigationHeader = document.getElementById('navigation_header');
+                var content = document.getElementById('content');
+                var showSidebar = false;
+
+                function toggleSidebar() {
+                    showSidebar = !showSidebar;
+                    if (showSidebar) {
+                        navigationHeader.style.marginLeft = '-10vw';
+                        navigationHeader.style.animationName = 'showSidebar';
+                    }
+                    else {
+                        navigationHeader.style.marginLeft = '-100vw';
+                        navigationHeader.style.animationName = '';
+                    }
+                }
+
+                function closeSidebar() {
+                    if (showSidebar) {
+                        showSidebar = false;
+                        toggleSidebar();
+                    }
+                }
+
+                window.addEventListener('resize', function (event) {
+                    if (window.innerWidth > 768 && showSidebar) {
+                        showSidebar = false;
+                        toggleSidebar();
+                    }
+                });
+
+            </script>
+
         </header>
         <h1 id="h1name">Breaking Bad</h1>
         <div class="container">
@@ -27,8 +107,8 @@
             <article id="a1">
                 <!-- imagem da série -->
                 <article id="a3">
-                    <img id="img1" class="jorge" src="../../../../assets/images/breaking-bad.jpg" width="70%" height="50%"
-                        alt="foto breakingbad">
+                    <img id="img1" class="jorge" src="../../../../assets/images/breaking-bad.jpg" width="70%"
+                        height="50%" alt="foto breakingbad">
                     <p class="legend"> Foto representativa da série.</p>
                 </article>
                 <article id="a1">
@@ -59,20 +139,23 @@
                 <a><img id="img2"
                         src="../../../../assets/images/Bryan_Cranston_at_the_2018_Berlin_Film_Festival_(2).jpg"
                         width="100px" height="150px" alt="foto Bryan">
-                    <p>Bryan Cranston</p></a>
+                    <p>Bryan Cranston</p>
+                </a>
                 <a><img id="img2" src="../../../../assets/images/aaron-paul-2016-450x600.jpg" width="100px"
                         height="150px" alt="foto Aron ">
-                    <p>Aaron Paul</p></a>
+                    <p>Aaron Paul</p>
+                </a>
                 <a><img id="img2" src="../../../../assets/images/saul goodman.jpg" width="100px" height="150px"
                         alt="foto Saul ">
-                    <p>Saul Goodman</p></a>
+                    <p>Saul Goodman</p>
+                </a>
             </div>
         </div>
-        
+
         <div id="infosection">
-            <form  action="../../../categories/series/index.html">
-               <div class="button">
-               <button>Voltar</button>
+            <form action="../../../categories/series/index.html">
+                <div class="button">
+                    <button>Voltar</button>
             </form>
         </div>
 
@@ -96,99 +179,98 @@
                         <h2>10</h2>
                     </div>
                 </section>
-                
-                </div>
 
-                <!-- depoimentos -->
-                <div class="depoiments">
-                    <section class="cards">
-                        <!-- depoimento 1 -->
-                        <div class="card">
-                            <img class="user"
-                                src="../../../../assets/images/Bryan_Cranston_at_the_2018_Berlin_Film_Festival_(2).jpg"
-                                alt="bryan cranston">
-                            <h3>Bryan Cranston</h3>
-                            <div class="stars">
-                                <img class="stars" src="../../../../assets/categories/e-sports/images/" alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span>"Breaking bad is simply amazing, it’s an honor to have been part of this project.
-                                !"</span>
-                            <p>Publicado em 23 de fevereiro de 2023</p>
-                        </div>
-                        <!-- depoimento 2 -->
-                        <div class="card">
-                            <img class="user" src="../../../../assets/images/aaron-paul-2016-450x600.jpg"
-                                alt="Aaron paul">
-                            <h3>Aaron Paul</h3>
-                            <div class="stars">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span> "Pinkman is the best character, the path the character takes is awesome."
-                            </span>
-                            <p>Publicado em 17 de março de 2023</p>
-                        </div>
-                        <!-- depoimento 3 -->
-                        <div class="card">
-                            <img class="user" src="../../../../assets/images/felipesantos.jfif" alt="Felipe santos">
-                            <h3>Felipe Santos</h3>
-                            <div class="stars">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                                <img class="stars"
-                                    src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
-                                    alt="estrela">
-                            </div>
-                            <span>"Muito inspiradora, acho que vou parar de ser dev e investir nessa vida."</span>
-                            <p>Publicado em 24 de março de 2023</p>
-                        </div>
-                    </section>
-                </div>
-            </article>
         </div>
-    </main>
-    <footer>
-        <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px"
-            frameborder="0"></iframe>
-    </footer>
-</body>
+
+        <!-- depoimentos -->
+        <div class="depoiments">
+            <section class="cards">
+                <!-- depoimento 1 -->
+                <div class="card">
+                    <img class="user"
+                        src="../../../../assets/images/Bryan_Cranston_at_the_2018_Berlin_Film_Festival_(2).jpg"
+                        alt="bryan cranston">
+                    <h3>Bryan Cranston</h3>
+                    <div class="stars">
+                        <img class="stars" src="../../../../assets/categories/e-sports/images/" alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                    </div>
+                    <span>"Breaking bad is simply amazing, it’s an honor to have been part of this project.
+                        !"</span>
+                    <p>Publicado em 23 de fevereiro de 2023</p>
+                </div>
+                <!-- depoimento 2 -->
+                <div class="card">
+                    <img class="user" src="../../../../assets/images/aaron-paul-2016-450x600.jpg" alt="Aaron paul">
+                    <h3>Aaron Paul</h3>
+                    <div class="stars">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                    </div>
+                    <span> "Pinkman is the best character, the path the character takes is awesome."
+                    </span>
+                    <p>Publicado em 17 de março de 2023</p>
+                </div>
+                <!-- depoimento 3 -->
+                <div class="card">
+                    <img class="user" src="../../../../assets/images/felipesantos.jfif" alt="Felipe santos">
+                    <h3>Felipe Santos</h3>
+                    <div class="stars">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                        <img class="stars"
+                            src="../../../../assets/categories/e-sports/images/IMG_20230317_084721_329.svg"
+                            alt="estrela">
+                    </div>
+                    <span>"Muito inspiradora, acho que vou parar de ser dev e investir nessa vida."</span>
+                    <p>Publicado em 24 de março de 2023</p>
+                </div>
+            </section>
+        </div>
+        </article>
+        </div>
+        </main>
+        <footer>
+            <iframe src="../../../../layouts/footer.html" scrolling="no" width="100%" height="340px"
+                frameborder="0"></iframe>
+        </footer>
+    </body>
 
 </html>

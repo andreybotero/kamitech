@@ -6,8 +6,9 @@
 
 body {
   font-family: system-ui;
-  
+
 }
+
 /*fazendo header funcionar*/
 .header-upper {
   z-index: 5;
@@ -26,7 +27,8 @@ body {
   height: 500px;
 }
 
-main { margin-top: 280px;
+main {
+  margin-top: 280px;
   margin-bottom: 20px;
 }
 
@@ -34,6 +36,7 @@ main { margin-top: 280px;
   text-align: center;
   padding: 20px;
 }
+
 .a3 img {
   padding: 20px;
 }
@@ -41,15 +44,17 @@ main { margin-top: 280px;
 .elenco {
   text-align: center;
   border-top: solid 3px #3c4ffa;
-  
+
 }
-.container2{
+
+.container2 {
   display: flex;
   margin-left: 35%;
   gap: 30px;
 }
+
 /*hover imagem do elenco*/
-#img2:hover{
+#img2:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: all 0.5s;
@@ -66,12 +71,13 @@ main { margin-top: 280px;
   border-radius: 4px;
 
 }
+
 /*section*/
 #s1 p {
 
   font-size: 22px;
- 
- 
+
+
 }
 
 p {
@@ -88,7 +94,7 @@ ul {
 }
 
 #s2 {
- border-top: solid 3px #3c4ffa;
+  border-top: solid 3px #3c4ffa;
   text-align: justify;
   padding: 20px;
   width: 40%;
@@ -97,10 +103,10 @@ ul {
 }
 
 #s3 {
-   border-top: solid 3px #3c4ffa;
+  border-top: solid 3px #3c4ffa;
   text-align: justify;
   padding: 20px;
-border-radius: 4px;
+  border-radius: 4px;
   width: 40%;
   margin-left: 4%;
 }
@@ -120,10 +126,12 @@ article {
 h2 {
   margin-top: 5%;
 }
-#img1{
+
+#img1 {
   margin-left: 4%;
 }
-.legend{
+
+.legend {
   margin-left: 4%;
 }
 
@@ -288,9 +296,11 @@ footer iframe {
   h2 {
     text-align: center;
   }
-  #s1{
+
+  #s1 {
     font-size: 15px;
   }
+
   #s2 {
     border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
@@ -298,15 +308,17 @@ footer iframe {
     border-radius: 6px;
     width: 90%;
     margin-left: -5%;
-  
+
   }
+
   #s3 {
-    border-top: solid 3px hsl(234, 81%, 21%); 
+    border-top: solid 3px hsl(234, 81%, 21%);
     text-align: center;
     padding: 20px;
     border-radius: 6px;
     width: 80%;
   }
+
   #img1 {
     justify-content: center;
     width: 90%;
@@ -315,28 +327,109 @@ footer iframe {
     margin-left: 8%;
 
   }
+
   .container2 {
     margin-left: 0%;
     gap: 20px;
-    
+
   }
+
   .cards {
     flex-direction: column;
   }
-  .cards .card{
+
+  .cards .card {
     width: 70%;
   }
-  .stars{
+
+  .stars {
     justify-content: center;
   }
+
   .elenco {
     text-align: center;
-    border-top:transparent;
-    
+    border-top: transparent;
+
   }
-  .jorge{
+
+  .jorge {
     width: 50%;
     justify-content: center;
   }
-}
 
+
+
+  h2 {
+    text-align: center;
+  }
+
+  #infosection button {
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+  }
+
+  #ifame {
+    display: none;
+  }
+
+  #iframe2 {
+    display: inline;
+  }
+
+  p .legend {
+    text-align: center;
+  }
+
+  a p {
+    margin-left: 33%;
+  }
+
+  #s1 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+    margin-left: 5%;
+    width: 80%;
+  }
+
+  #s1 p {
+    text-align: justify;
+  }
+
+  #s3 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+  }
+
+  #s3 li {
+    text-align: justify;
+    list-style-type: none;
+  }
+
+  #s2 {
+    border-top: solid 3px hsl(234, 81%, 21%);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+    margin-left: 25px;
+  }
+
+  #s2 p {
+    text-align: justify;
+  }
+}
