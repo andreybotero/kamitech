@@ -434,7 +434,7 @@ footer iframe {
   }
 
   #s3 li {
-    width: 120%;
+    width: 95%;
     text-align: justify;
     list-style-type: none;
   }
@@ -444,6 +444,10 @@ footer iframe {
   .container a:nth-child(4n+2),
   .container a:nth-child(4n+3) {
     flex-basis: 10%;
+  }
+
+  h1 {
+    margin-top: -235px;
   }
 
 }
