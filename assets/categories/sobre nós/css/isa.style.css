@@ -149,7 +149,9 @@
 
 }
 @media (min-width: 600px) {
-    
+    #iframe2{
+        display: none;
+    }
 
     * {
         padding: 0;
