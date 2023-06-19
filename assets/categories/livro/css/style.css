@@ -313,7 +313,20 @@ a:hover {
     background-color: #222025;
 }
 
-@media (max-width: 768px) {
+#iframe2{
+    display: none;
+  }
+  
+  @media (max-width:768px) {
+    #iframe2{
+      display: inline;
+    }
+    .header-upper{
+      display: none;
+    }
+    main{
+      margin-top: 10px;
+    }
     #some {
         display: none;
     }

@@ -413,7 +413,20 @@ input:checked+.avaliacaoMateria article section #mais {
   justify-content: center;
   gap: 2px;
 }
-@media (max-width: 600px) {
+#iframe2{
+  display: none;
+}
+
+@media (max-width:768px) {
+  #iframe2{
+    display: inline;
+  }
+  .header-upper{
+    display: none;
+  }
+  main{
+    margin-top: 10px;
+  }
   aside {
     display: none;
   }

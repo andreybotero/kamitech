@@ -396,8 +396,20 @@ input:checked+.avaliacaoMateria article section #mais {
   justify-content: center;
   gap: 2px;
 }
+#iframe2{
+  display: none;
+}
 
-@media (max-width: 600px) {
+@media (max-width:768px) {
+  #iframe2{
+    display: inline;
+  }
+  .header-upper{
+    display: none;
+  }
+  main{
+    margin-top: 10px;
+  }
   h1 {
     text-align: center;
     margin-left: 50%;
