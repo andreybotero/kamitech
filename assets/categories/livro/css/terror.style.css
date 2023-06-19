@@ -427,10 +427,7 @@ input:checked+.avaliacaoMateria article section #mais {
   gap: 2px;
 }
 
-
-
 @media (max-width: 780px) {
-
 
   #infosection button {
     padding: 6px;
@@ -447,7 +444,13 @@ input:checked+.avaliacaoMateria article section #mais {
     margin-bottom: 2%;
   }
 
+  #ifame {
+    display: none;
+  }
 
+  #iframe2 {
+    display: inline;
+  }
 
   aside {
     display: none;
@@ -624,17 +627,4 @@ input:checked+.avaliacaoMateria article section #mais {
     font-size: 25px;
     text-transform: uppercase;
   }
-
-  #title {
-    margin-top: -100px;
-  }
-
-  #ifame {
-    display: none;
-  }
-
-  #iframe2 {
-    display: inline;
-  }
-
 }
