@@ -30,7 +30,7 @@ body {
 
 .navigation_header {
     gap: 3em;
-    z-index: 2;
+    z-index: 301;
 }
 
 .linkblock {
