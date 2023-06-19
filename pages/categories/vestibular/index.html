@@ -6,15 +6,95 @@
     <link rel="stylesheet" href="../../../assets/categories/vestibular/css/style.css">
     <link rel="icon" href="../../../assets/images/logowhite-semFundo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Vestibular - KamiNews</title>
+
+    <link rel="stylesheet" href="../../../layouts/header2.css">
+
 </head>
 
 <body>
-
     <header class="header-upper">
-        <iframe src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"></iframe>
+        <iframe id="ifame" src="../../../layouts/header.html" scrolling="no" width="100%" frameborder="0"
+            height="300px"></iframe>
     </header>
+    <header id="iframe2">
+
+        <body id="body">
+            <div class="header" id="header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="logo_header">
+                    <img src="../../../assets/images/logokami-semFundo.png" alt="Logo Kamitech" class="img_logo_header">
+                </div>
+                <div class="navigation_header" id="navigation_header">
+                    <button onclick="toggleSidebar()" class="btn_icon_header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-x" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <a href="../../../index.html">Início</a>
+                    <a href="../../../pages/categories/filmes/index.html">Filmes</a>
+                    <a href="../../../pages/categories/series/index.html">Séries</a>
+                    <a href="../../../pages/categories/livros/index.html">Livros</a>
+                    <a href="../../../pages/categories/e-sports/index.html">E-sports</a>
+                    <a href="../../../pages/categories/vestibular/index.html">Vestibular</a>
+                    <a href="../../../pages/categories/sobre-nos/creators/index.sobrenos.html">Sobre nós</a>
+                    <a href="../../../pages/contato.html">Contato</a>
+                    <a href="../../../pages/feedback.html">Feedback</a>
+                    <a href="../../../lista/lista.html">Lista</a>
+
+                    <a target="_parent" href="../../../music/musica.html">
+                        <button type="button" id="music">Música</button>
+                    </a>
+
+                </div>
+            </div>
+
+        </body>
+        <script>
+            var header = document.getElementById('header');
+            var navigationHeader = document.getElementById('navigation_header');
+            var content = document.getElementById('content');
+            var showSidebar = false;
+
+            function toggleSidebar() {
+                showSidebar = !showSidebar;
+                if (showSidebar) {
+                    navigationHeader.style.marginLeft = '-10vw';
+                    navigationHeader.style.animationName = 'showSidebar';
+                }
+                else {
+                    navigationHeader.style.marginLeft = '-100vw';
+                    navigationHeader.style.animationName = '';
+                }
+            }
+
+            function closeSidebar() {
+                if (showSidebar) {
+                    showSidebar = false;
+                    toggleSidebar();
+                }
+            }
+
+            window.addEventListener('resize', function (event) {
+                if (window.innerWidth > 768 && showSidebar) {
+                    showSidebar = false;
+                    toggleSidebar();
+                }
+            });
+
+        </script>
+
+    </header>
+
+
     <main>
 
         <article class="art1">
@@ -25,37 +105,37 @@
         </article>
         <div class="displaycorpo">
             <article class="art3">
-                
-                
+
+
                 <section class="conteudoart">
-                    
-                    
+
+
                     <h1 class="h1art">O que é o vestibular?</h1>
-                    
+
                     <p class="textosvest">Exame vestibular designa o processo de seleção de novos estudantes emprega
                         do pelas universidades brasileiras.
-                        
+
                     </p>
-                    
-                    
+
+
 
                     </a>
                 </section>
             </article>
-            
+
             <article class="art3">
-                
+
                 <section class="conteudoart">
-                    
+
                     <h1>Para que serve o vestibular?</h1>
                     <p class="textosvest">Exame vestibular designa o processo de seleção de novos estudantes emprega
                         do pelas universidades brasileiras.
                         O vestibular é um processo seletivo usado por diferentes instituições de ensino para aprovar
                         estudantes que queiram ingressar em um curso de graduação. Atualmente, existem diversos tipos de
                         vestibulares para os quais você pode se inscrever.
-                        
+
                     </p>
-                    
+
                 </section>
             </article>
 
@@ -74,11 +154,11 @@
                         Dependendo da instituição de ensino, será preciso pagar uma taxa de inscrição para validar seu
                         registro.
                     </p>
-                    
+
                 </section>
             </article>
             <article class="art3">
-                
+
                 <section class="conteudoart">
                     <h1>Qual a diferença entre Enem e vestibular?</h1>
                     <p class="textosvest">O Enem e o vestibular são provas que medem conhecimentos dos estudantes. O
@@ -86,17 +166,17 @@
                         processo seletivo para faculdade por meio das instituições de ensino. Já o Enem é aplicado pelo
                         INEP, tendo a nota do Enem como base para o SiSU, Fies e ProUni.
                     </p>
-                    
+
                 </section>
             </article>
             <article class="art3">
-                
+
                 <section class="conteudoart">
                     <h1>O que cai no vestibular?</h1>
                     <p c>
-                        <ul>
-                            <li>
-                                Ciências humanas e suas tecnologias;
+                    <ul>
+                        <li>
+                            Ciências humanas e suas tecnologias;
                         </li>
                         <li>Ciências da natureza e suas tecnologias;
                         </li>
@@ -104,33 +184,33 @@
                             Linguagens, códigos e suas tecnologias;
                         </li>
                         <li>Matemática e suas tecnologias.</li>
-                        
-                        
+
+
                     </ul>
-                </p>
-                
-            </section>
-        </article>
-        <article class="art3">
-            
-            <section class="conteudoart">
-                <h1>Quais os principais vestibulares do Brasil?</h1>
-                <p class="textosvest">No Brasil, alguns dos mais famosos são os da Fuvest, da Unicamp, da Unesp, da
-                    Estácio e, claro, o
-                    próprio Sisu, que está atrelado ao Enem.
-                </p>
-                
-            </section>
-        </article>
-        
-        <div id="infosection">
-        <form  action="../../../index.html">
-            <div class="button">
-              <button>Voltar</button>
-          </form>
+                    </p>
+
+                </section>
+            </article>
+            <article class="art3">
+
+                <section class="conteudoart">
+                    <h1>Quais os principais vestibulares do Brasil?</h1>
+                    <p class="textosvest">No Brasil, alguns dos mais famosos são os da Fuvest, da Unicamp, da Unesp, da
+                        Estácio e, claro, o
+                        próprio Sisu, que está atrelado ao Enem.
+                    </p>
+
+                </section>
+            </article>
+
+            <div id="infosection">
+                <form action="../../../index.html">
+                    <div class="button">
+                        <button>Voltar</button>
+                </form>
+            </div>
         </div>
-        </div>
-        
+
         <div class="h1noticias"></div>
         <h1 class="h1vesti">Principais vestibulares</h1>
         <div class="h1noticias"></div>
@@ -139,12 +219,12 @@
 
             <article id="artweb">
                 <div class="webinar-grid">
-                    
+
                     <a href="../../../pages/categories/vestibular/art1.html" target="_parent" class="link-block">
                         <div class="jumbotron left-right-jumbotron-block">
                             <div class="webinar-image-container">
                                 <img class="imgliv" src="../../../assets/categories/vestibular/images/enem2.jpg"
-                                alt="imagem Enem">
+                                    alt="imagem Enem">
                             </div>
                             <h1 class="dundas-blue-text-long">
                                 O que voce precisa saber sobre o ENEM?
@@ -158,36 +238,36 @@
                     </a>
                 </div>
                 <div class="webinar-grid">
-                    
+
                     <a href="../../../pages/categories/vestibular/art2.html" target="_parent" class="link-block">
                         <div class="jumbotron left-right-jumbotron-block">
                             <div class="webinar-image-container">
                                 <img src="../../../assets/categories/vestibular/images/vestibular-unicamp-2023 (1).jpg"
                                     alt="imagem vestibular unicamp">
-                                </div>
-                                <h1 class="dundas-blue-text-long">
-                                    O que voce precisa saber sobre a UNICAMP?
-                                </h1>
-                                
-                                <div class="webinar-content-box">
-                                    <p>O Vestibular Unicamp é um concurso público destinado à seleção dos melhores
-                                        estudantes para ingressar na faculdade desejada. </p>
-                                        <span class="dundas-blue-link">Ver mais &gt;</span>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <h1 class="dundas-blue-text-long">
+                                O que voce precisa saber sobre a UNICAMP?
+                            </h1>
+
+                            <div class="webinar-content-box">
+                                <p>O Vestibular Unicamp é um concurso público destinado à seleção dos melhores
+                                    estudantes para ingressar na faculdade desejada. </p>
+                                <span class="dundas-blue-link">Ver mais &gt;</span>
+                            </div>
                         </div>
-                        <div class="webinar-grid">
-                            
-                            <a href="../../../pages/categories/vestibular/art3.html" target="_parent" class="link-block">
-                                <div class="jumbotron left-right-jumbotron-block">
-                                    <div class="webinar-image-container">
-                                        <img src="../../../assets/categories/vestibular/images/vunesp.jpg" alt="imagem Vunesp">
+                    </a>
+                </div>
+                <div class="webinar-grid">
+
+                    <a href="../../../pages/categories/vestibular/art3.html" target="_parent" class="link-block">
+                        <div class="jumbotron left-right-jumbotron-block">
+                            <div class="webinar-image-container">
+                                <img src="../../../assets/categories/vestibular/images/vunesp.jpg" alt="imagem Vunesp">
                             </div>
                             <h1 class="dundas-blue-text-long">
                                 O que voce precisa saber sobre a VUNESP?
                             </h1>
-                            
+
                             <div class="webinar-content-box">
                                 <p>O Vestibular Vunesp é um concurso público destinado à seleção dos melhores
                                     estudantes.
@@ -198,10 +278,10 @@
                     </a>
                 </div>
             </article>
-        </main>
-        <footer>
-            <iframe src="../../../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
-        </footer>
-    </body>
-    
+    </main>
+    <footer>
+        <iframe src="../../../layouts/footer.html" scrolling="no" width="100%" height="340px" frameborder="0"></iframe>
+    </footer>
+</body>
+
 </html>
