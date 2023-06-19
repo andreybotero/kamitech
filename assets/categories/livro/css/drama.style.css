@@ -1,5 +1,12 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-#infosection button{
+#iframe2 {
+  display: none;
+}
+
+#infosection button {
   padding: 6px;
   border: 1px solid #0b0b0b;
   border-radius: 25px;
@@ -14,18 +21,15 @@
   margin-bottom: 2%;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
 }
 
-main { margin-top: 280px;
+main {
+  margin-top: 280px;
   background-color: white;
-  
+
 }
 
 /* gambiarra para o header ficar sem bug */
@@ -57,15 +61,14 @@ footer iframe {
 }
 
 #s1 {
-
   text-align: justify;
+  border-top: 1px solid #e6e6e6;
   background-color: white;
-  margin-left: 10px;
+  margin-left: 20px;
   padding: 10px;
 }
 
 #s2 {
-
   text-align: justify;
   border-top: 1px solid #e6e6e6;
   background-color: white;
@@ -74,7 +77,6 @@ footer iframe {
 }
 
 #s3 {
-
   text-align: justify;
   border-top: 1px solid #e6e6e6;
   background-color: white;
@@ -82,12 +84,16 @@ footer iframe {
   padding: 10px;
 }
 
+#s3 li {
+  list-style-type: none;
+}
+
 #a1 {
   width: 70%;
 }
 
 #title {
-
+  margin-top: 75px;
   letter-spacing: 2px;
   font-style: italic;
   font-size: 35px;
@@ -108,7 +114,7 @@ h2 {
 /*estilização carrossel*/
 .slider {
   overflow: hidden;
-text-align: center;
+  text-align: center;
 }
 
 .slider-content {
@@ -130,6 +136,8 @@ text-align: center;
 
 img {
   object-fit: contain;
+  width: 100px;
+  height: 100px;
 }
 
 .books {
@@ -159,10 +167,15 @@ img {
 }
 
 .slider-item {
-
   border-radius: 5px;
+}
 
+.books p {
+  text-align: justify;
+}
 
+.books .p1 {
+  text-align: center;
 }
 
 .input-radio {
@@ -173,7 +186,7 @@ img {
 }
 
 .slider label {
-display: inline-block;
+  display: inline-block;
 }
 
 .radio-btn {
@@ -236,7 +249,7 @@ display: inline-block;
 .avaliacaoMateria {
   background-color: #f5f5f5;
   padding: 20px;
-/*   margin-top: 20px; */
+  /*   margin-top: 20px; */
 }
 
 .avaliacaoMateria article section {
@@ -386,7 +399,7 @@ input:checked+.avaliacaoMateria article section #mais {
   padding: 25px 30px;
   box-shadow: 6px 6px 10px #000;
   border-radius: 10px;
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
 }
 
 .cards .card h3 {
@@ -413,26 +426,40 @@ input:checked+.avaliacaoMateria article section #mais {
   justify-content: center;
   gap: 2px;
 }
-#iframe2{
-  display: none;
-}
 
-@media (max-width:768px) {
-  #iframe2{
-    display: inline;
+@media (max-width: 780px) {
+
+  #infosection button {
+    padding: 6px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #2b2a2f;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 2%;
+    margin-left: 31%;
+    margin-bottom: 2%;
   }
-  .header-upper{
+
+  #ifame {
     display: none;
   }
-  main{
-    margin-top: 10px;
+
+  #iframe2 {
+    display: inline;
   }
+
   aside {
     display: none;
   }
+
   #a1 {
     width: 100%;
   }
+
   .depoiments {
     background-color: #f5f5f5;
     padding: 0;
@@ -441,14 +468,14 @@ input:checked+.avaliacaoMateria article section #mais {
     display: none;
     width: 80%;
   }
-  
-  
+
+
   .depoiments h1 {
     text-align: center;
     margin-bottom: 3rem;
     justify-content: baseline;
   }
-  
+
   .depoiments .cards .card p {
     font-style: italic;
     font-size: 13px;
@@ -459,12 +486,12 @@ input:checked+.avaliacaoMateria article section #mais {
     margin-bottom: -5px;
     margin-top: 20px;
   }
-  
+
   .cards {
     display: flex;
     margin: 0;
   }
-  
+
   .cards .card {
     background-color: white;
     margin: 10px;
@@ -476,24 +503,24 @@ input:checked+.avaliacaoMateria article section #mais {
     border-radius: 10px;
     width: 100%;
   }
-  
+
   .cards .card h3 {
     margin: 0;
   }
-  
+
   .cards .card span {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
   }
-  
+
   .card .user {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
   }
-  
+
   .stars {
     width: 20px;
     height: 20px;
@@ -501,13 +528,13 @@ input:checked+.avaliacaoMateria article section #mais {
     justify-content: center;
     gap: 2px;
   }
-  
+
   /* fix footer */
   footer iframe {
     margin-bottom: -5px;
   }
-  
-  
+
+
   #elenco {
     margin-bottom: 15px;
     letter-spacing: 2px;
@@ -516,79 +543,82 @@ input:checked+.avaliacaoMateria article section #mais {
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   .container2 {
     text-align: center;
   }
+
   .avaliacaoMateria {
     background-color: #f5f5f5;
     margin-top: 20px;
   }
-  
+
   .avaliacaoMateria article section {
     display: inline;
     align-items: baseline;
   }
-  
+
   .avaliacaoMateria article section label {
     margin-left: auto;
     cursor: pointer;
   }
-  
+
   .avaliacaoMateria article section label:hover {
     color: #383838;
   }
-  
+
   .avaliacaoMateria article section label:active {
     color: #3c4ffa;
   }
-  
+
   .avaliacaoMateria article .notas {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
   }
-  
+
   .avaliacaoMateria article .notas .media {
     display: flex;
     gap: 10px;
   }
-  
+
   input:checked+.avaliacaoMateria article .depoiments {
     display: block;
   }
-  
+
   input:checked+.avaliacaoMateria article section #menos {
     display: block;
   }
-  
+
   input:checked+.avaliacaoMateria article section #mais {
     display: none;
   }
-  
+
   #menos {
     display: none;
   }
-  
+
   #veja {
     display: none;
   }
+
   .books {
     background-color: #509bfa;
     color: #fff;
     margin-top: 0;
     padding: 50px;
   }
+
   .books .p1 {
     color: #fff;
-    
+
   }
-  
+
   .p2 {
     color: #fff;
   }
-  
+
   .books .tt2 {
     margin-top: 0px;
     margin-bottom: 5px;
@@ -597,4 +627,4 @@ input:checked+.avaliacaoMateria article section #mais {
     font-size: 25px;
     text-transform: uppercase;
   }
-  }
+}
